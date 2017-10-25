@@ -1,5 +1,5 @@
 PremierZ
-ver 1.0.5-ja
+ver 1.0.6-ja
 
 one line to give the program's name and an idea of what it does.
 
