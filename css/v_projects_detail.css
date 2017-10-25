@@ -1,0 +1,149 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ プロジェクト管理画面で使用するCSSの設定
+ ***********************************************************/
+/***********************************************************/
+/* 明細部                                                  */
+/***********************************************************/
+#id_div_prj_dtail {
+	height:				480px;
+	overflow:			hidden;
+	border:				none 0px;
+}
+/*---------------------------------------------------------*/
+/* ページ操作部                                            */
+/*---------------------------------------------------------*/
+#id_div_prj_dtail_top {
+	width:				100%;
+	border:				none 0px;
+}
+
+/* タイトル */
+#id_table_prj_detail_title {
+	width:				100%;
+	height:				25px;
+	border:				none 0px;
+	border-collapse:	collapse;
+}
+#id_td_prj_detail_title {
+	font-size: 			13px;
+	font-weight:		bold;
+	background-image:	url("../img/newz_title_back.png");
+	background-repeat:	repeat-x;
+	padding:			0px;
+	padding-left:		3px;
+	height:				23px;
+}
+
+/* ボタン部 */
+#id_table_prj_pagemenu {
+	width:				100%;
+	height:				30px;
+}
+.c_td_prj_pagemenu {
+	width:				30%;
+}
+.c_td_prj_btnmenu {
+	width:				20%;
+}
+#id_btn_prj_prev {
+	width:				100%;
+}
+#id_btn_prj_next {
+	width:				100%;
+}
+
+
+/*---------------------------------------------------------*/
+/* 明細表ヘッダー部                                        */
+/*---------------------------------------------------------*/
+#id_div_prj_dtail_table {
+	width:				700px;
+	height:				380px;
+	border:				none 0px;
+	overflow:			scroll;
+}
+
+#id_table_prj_dtail_table {
+	max-height:			100%;
+	border:				solid 1px #cccccc;
+	border-collapse:	collapse;
+}
+
+.c_th_prj_detail {
+	height:				24px;
+	background-color:	#c9d6ff;
+	border:				solid 1px #cccccc;
+	white-space:		nowrap;
+	padding-top:		1px;
+	padding-bottom:		1px;
+	padding-left:		4px;
+	padding-right:		4px;
+	font-size: 			12px;
+}
+
+/*---------------------------------------------------------*/
+/* 明細表一覧部                                            */
+/*---------------------------------------------------------*/
+/* TD一般設定 */
+.c_td_prj_detail {
+	height:				22px;
+	background-color:	transparent;
+	border:				solid 1px #cccccc;
+	white-space:		nowrap;
+	padding-top:		0px;
+	padding-bottom:		0px;
+	padding-left:		4px;
+	padding-right:		4px;
+	font-size: 			12px;
+}
+/* 有効無効表示 */
+.c_txt_td_prj_valid {
+	height:				22px;
+	width:				4px;
+	border:				none 0px;
+	background-color:	#0000ff;
+}
+.c_txt_td_prj_invalid {
+	height:				22px;
+	width:				4px;
+	border:				none 0px;
+	background-color:	#ff0000;
+}
+/* ボタン */
+.c_btn_prj_detail,.c_btn_prj_report,.c_btn_prj_update,.c_btn_prj_delete {
+	height:				22px;
+	width:				40px;
+	font-size: 			12px;
+}
+
+/*---------------------------------------------------------*/
+/* 下部                                                    */
+/*---------------------------------------------------------*/
+#id_td_prj_detail_insert {
+	width:				100%;
+}
+#id_td_prj_detail_ckb {
+	width:				25%;
+}
+/* 新規作成ボタン */
+#id_td_prj_detail_insert {
+	text-align:			right;
+}
+/* ボタン */
+.c_btn_prj_detail_btm {
+	width:				90px;
+}

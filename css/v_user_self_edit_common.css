@@ -1,0 +1,64 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+  ユーザー情報画面で使用するCSSの設定
+ ***********************************************************/
+body {
+	font-size:			12px;
+	color:				#111111;
+	margin:				0px;
+	padding:			1px;
+}
+/* 全体を囲うdiv */
+#id_div_master{
+	width:				1000px;
+	height:				100%;
+	margin-left:		auto;
+	margin-right:		auto;
+	background-image:	url('../img/mainback.png');
+}
+/***********************************************************
+ ページタイトル
+ ***********************************************************/
+.c_span_fontsize12px {
+	font-size:			12px;
+}
+
+.c_span_paganame_bold {
+	font-size:			12px;
+	font-weight:		bold;
+}
+
+
+/***********************************************************
+ リンク
+ ***********************************************************/
+.c_btn_link {
+	width:				100px;
+	height: 			23px;
+	cursor:				pointer;
+}
+
+/***********************************************************/
+/* コピーライト                                              */
+/***********************************************************/
+#id_div_copyright {
+	width:				1000px;
+	height: 			15px;
+	position:			absolute;
+	top:				580px;
+	text-align:			center;
+	border-top:			1px solid #BBBBBB;
+}

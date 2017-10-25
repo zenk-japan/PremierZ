@@ -1,0 +1,85 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/*----------------------------------------------------------
+  カレンダーの設定
+  ----------------------------------------------------------*/
+/*----------------------------------------------------------
+  YMカレンダー
+  ----------------------------------------------------------*/
+/* 下地 */
+#id_ext_div_ymcalendar_fnd {
+	width:					152px;
+	height:					52px;
+	background-image:		url("../img/calendar_fnd.png");
+	background-repeat:		no-repeat;
+}
+/* 本体DIV */
+#id_ext_div_ymcalendar {
+	width:					150px;
+	height:					50px;
+	background-color:		#ffffff;
+	overflow:				hidden;
+}
+/* テーブル */
+#id_ext_table_ymcal {
+	width:					100%;
+	height:					100%;
+	border-collapse:		collapse;
+}
+/* タイトル */
+#id_ext_td_ymcal_title {
+	height:					20px;
+	background-image:		url("../img/newz_title_back.png");
+	text-align:				left;
+	font-weight:			bold;
+	font-size:				12px;
+}
+/* 閉じるボタン */
+#id_td_btn_ymcal_close {
+	height:					20px;
+	border:					none 0px;
+	background-image:		url("../img/newz_title_back.png");
+	text-align:				right;
+}
+#id_ext_btn_ymcal_close {
+	width:					15px;
+	height:					100%;
+	border:					none 0px;
+	background-color:		transparent;
+}
+/* 日付ボタン */
+#id_ext_td_ymcal_ym {
+	width:					50%;
+	height:					25px;
+	text-align:				center;
+	border:					none 0px;
+}
+#id_ext_btn_ymcal_ymval{
+	width:					100%;
+	height:					100%;
+	text-align:				center;
+}
+/* 月移動ボタン */
+.c_ext_td_ymcal_movemonth {
+	width:					25%;
+	height:					25px;
+	text-align:				center;
+	border:					none 0px;
+}
+.c_ext_btn_ymcal_movemonth{
+	width:					100%;
+	height:					100%;
+	text-align:				center;
+}

@@ -1,0 +1,171 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ 明細の設定
+ ***********************************************************/
+/* 外枠のDIV */
+#id_div_detail_menu {
+	color:				#000000;
+	background-color: 	transparent;
+	width: 				698px;
+	overflow: 			hidden;
+	/*border:				solid 1px #cccccc;*/
+	vertical-align:		top;
+}
+/***********************************************************
+ タイトル
+ ***********************************************************/
+#id_div_detail_title {
+	width: 				100%;
+	height: 			23px;
+	background-color: 	transparent;
+	background-image:	url("../img/newz_title_back.png");
+	border:				none 0px;
+	/*border:				solid 1px #cccccc;*/
+	font-size:			14px;
+	font-weight:		bold;
+	font-family: 		"メイリオ","ＭＳ Ｐゴシック",sans-serif;
+	color:				#111111;
+	padding-top:  		3px;
+	padding-left: 		3px;
+	vertical-align:		middle;
+}
+#id_table_detail_title_cap {
+	padding-top:  		3px;
+	padding-left: 		3px;
+	display:			none;
+}
+/***********************************************************
+ 編集ボタン
+ ***********************************************************/
+#id_div_detail_editbtn {
+	position:			relative;
+	width: 				100%;
+	height: 			30px;
+}
+/* テーブル */
+#id_table_detail_editbtn {
+	width:				100%;
+	border: 			none 0px;
+	border-collapse: 	collapse;
+}
+/* メッセージ用TD */
+#id_td_detail_editbtn_mess {
+	width: 				75%;
+	height: 			100%;
+	font-size: 			10px;
+	font-weight: 		bold;
+	color: 				#ff0000;
+	text-align: 		left;
+}
+/* ボタン格納用TD */
+#id_td_detail_editbtn {
+	width: 				25%;
+	height: 			100%;
+	text-align: 		right;
+}
+/* 編集ボタン */
+#id_btn_detail_editbtn {
+	width:				80px;
+	text-align: 		center;
+}
+/***********************************************************
+ 明細
+ ***********************************************************/
+/* 明細表用のDIV */
+#id_div_detail_table {
+	position:			relative;
+	width:				100%;
+	overflow: 			hidden;
+	vertical-align:		top;
+}
+/* 明細テーブル */
+#id_table_detail {
+	position:			relative;
+	width:				95%;
+	border:				0px;
+	left:				1%;
+	empty-cells: 		show;
+	border-collapse:	separate;
+}
+/* セクション区切り */
+.c_td_section_separator {
+	width:				100%;
+	height:				2px;
+	font-size:			2px;
+	border-bottom:		solid 1px #abc1ff;
+}
+
+/* セクションタイトル */
+.c_td_section_header {
+	height:				20px;
+	background-color:	#799af6;
+	/*background-image: 	url("../img/detailsectiontitle.png");*/
+	background-repeat:	no-repeat;
+	padding-left: 		10px;
+	color: 				#ffffff;
+	font-size: 			12px;
+}
+
+/* 項目名用TD */
+.c_td_detail_name {
+	width:				12.5%;
+	height:				20px;
+	border:				none 0px;
+	background-color:	#c9d6ff;
+	text-align: 		left;
+}
+/* 2項目分項目名用TD */
+.c_td_detail_name_2col {
+	width:				25%;
+	height:				20px;
+	border:				none 0px;
+	background-color:	#c9d6ff;
+	text-align: 		left;
+}
+
+/* 項目値用TD */
+.c_td_detail_value {
+	width:				12.5%;
+	height:				20px;
+	border:				none 0px;
+	text-align: 		left;
+	border-bottom:		solid 1px #969aff;
+}
+
+/* 2項目分項目値用TD */
+.c_td_detail_value_2col {
+	width:				25%;
+	height:				20px;
+	border:				none 0px;
+	text-align: 		left;
+	border-bottom:		solid 1px #969aff;
+}
+
+/* 3項目分項目値用TD */
+.c_td_detail_value_3col {
+	width:				37.5%;
+	height:				20px;
+	border:				none 0px;
+	text-align: 		left;
+	border-bottom:		solid 1px #969aff;
+}
+/* 7項目分項目値用TD */
+.c_td_detail_value_7col {
+	width:				87.5%;
+	border:				none 0px;
+	text-align: 		left;
+	border-bottom:		solid 1px #969aff;
+}

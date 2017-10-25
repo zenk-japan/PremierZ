@@ -1,0 +1,185 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/*----------------------------------------------------------
+ 値リストの設定
+ ----------------------------------------------------------*/
+/* 下地 */
+#id_ext_div_value_list_fnd {
+	color:				#111111;
+	/*background-color: 	#fdffe0;*/
+	background-image:	url("../img/listDivShadow.png");
+	background-repeat:	no-repeat;
+	width: 				304px;
+	height: 			304px;
+	overflow: 			hidden;
+	/*border:				solid 1px #fdffe0;*/
+	border:				none 0px;
+}
+/* 全体のDIV */
+#id_ext_div_value_list {
+	position:			relative;
+	margin-left:		3px;
+	margin-top:			3px;
+	color:				#111111;
+	background-color: 	#ffffff;
+	width: 				294px;
+	height: 			294px;
+	overflow: 			hidden;
+	border:				none 0px;
+	text-align:			center;
+	font-family: 		"ＭＳ Ｐゴシック",sans-serif;
+	font-size:			12px;
+}
+/*----------------------------------------------------------
+ タイトル
+ ----------------------------------------------------------*/
+#id_ext_div_list_title {
+	position:			relative;
+	left:				0px;
+	width:				294px;
+	height:				20px;
+	background-color: 	#e1e0f4;
+	border-top:			solid 1px #ffffff;
+	border-bottom:		solid 1px #ffffff;
+}
+/* タイトル */
+#id_ext_td_list_title {
+	width:				270px;
+	height:				100%;
+	font-size:			12px;
+	text-align:			left;
+}
+/* 閉じるボタン */
+#id_ext_td_list_title_btn {
+	width:				30px;
+	height:				100%;
+	font-size:			11px;
+	font-family: 		inherit;
+	text-align:			right;
+}
+#id_ext_btn_lv_exit {
+	width:				18px;
+	height:				20px;
+	color:				#111111;
+	border:				none 0px;
+	background-color:	transparent;
+}
+
+
+/*----------------------------------------------------------
+ ページ操作部
+ ----------------------------------------------------------*/
+#id_ext_div_list_page_ope {
+	position:			relative;
+	left:				0px;
+	width:				294px;
+	height:				28px;
+	border-bottom:		solid 1px #ffffff;
+}
+#id_ext_table_list_page_ope {
+	width:				100%;
+	height:				100%;
+	border:				none 0px;
+}
+.c_ext_td_list_page_ope {
+	width:				25%;
+	height:				20px;
+	border:				none 0px;
+	text-align:			left;
+}
+/* ボタン */
+.c_ext_btn_list_page_ope{
+	width:				100%;
+	height:				25px;
+	font-size:			11px;
+	font-family: 		inherit;
+	/*border:				ridge 1px #ffffff;*/
+	/*background-color: 	#cbc9f4;*/
+	margin-bottom:		1px;
+}
+
+/*----------------------------------------------------------
+ 明細タイトル
+ ----------------------------------------------------------*/
+#id_ext_div_list_detail_table {
+	position:			relative;
+	left:				0px;
+	width:				100%;
+	height:				215px;
+	border-bottom:		solid 1px #ffffff;
+	overflow-y:			hidden;
+	overflow-x:			auto;
+}
+/* テーブル */
+#id_ext_table_list_detail {
+	border-collapse:	collapse;
+	min-width:			294px;
+	width:				294px;
+}
+/* 見出し */
+.c_ext_td_list_detail_top {
+	height:				18px;
+	font-size:			11px;
+	background-color: 	#e1e0f4;
+	border:				solid 1px #dad8f6;
+	text-align:			left;
+}
+/* ラジオボタンのTD */
+.c_ext_td_list_detail_rdb {
+	width:				15px;
+	height:				18px;
+	font-size:			11px;
+	font-family: 		inherit;
+	border:				solid 1px #dad8f6;
+	text-align:			left;
+}
+/* 表の各値 */
+.c_ext_td_list_detail_value {
+	height:				18px;
+	font-size:			11px;
+	font-family: 		inherit;
+	border:				solid 1px #dad8f6;
+	text-align:			left;
+}
+
+/*----------------------------------------------------------
+ セットボタン
+ ----------------------------------------------------------*/
+#id_ext_div_set_value {
+	position:			relative;
+	left:				0px;
+	width:				100%;
+	height:				28px;
+}
+/* テーブル */
+#id_ext_table_set_value {
+	width:				100%;
+	height:				100%;
+	border:				none 0px;
+}
+#id_ext_table_set_value_btn {
+	width:				270px;
+	height:				100%;
+	text-align:			left;
+}
+#id_ext_btn_set_value {
+	width:				60px;
+	height:				25px;
+	color:				#111111;
+	font-size:			11px;
+	font-family: 		inherit;
+	/*border:				ridge 1px #ffffff;*/
+	/*background-color:	#cbc9f4;*/
+}

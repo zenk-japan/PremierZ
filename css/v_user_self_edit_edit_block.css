@@ -1,0 +1,109 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ ユーザー情報画面で使用するCSSの設定
+ ***********************************************************/
+/***********************************************************/
+/* 各表示領域を格納するテーブル                            */
+/***********************************************************/
+/* タイトル */
+#id_div_use_main_title {
+	background-image:			url("../img/newz_title_back.png");
+	background-repeat:			repeat-x;
+	font-size:					13px;
+	font-weight:				bold;
+	height:						22px;
+	min-width:					993px;
+	max-width:					993px;
+	width:						993px;
+	padding-left:				3px;
+	padding-top:				3px;
+}
+/* 各種設定値 */
+#id_div_use_main_edit {
+	min-height:					420px;
+	max-height:					420px;
+	height:						420px;
+	min-width:					996px;
+	max-width:					996px;
+	width:						996px;
+}
+#id_tab_use_main {
+	border-collapse:			separate;
+}
+.c_td_use_edit_cap {
+	font-size:					13px;
+	background-color:			#C9D6FF;
+	border:						0 none;
+	text-align:					left;
+	height:						30px;
+	min-width:					180px;
+	max-width:					180px;
+	width:						180px;
+	padding-left:				3px;
+}
+.c_td_use_edit_data {
+	width:						360px;
+	min-width:					360px;
+	max-width:					360px;
+	border:						none 0px;
+	text-align:					left;
+	border-bottom:				solid 1px #969AFF;
+}
+/* パスワード入力欄のTD */
+#id_td_use_edit_passwd {
+	height:						70px;
+}
+/* 各種入力 */
+/* 読み取り専用 */
+.c_txt_use_readonly {
+	font-size:					13px;
+	background-color:			transparent;
+	border:						0px none;
+	height:						28px;
+	width:						180px;
+}
+/* 入力可能 */
+.c_txt_use_input {
+	font-size:					13px;
+	width:						150px;
+}
+.c_txt_use_input[disabled] {
+	font-size:					13px;
+	width:						150px;
+	background-color:			#cccccc;
+	border:						1px solid #aaaaaa;
+	padding:					2px;
+}
+.c_txt_use_input_long {
+	font-size:					13px;
+	width:						358px;
+}
+/* 注意書き */
+.c_span_use_edit_notice {
+	font-size:					11px;
+	color:						#333333;
+}
+.c_span_use_edit_warning {
+	font-size:					11px;
+	color:						#ff2222;
+}
+/* ボタン */
+#id_div_use_button {
+	position:					relative;
+}
+.c_btn_button {
+	width:						90px;
+}

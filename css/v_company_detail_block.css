@@ -1,0 +1,413 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ 明細の設定
+ ***********************************************************/
+/* 外枠のDIV */
+#id_div_detail_menu {
+	color:				#000000;
+	background-color: 	transparent;
+	width: 				698px;
+	height: 			450px;
+	overflow: 			hidden;
+	/*border:			solid 1px #cc0000;*/
+	vertical-align:		top;
+}
+/***********************************************************
+ タイトル
+ ***********************************************************/
+#id_div_detail_title {
+	width: 				100%;
+	height: 			23px;
+	background-color: 	transparent;
+	background-image:	url("../img/newz_title_back.png");
+	border:				none 0px;
+	/*border:				solid 1px #cccccc;*/
+	font-size:			14px;
+	font-weight:		bold;
+	font-family: 		"メイリオ","ＭＳ Ｐゴシック",sans-serif;
+	color:				#111111;
+	padding-top:  		3px;
+	padding-left: 		3px;
+	vertical-align:		middle;
+}
+#id_table_detail_title_cap {
+	padding-top:  		3px;
+	padding-left: 		3px;
+}
+/***********************************************************
+ 編集ボタン
+ ***********************************************************/
+#id_div_detail_editbtn {
+	position:			relative;
+	width: 				100%;
+	height: 			25px;
+}
+/* テーブル */
+#id_table_detail_editbtn {
+	width:				100%;
+	height: 			100%;
+	border:				none 0px;
+	border-collapse: 	collapse;
+}
+/* メッセージ用TD */
+#id_td_detail_editbtn_mess {
+	width: 				85%;
+	height: 			100%;
+	font-size: 			10px;
+	font-weight: 		bold;
+	color: 				#ff0000;
+	text-align: 		left;
+}
+/* ボタン格納用TD */
+#id_td_detail_editbtn {
+	width: 				15%;
+	height: 			100%;
+	text-align: 		right;
+}
+/* 編集ボタン */
+#id_btn_detail_editbtn {
+	width:				80px;
+	height: 			22px;
+	text-align: 		center;
+}
+/***********************************************************
+ 明細
+ ***********************************************************/
+/* 明細表用のDIV */
+#id_div_detail_table {
+	position:			relative;
+	border:				none 0px;
+	width: 				100%;
+	height:				430px;
+	overflow: 			hidden;
+	overflow-y:			auto;
+	vertical-align:		top;
+}
+/* 明細テーブル */
+#id_table_detail {
+	position:			relative;
+	border:				none 0px;
+	width: 				600px;
+	border:				none 0px;
+	left:				1%;
+	empty-cells: 		show;
+	border-collapse:	separate;
+}
+/* セクション区切り */
+.c_td_section_separator {
+	width:				100%;
+	height:				2px;
+	font-size:			2px;
+	border-bottom:		solid 1px #abc1ff;
+}
+
+/* セクションタイトル */
+.c_td_section_header {
+	height:				20px;
+	background-color:	#799af6;
+	/*background-image: 	url("../img/detailsectiontitle.png");*/
+	background-repeat:	no-repeat;
+	padding-left: 		10px;
+	color: 				#ffffff;
+	font-size: 			12px;
+}
+
+/* 項目名用TD */
+.c_td_detail_name {
+	width:				12.5%;
+	height:				20px;
+	border:				none 0px;
+	background-color:	#c9d6ff;
+	text-align: 		left;
+}
+/* 2項目分項目名用TD */
+.c_td_detail_name_2col {
+	width:				25%;
+	height:				20px;
+	border:				none 0px;
+	background-color:	#c9d6ff;
+	text-align: 		left;
+}
+
+/* 項目値用TD */
+.c_td_detail_value {
+	width:				12.5%;
+	height:				20px;
+	border:				none 0px;
+	text-align: 		left;
+	border-bottom:		solid 1px #969aff;
+}
+
+/* 2項目分項目値用TD */
+.c_td_detail_value_2col {
+	width:				25%;
+	height:				20px;
+	border:				none 0px;
+	text-align: 		left;
+	border-bottom:		solid 1px #969aff;
+}
+
+/* 3項目分項目値用TD */
+.c_td_detail_value_3col {
+	width:				37.5%;
+	height:				20px;
+	border:				none 0px;
+	text-align: 		left;
+	border-bottom:		solid 1px #969aff;
+}
+/* 7項目分項目値用TD */
+.c_td_detail_value_7col {
+	width:				87.5%;
+	border:				none 0px;
+	text-align: 		left;
+	border-bottom:		solid 1px #969aff;
+}
+/***********************************************************
+ 所属リスト
+ ***********************************************************/
+/* DIV */
+#id_div_affiliation_tab {
+	width:				696px;
+	height:				24px;
+	position:			relative;
+	top:				1px;
+	left:				0px;
+	overflow:			hidden;
+	border:				none 0px;
+}
+/* テーブル */
+#id_table_affiliation_tab {
+	border-collapse:	collapse;
+	height:				100%;
+	width:				100%;
+}
+/* タブ */
+.c_td_affiliation_tab {
+	height:				100%;
+	font-size:			10px;
+	/*border:				solid 1px #ff0000;*/
+	/*background-color:	#888888;*/
+	border:				none 0px;
+	width:				150px;
+	cursor:				pointer;
+}
+.c_td_affiliation_tab_sp {
+	height:				100%;
+}
+/* タブ切り替えボタン */
+.c_btn_affiliation_tab {
+	width:				100%;
+	height:				100%;
+	border-top:			solid 1px #799af6;
+	border-left:		solid 1px #799af6;
+	border-right:		solid 1px #799af6;
+	border-bottom:		none 0px;
+	cursor:				pointer;
+	border-radius:		4px 4px 0px 0px/4px 4px 0px 0px;
+}
+/***********************************************************
+ タブのDIV
+ ***********************************************************/
+/* 外枠 */
+.c_div_comp_dtail_tab_outer {
+	width:				696px;
+	position:			relative;
+	left:				0px;
+	height:				245px;
+	border-top:			solid 1px #799af6;
+	border-left:		solid 1px #888888;
+	border-right:		solid 1px #888888;
+	border-bottom:		solid 1px #888888;
+	overflow:			hidden;
+}
+/* ページ操作DIV */
+.c_div_comp_dtail_tab_pageope {
+	width:				696px;
+	height:				60px;
+	border:				none 0px;
+	position: 			relative;
+	border:				none 0px;
+	left: 				0px;
+}
+/* テーブルDIV */
+.c_div_comp_detail_tab_dtltable {
+	width:				696px;
+	height:				160px;
+	border:				none 0px;
+	position: 			relative;
+	left: 				0px;
+	background-color: 	transparent;
+	overflow:			hidden;
+	overflow-x:			auto;
+	border:				none 0px;
+}
+
+/***********************************************************
+ 各タブ共通設定
+ ***********************************************************/
+/* タイトルテーブル */
+.c_table_comp_detail_afftitle {
+	border-collapse:	collapse;
+	border:				none 0px;
+	width: 				100%;
+	height:				50%;
+	empty-cells: 		show;
+}
+/* タイトル*/
+.c_td_comp_detail_affmenu_listtitle {
+	color:				#ffffff;
+	font-size:			12px;
+	width:				80%;
+	height:				100%;
+	background-color:	#799af6;
+	/*background-image:	url("../img/comp_detailsectiontitle.png");*/
+	background-repeat:	no-repeat;
+	background-position: left center;
+	padding-left:		15px;
+}
+/* 新規ボタン*/
+.c_td_comp_detail_afftitle_btn {
+	text-align:			right;
+	width:				20%;
+	height:				100%;
+	background-color:	#799af6;
+}
+/* ページ操作テーブル */
+.c_table_comp_detail_affmenu {
+	border-collapse:	collapse;
+	border:				none 0px;
+	width: 				100%;
+	height:				50%;
+	empty-cells: 		show;
+}
+.c_td_comp_detail_affmenu {
+	width:				40%;
+	height:				100%;
+	border:				none 0px;
+}
+.c_td_comp_detail_affmenu_prev, .c_td_comp_detail_affmenu_next {
+	width:				10%;
+	height:				100%;
+	border:				none 0px;
+	text-align:			right;
+}
+/* ページ操作ボタン */
+.c_btn_affiliation_workbase_menu {
+	width:				100%;
+	height:				100%;
+}
+
+/* 明細表 */
+.c_table_comp_detail_list {
+	border-collapse:	collapse;
+	width:				100%;
+}
+/* 明細表TOP */
+.c_tr_comp_detail_list_top {
+	height:				20px;
+}
+.c_tr_comp_detail_list_top td{
+	height:				100%;
+	background-color:	#c9d6ff;
+	border:				solid 1px #ffffff;
+}
+/* 明細表明細 */
+.c_tr_affiliation_menu, .c_tr_affiliation_user_menu, .c_tr_affiliation_workbase_menu {
+	height:				20px;
+}
+.c_tr_affiliation_menu td, .c_tr_affiliation_user_menu td, .c_tr_affiliation_workbase_menu td {
+	height:				100%;
+	border:				solid 1px #c9d6ff;
+	font-size:			10px;
+}
+
+/* 有効無効表示TD */
+.c_td_affiliation_menu_invalid {
+	width:				8px;
+}
+/* ボタンTD */
+.c_td_affiliation_menu_detail, 
+.c_td_affiliation_menu_update, 
+.c_td_affiliation_menu_user_detail, 
+.c_td_affiliation_menu_user_update, 
+.c_td_affiliation_menu_workbase_detail, 
+.c_td_affiliation_menu_workbase_update {
+	width:				40px;
+}
+/***********************************************************
+ 所属グループリスト
+ ***********************************************************/
+/* 有効 */
+.c_txt_affiliation_menu_valid {
+	width:				4px;
+	border:				none 0px;
+	background-color:	#0000ff;
+	color:				#1111ff;
+	font-size:			transparent;
+	text-align:			center;
+}
+/* 無効 */
+.c_txt_affiliation_menu_invalid {
+	width:				4px;
+	border:				none 0px;
+	background-color:	#ff0000;
+	color:				#ff1111;
+	font-size:			transparent;
+	text-align:			center;
+}
+/* 編集ボタン */
+.c_btn_affiliation_group_update {
+	width:				100%;
+	height: 			22px;
+	text-align: 		center;
+}
+
+/* 詳細ボタン */
+.c_btn_affiliation_group_detail{
+	width: 				100%;
+	height: 			22px;
+	text-align: 		center;
+}
+/***********************************************************
+ 所属ユーザーリスト
+ ***********************************************************/
+/* 編集ボタン */
+.c_btn_affiliation_user_update{
+	width: 				100%;
+	height: 			22px;
+	text-align: 		center;
+}
+/* 詳細ボタン */
+.c_btn_affiliation_user_detail{
+	width: 				100%;
+	height: 			22px;
+	text-align: 		center;
+}
+/***********************************************************
+ 所属作業拠点リスト
+ ***********************************************************/
+/* 編集ボタン */
+.c_btn_affiliation_workbase_update{
+	width: 				100%;
+	height: 			22px;
+	text-align: 		center;
+}
+/* 詳細ボタン */
+.c_btn_affiliation_workbase_detail{
+	width: 				100%;
+	height: 			22px;
+	text-align: 		center;
+}

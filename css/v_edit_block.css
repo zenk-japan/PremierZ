@@ -1,0 +1,307 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ ボタン
+ ***********************************************************/
+.c_btn_edit_menu {
+	width:					80px;
+	height: 				100%;
+	text-align: 			center;
+}
+
+/* 作成ボタン */
+#id_btn_create {
+}
+
+/* 保存ボタン */
+#id_btn_save {
+}
+
+/* キャンセルボタン */
+#id_btn_cancel {
+}
+
+/***********************************************************
+ 編集
+ ***********************************************************/
+/* 編集表用のDIV */
+#id_div_edit_table {
+	width:					100%;
+	height:					100%;
+	overflow: 				visible;
+	vertical-align:			top;
+/*
+	position:				relative;
+*/
+}
+
+/* 編集テーブル */
+#id_table_edit {
+	border:					0px;
+	empty-cells: 			show;
+	width:					100%;
+/*	position:				relative;
+	left:					1%;
+	border-collapse:		separate;
+*/
+}
+
+/* 隠し項目 */
+#id_div_hidden {
+/*	position:				relative;
+	width:					100%;
+	height:					430px;
+	overflow: 				visible;
+	vertical-align:			top;
+*/
+}
+
+/* 隠し項目 */
+#id_div_debug {
+/*	position:				relative;
+	width:					100%;
+	height:					430px;
+	overflow: 				visible;
+	vertical-align:			top;
+*/
+}
+
+/* セクション区切り */
+.c_td_section_separator {
+	width:					100%;
+	height:					2px;
+	font-size:				2px;
+	border-bottom:			solid 1px #abc1ff;
+}
+
+/* セクションタイトル */
+.c_td_edit_section_header {
+	height:					20px;
+	/*background-color:		#AFEEEE;*/
+	background-image: 		url("../img/detaileditsectiontitle.png");
+	background-repeat:		no-repeat;
+	padding-left: 			10px;
+	color: 					#ffffff;
+	font-size: 				13px;
+}
+
+/* カレンダー */
+.c_td_edit_calendar {
+	width:					12.5%;
+	background-image: 		url("../img/edit_calendar.png");
+	background-repeat:		no-repeat;
+	background-position:	left center;
+/*
+	width:					30px;
+	height:					20px;
+	vertical-align:			middle ;
+*/
+}
+
+/* 項目名用TD */
+.c_td_edit_name {
+	width:					12.5%;
+	height:					20px;
+	border:					none 0px;
+	background-color:		#AFEEEE;
+	text-align: 			left;
+	font-weight:			bold;
+}
+
+/* 項目名用TD */
+.c_td_edit_data {
+	width:					12.5%;
+	height:					20px;
+	border:					none 0px;
+	background-color:		#AFEEEE;
+/*	text-align:				center;*/
+	font-weight:			bold;
+}
+
+/* 2項目分項目名用TD */
+.c_td_edit_name_2col {
+	width:					25%;
+	height:					20px;
+	border:					none 0px;
+	background-color:		#AFEEEE;
+	text-align: 			left;
+}
+
+/* 項目値用TD */
+.c_td_edit_value {
+	width:					12.5%;
+	height:					20px;
+	border:					none 0px;
+	text-align: 			left;
+/*	border-bottom:			solid 1px #87CEEB;*/
+}
+
+/* 項目値用TD */
+.c_td_edit_radio_value {
+	width:					12.5%;
+	height:					20px;
+	border:					none 0px;
+	text-align: 			left;
+	vertical-align:			middle ;
+/*	border-bottom:			solid 1px #87CEEB;*/
+}
+
+/* 1項目分項目値用TD */
+.c_td_edit_value_col {
+	width:					12.5%;
+	height:					20px;
+	border:					none 0px;
+	text-align: 			left;
+/*	border-bottom:			solid 1px #87CEEB;*/
+}
+
+/* 2項目分項目値用TD */
+.c_td_edit_value_2col {
+	width:					25%;
+	height:					20px;
+	border:					none 0px;
+	text-align: 			left;
+/*	border-bottom:			solid 1px #87CEEB;*/
+}
+
+/* 3項目分項目値用TD */
+.c_td_edit_value_3col {
+	width:					37.5%;
+	height:					20px;
+	border:					none 0px;
+	text-align: 			left;
+/*	border-bottom:			solid 1px #87CEEB;*/
+}
+
+/* 3項目分項目値用TD */
+.c_td_edit_radio_value_3col {
+	width:					37.5%;
+	height:					20px;
+	border:					none 0px;
+	text-align: 			left;
+/*	border-bottom:			solid 1px #87CEEB;*/
+}
+
+.c_td_edit_radio_value_3col {
+	width:					37.5%;
+	height:					20px;
+	border:					none 0px;
+	text-align: 			left;
+/*	border-bottom:			solid 1px #87CEEB;*/
+}
+
+.c_td_edit_radio_data_3col {
+	width:					37.5%;
+	height:					20px;
+	color:					#AFEEEE;
+	font-weight:			bold;
+	border:					none 0px;
+	text-align: 			left;
+/*	border-bottom:			solid 1px #87CEEB;*/
+}
+
+/* 7項目分項目値用TD */
+.c_td_edit_value_7col {
+	width:					87.5%;
+	border:					none 0px;
+	text-align: 			left;
+/*	border-bottom:			solid 1px #87CEEB;*/
+}
+
+/* 6項目分項目値用TD */
+.c_td_edit_value_6col {
+	width:					75.0%;
+	border:					none 0px;
+	text-align: 			left;
+/*	border-bottom:			solid 1px #87CEEB;*/
+}
+
+/* 5項目分項目値用TD */
+.c_td_edit_btn_5col {
+	text-align: 			right;
+}
+
+/* 4項目分項目値用TD */
+.c_td_edit_btn_4col {
+	text-align: 			left;
+}
+
+/* テキストボックス */
+.c_table_td_textval {
+	font-size:				11px;
+	width:					99%;
+	border:					solid 1px #87CEEB;
+}
+
+/* リストがあるテキストボックス */
+.c_table_td_search_textval {
+	font-size:				11px;
+	width:					99%;
+	border:					solid 1px #87CEEB;
+	background-color:		#CCFFCF;
+}
+
+/* 必須項目のテキストボックス */
+.c_table_td_textval[title="<<必須項目>>"] {
+	background-color:		#FFFFAA;
+}
+/* 使用不可のテキストボックス */
+.c_table_td_textval[disabled] {
+	background-color:		#DDDDDD;
+}
+.c_table_td_search_textval[disabled] {
+	background-color:		#DDDDDD;
+}
+
+
+/* テキストエリア */
+.c_table_td_textareaval {
+	font-size:				11px;
+	width:					99%;
+	border:					solid 1px #87CEEB;
+}
+
+/* コンボボックス */
+.c_table_td_select {
+	width:					99%;
+	font-size:				11px;
+	border:					solid 1px #87CEEB;
+}
+
+.c_td_insert_ckb {
+	width:				85%;
+	height:				100%;
+	text-align:			left;
+	border:				none 0px;
+}
+
+/* 隠し項目 */
+.c_table_td_hidden_col {
+	display:				none;
+}
+
+.c_table_td_hidden_val {
+	display:				none;
+}
+
+.days_red {
+	background-color:		#FF55D5;
+}
+.days_blue {
+	background-color:		#1E90FF;
+}
+.days_normal {
+/*	background-color:		black;*/
+}

@@ -1,0 +1,91 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ プロジェクト管理画面で使用するCSSの設定
+ ***********************************************************/
+/***********************************************************/
+/* 検索部                                                  */
+/***********************************************************/
+/* タイトル */
+#id_table_cond_title{
+	width:				100%;
+	height:				25px;
+	border:				none 0px;
+	border-collapse:	collapse;
+}
+#id_td_cond_title {
+	font-size: 			13px;
+	font-weight:		bold;
+	background-image:	url("../img/newz_title_back.png");
+	background-repeat:	repeat-x;
+	padding:			0px;
+	padding-left:		3px;
+	height:				23px;
+}
+/* 検索条件テーブル */
+#id_table_cond {
+	width:				100%;
+	border:				none 0px;
+	border-collapse:	collapse;
+}
+/*検索項目キャプション*/
+.c_td_cond_caption {
+	width: 				50%;
+	height: 			20px;
+	border:				none 0px;
+	text-align: 		left;
+	border-top: 		solid 1px #c9d6ff;
+	border-bottom: 		solid 1px #c9d6ff;
+	font-size:			12px;
+}
+/*検索項目テキスト*/
+.c_td_cond_input {
+	width: 				50%;
+	height: 			20px;
+	border:				none 0px;
+	text-align: 		left;
+	border-top: 		solid 1px #c9d6ff;
+	border-bottom: 		solid 1px #c9d6ff;
+	font-size:			12px;
+}
+.c_txt_search_textbox {
+	width:				99%;
+	color:				#000000;
+	text-align: 		left;
+	border: 			none 0px;
+	font-size:			12px;
+	border: 			groove 1px #c9d6ff;
+}
+/*検索項目コンボボックス*/
+.c_sel_cond {
+	font-size:			12px;
+	width:				100%;
+}
+
+/* ボタン */
+.c_td_cond_search_btn {
+	height:				25px;
+	border:				none 0px;
+	text-align:			left;
+}
+.c_td_cond_clear_btn {
+	height:				25px;
+	border:				none 0px;
+	text-align:			right;
+}
+.c_btn_cond_search_btn {
+	width: 				90px;
+	height: 			100%;
+}

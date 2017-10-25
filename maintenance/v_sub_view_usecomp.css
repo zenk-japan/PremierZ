@@ -1,0 +1,105 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************/
+/* サブ画面                                                */
+/***********************************************************/
+/***********************************************************/
+/* カバー                                                  */
+/***********************************************************/
+#id_ext_back_div {
+	position:			fixed;
+	top: 				0%;
+	left: 				0%;
+	width:				100%;
+	height:				100%;
+	background-color:	#000000;
+	z-index:			100;
+}
+/***********************************************************/
+/* NowLoading                                              */
+/***********************************************************/
+#id_ext_loading_div {
+	background-image:	url("../img/nowloading.gif");	/* 画像の指定 */
+	position: 			fixed;
+	top: 				50%;
+	left: 				50%;
+	margin: 			-15px 0 0 -15px;	/* サイズの半分マージンを取って中央に表示 */
+	width:				30px;
+	height:				30px;
+	z-index:			300;
+}
+
+/***********************************************************/
+/* ページ表示部                                            */
+/***********************************************************/
+/* 下地 */
+#id_ext_page_div {
+	margin: 			0 0 0 -300px;	/* サイズの半分マージンを取って中央に表示 */
+	position: 			absolute;
+	top: 				5%;
+	left: 				50%;
+	width:				600px;
+	height:				600px;
+	padding:			10px;
+	background-color:	#ffffff;
+	/*background-image:	url("usecompsub_back.png");*/	/* 画像の指定 */
+	background-repeat:	no-repeat;
+	z-index:			200;
+}
+/* 内部のDIV */
+#id_subv_div_outer {
+	width:				580px;
+	height:				580px;
+	margin:				auto;
+	/*border:				solid 1px #aaaaaa;*/
+}
+/* メインテーブル */
+#id_subv_table {
+	border:				none 0px;
+	border-collapse:	separate;
+	table-layout: 		fixed;
+}
+/* 見出し */
+.c_subv_th_dtl_cap {
+	background-color:	#b4bad6;
+	border:				none 0px;
+	font-size:			14px;
+	font-weight:		bold;
+	width:				580px;
+	max-width:			580px;
+	min-width:			580px;
+	height:				30px;
+}
+/* タイトル */
+.c_subv_td_dtl_title{
+	font-size:			12px;
+	font-weight:		bold;
+	border-bottom:		solid 1px #b4bad6;
+	height:				26px;
+}
+/* キャプション */
+.c_subv_td_dtl_cap {
+	border:				none 0px;
+	font-size:			12px;
+}
+
+/* 短い */
+.c_subv_ipt_dtl_shorttext {
+	width:				100px;
+}
+/* 長い */
+.c_subv_ipt_dtl_longtext {
+	width:				350px;
+}

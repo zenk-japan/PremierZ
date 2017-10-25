@@ -1,0 +1,131 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ 検索メニューの設定
+ ***********************************************************/
+#id_div_search_menu {
+	color:				#000000;
+	width: 				298px;
+	height: 			100%;
+	overflow: 			hidden;
+	/*border: 			solid 1px #cc0000;*/
+}
+
+/* 検索項目のタイトル */
+#id_div_search_menu_title {
+	width: 				99%;
+	height: 			23px;
+	background-color: 	transparent;
+	background-image:	url("../img/newz_title_back.png");
+	border:				none 0px;
+	/*border:			solid 1px #cccccc;*/
+	font-size:			14px;
+	font-weight:		bold;
+	font-family: 		"メイリオ","ＭＳ Ｐゴシック",sans-serif;
+	color:				#111111;
+	padding-top:  		3px;
+	padding-left: 		3px;
+	vertical-align:		middle;
+}
+/*-----------------------------------------------------------
+ 検索条件入力部分
+ -----------------------------------------------------------*/
+/* 検索条件用表 */
+#id_table_search {
+	width: 				98%;
+	position: 			relative;
+	left: 				1%;
+	border-collapse: 	collapse;
+	margin-top: 		2px;
+}
+/* 検索項目タイトル */
+.c_td_serch_text {
+	width: 				30%;
+	height: 			20px;
+	border:				none 0px;
+	text-align: 		left;
+	border-top: 		solid 1px #c9d6ff;
+	border-bottom: 		solid 1px #c9d6ff;
+	font-size:			12px;
+}
+
+/* 検索条件入力欄 */
+.c_td_search_input {
+	width: 				98%;
+	height: 			20px;
+	border:				none 0px;
+	text-align: 		left;
+	border-top: 		solid 1px #c9d6ff;
+	border-bottom: 		solid 1px #c9d6ff;
+	font-size:			12px;
+}
+/* テキストボックス */
+.c_txt_search_textbox {
+	width:				100%;
+	color:				#000000;
+	text-align: 		left;
+	border: 			none 0px;
+	font-size:			12px;
+	border: 			groove 1px #c9d6ff;
+}
+/* リストの有るテキストボックス */
+.c_txt_search_textbox_vl {
+	background-color: 	#eafcf4;
+}
+
+/* コンボボックス */
+.c_select_search_input {
+	font-size:			12px;
+	width:				100%;
+}
+/*-----------------------------------------------------------
+ ボタン部分
+ -----------------------------------------------------------*/
+/* 検索ボタン格納用DIV */
+#id_div_search_menu_btn {
+	width: 				98%;
+	height: 			25px;
+	position: 			relative;
+	left: 				1%;
+}
+
+/* ボタン格納用表 */
+#id_table_search_menu_btn {
+	width: 				100%;
+	height:				100%;
+	border-collapse: 	collapse;
+}
+
+/* ボタン格納用TD */
+/* 検索 */
+#id_td_search_menu_btn_search {
+	width:				50%;
+	height:				100%;
+	border:				none 0px;
+	text-align:			left;
+}
+/* クリア */
+#id_td_search_menu_btn_clear {
+	width:				50%;
+	height:				100%;
+	border:				none 0px;
+	text-align:			right;
+}
+
+/* ボタン */
+.c_btn_search {
+	width: 				90px;
+	height: 			22px;
+}

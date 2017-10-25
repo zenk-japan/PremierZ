@@ -1,0 +1,168 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ プロジェクト管理画面で使用するCSSの設定
+ ***********************************************************/
+/***********************************************************/
+/* カレンダー部                                            */
+/***********************************************************/
+/* DIV */
+#id_div_calendar {
+	width:					293px;
+	height:					249px;
+	boder:					0px none;
+	background-color:		transparent;
+	padding:				0px;
+	margin:					0px;
+	text-align:				center;
+}
+/* 上部のメッセージ */
+#id_div_cal_top_mess {
+	text-align:				left;
+	boder:					0px none;
+	background-color:		transparent;
+	padding:				0px;
+	margin:					0px;
+}
+.c_span_cal_top_mess {
+	font-size:				12px;
+}
+
+/* テーブル */
+#id_table_calendar {
+	width:					280px;
+	boder:					0px none;
+	padding:				0px;
+	margin:					0px;
+	margin-left:			auto;
+	margin-right:			auto;
+	border-collapse:		collapse;
+}
+
+#id_table_calendar TD {
+	boder:					0px none;
+	padding:				0px;
+	margin:					0px;
+}
+/* 年月表示部 */
+#id_td_cal_yyyymm {
+	height:					22px;
+	background-color:		#c9d6ff;
+}
+
+/* 横結合のTD */
+.c_id_cal_3col {
+	height:					24px;
+}
+.c_id_cal_4col {
+	height:					24px;
+}
+.c_id_cal_7col {
+	height:					24px;
+}
+.c_id_cal_9col {
+	height:					48px;
+}
+
+/* 年月ボタン */
+#id_btn_cal_yyyymm {
+	width:					100%;
+	height:					100%;
+	text-align:				center;
+	font-size:				12px;
+}
+/* 今月に戻すボタン */
+#id_btn_go_thismonth {
+	width:					100%;
+	height:					22px;
+	text-align:				center;
+	font-size:				12px;
+}
+/* スケジュールなしボタン */
+#id_btn_no_schedule{
+	width:					100%;
+	height:					100%;
+	text-align:				center;
+	font-size:				12px;
+}
+
+/* 月移動ボタン */
+.c_id_cal_6row {
+	width:					30px;
+	height:					125px;
+}
+.c_id_cal_btn_movemonth {
+	width:					100%;
+	height:					22px;
+}
+
+/* 曜日表示部 */
+.c_th_clendar_top1,
+.c_th_clendar_top2,
+.c_th_clendar_top3,
+.c_th_clendar_top4,
+.c_th_clendar_top5,
+.c_th_clendar_top6,
+.c_th_clendar_top7 {
+	font-size:				12px;
+	border:					1px solid #cccccc;
+	padding:				0px;
+	margin:					0px;
+}
+.c_th_clendar_top1 {
+	color:					#ff0000;
+}
+.c_th_clendar_top7 {
+	color:					#0000ff;
+}
+
+/* 日付表示部 */
+.c_td_cal_day1,
+.c_td_cal_day2,
+.c_td_cal_day3,
+.c_td_cal_day4,
+.c_td_cal_day5,
+.c_td_cal_day6,
+.c_td_cal_day7 {
+	font-size:				12px;
+	border:					1px solid #cccccc;
+	padding:				0px;
+	margin:					0px;
+}
+.c_btn_cal_day1,
+.c_btn_cal_day2,
+.c_btn_cal_day3,
+.c_btn_cal_day4,
+.c_btn_cal_day5,
+.c_btn_cal_day6,
+.c_btn_cal_day7 {
+	font-size:				10px;
+	border:					none 0px;
+	background-color:		transparent;
+	width:					100%;
+	height:					100%;
+}
+.c_btn_cal_day1 {
+	color:					#ff0000;
+}
+.c_btn_cal_day7 {
+	color:					#0000ff;
+}
+
+/* 下部メッセージ */
+#id_td_cal_bottom_mess {
+	text-align:				left;
+	font-size:				12px;
+}

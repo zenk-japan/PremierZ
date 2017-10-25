@@ -1,0 +1,55 @@
+/*-----------------------------------------------------------------------------
+-- TABLE名          ：ユーザ
+-- 作成者           ：zenk
+-- 作成日           ：2009-02-12
+-- 更新履歴         ：2009-06-03 携帯送信許可アカウント → 遅延警告許可フラグに変更
+--                    2010-01-13 会社IDの項目を追加
+  -----------------------------------------------------------------------------*/
+CREATE TABLE  `USERS` (
+    `DATA_ID`                 BIGINT(8)       NOT NULL                   COMMENT 'データID',
+    `COMPANY_ID`              BIGINT(8)       NOT NULL   DEFAULT '0'     COMMENT '会社ID',
+    `GROUP_ID`                BIGINT(8)       NOT NULL   DEFAULT '0'     COMMENT 'グループID',
+    `USER_ID`                 BIGINT(8)       NOT NULL   AUTO_INCREMENT  COMMENT 'ユーザID',
+    `USER_CODE`               VARCHAR(8)      NOT NULL                   COMMENT 'ユーザコード',
+    `PASSWORD`                VARCHAR(50)     NOT NULL                   COMMENT 'パスワード',
+    `ENCRYPTION_PASSWORD`     VARCHAR(32)     NOT NULL                   COMMENT '暗号化パスワード',
+    `AUTHORITY_ID`            BIGINT(8)       NOT NULL                   COMMENT '権限ID',
+    `NAME`                    VARCHAR(150)    NOT NULL                   COMMENT '名前',
+    `KANA`                    VARCHAR(150)               DEFAULT NULL    COMMENT 'フリガナ',
+    `PAYMENT_DIVISION`        VARCHAR(2)                 DEFAULT NULL    COMMENT '支払区分',
+    `SEX`                     VARCHAR(1)                 DEFAULT NULL    COMMENT '性別',
+    `BIRTHDATE`               DATE                       DEFAULT NULL    COMMENT '生年月日',
+    `ZIP_CODE`                VARCHAR(10)                DEFAULT NULL    COMMENT '郵便番号',
+    `ADDRESS`                 VARCHAR(240)               DEFAULT NULL    COMMENT '住所',
+    `CLOSEST_STATION`         VARCHAR(50)                DEFAULT NULL    COMMENT '最寄駅',
+    `HOME_PHONE`              VARCHAR(20)                DEFAULT NULL    COMMENT '自宅電話番号',
+    `HOME_MAIL`               VARCHAR(50)                DEFAULT NULL    COMMENT '自宅メールアドレス',
+    `MOBILE_PHONE`            VARCHAR(20)                DEFAULT NULL    COMMENT '携帯電話番号',
+    `MOBILE_PHONE_MAIL`       VARCHAR(50)                DEFAULT NULL    COMMENT '携帯メールアドレス',
+    `IDENTIFICATION_ID`       VARCHAR(30)                DEFAULT NULL    COMMENT '個体識別ID',
+    `IDENTIFICATION_FLAG`     VARCHAR(1)                 DEFAULT NULL    COMMENT '個体識別フラグ',
+    `ALERT_PERMISSION_FLAG`   VARCHAR(1)                 DEFAULT 'N'     COMMENT '遅延警告許可フラグ',
+    `UNIT_PRICE`              INTEGER                    DEFAULT NULL    COMMENT '単価',
+    `BANK_NAME`               VARCHAR(50)                DEFAULT NULL    COMMENT '銀行名',
+    `BRANCH_NAME`             VARCHAR(50)                DEFAULT NULL    COMMENT '支店名',
+    `ACCOUNT_NUMBER`          VARCHAR(50)                DEFAULT NULL    COMMENT '口座番号',
+    `REMARKS`                 VARCHAR(150)               DEFAULT NULL    COMMENT '備考',
+    `RESERVE_1`               VARCHAR(150)               DEFAULT NULL    COMMENT '予備1',
+    `RESERVE_2`               VARCHAR(150)               DEFAULT NULL    COMMENT '予備2',
+    `RESERVE_3`               VARCHAR(150)               DEFAULT NULL    COMMENT '予備3',
+    `RESERVE_4`               VARCHAR(150)               DEFAULT NULL    COMMENT '予備4',
+    `RESERVE_5`               VARCHAR(150)               DEFAULT NULL    COMMENT '予備5',
+    `RESERVE_6`               VARCHAR(150)               DEFAULT NULL    COMMENT '予備6',
+    `RESERVE_7`               VARCHAR(150)               DEFAULT NULL    COMMENT '予備7',
+    `RESERVE_8`               VARCHAR(150)               DEFAULT NULL    COMMENT '予備8',
+    `RESERVE_9`               VARCHAR(150)               DEFAULT NULL    COMMENT '予備9',
+    `RESERVE_10`              VARCHAR(150)               DEFAULT NULL    COMMENT '予備10',
+    `VALIDITY_FLAG`           VARCHAR(1)      NOT NULL   DEFAULT 'Y'     COMMENT '有効フラグ',
+    `REGISTRATION_DATET`      DATETIME        NOT NULL                   COMMENT '新規登録日',
+    `REGISTRATION_USER_ID`    BIGINT(8)       NOT NULL                   COMMENT '新規登録者ID',
+    `LAST_UPDATE_DATET`       DATETIME        NOT NULL                   COMMENT '最終更新日',
+    `LAST_UPDATE_USER_ID`     BIGINT(8)       NOT NULL                   COMMENT '最終更新者ID',
+    PRIMARY KEY  (`USER_ID`),
+    UNIQUE KEY `UI_USERS_01` (`DATA_ID`,`USER_CODE`),
+    UNIQUE KEY `UI_USERS_02` (`DATA_ID`,`NAME`)
+) ENGINE=innoDB DEFAULT CHARSET=utf8 COMMENT='ユーザ';

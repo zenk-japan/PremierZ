@@ -1,0 +1,78 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ 人員管理画面で使用するCSSの設定
+ ***********************************************************/
+/***********************************************************/
+/* 各表示領域を格納するテーブル                            */
+/***********************************************************/
+#id_table_disp_main{
+	width: 				1000px;
+	min-width: 			1000px;
+	min-height: 		520;
+	height: 			520;
+	max-height: 		520;
+	position: 			relative;
+	border-collapse: 	collapse;
+	border:				none 0px;
+	/*border:				solid 1px #cccccc;*/
+}
+#id_td_disp_info {
+	width:				998px;
+	min-width: 			998px;
+	max-width: 			998px;
+	height: 			72px;
+	min-height: 		72px;
+	max-height: 		72px;
+	/*border: 			none 0px;*/
+	border:				solid 1px #cccccc;
+	vertical-align:		top;
+	margin:				0px;
+	padding:			0px;
+}
+#id_td_disp_search {
+	width:				998px;
+	min-width: 			998px;
+	max-width: 			998px;
+	height: 			50px;
+	min-height: 		50px;
+	max-height: 		50px;
+	border:				solid 1px #cccccc;
+	margin:				0px;
+	padding:			0px;
+}
+#id_td_disp_operation {
+	width:				998px;
+	min-width: 			998px;
+	max-width: 			998px;
+	height: 			30px;
+	min-height: 		30px;
+	max-height: 		30px;
+	border:				solid 1px #cccccc;
+	margin:				0px;
+	padding:			0px;
+}
+#id_td_disp_detail {
+	width:				998px;
+	min-width: 			998px;
+	max-width: 			998px;
+	height: 			342px;
+	min-height: 		342px;
+	max-height: 		342px;
+	border:				solid 1px #cccccc;
+	margin:				0px;
+	padding:			0px;
+	vertical-align:		top;
+}

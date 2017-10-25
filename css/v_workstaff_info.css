@@ -1,0 +1,120 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ 人員画面で使用するCSSの設定
+ ***********************************************************/
+/***********************************************************/
+/* 概要                                                    */
+/***********************************************************/
+#id_div_info {
+	width:					996px;
+	height:					72px;
+	min-height: 			72px;
+	max-height: 			72px;
+	border:					none 0px;
+	margin:					0px;
+	padding:				0px;
+}
+
+#id_tab_info {
+	width:					996px;
+	height:					71px;
+	min-height: 			71px;
+	max-height: 			71px;
+	border:					none 0px;
+	margin:					0px;
+	padding:				0px;
+	border-collapse:		collapse;
+}
+
+.c_tr_info {
+	height:					23px;
+	min-height: 			23px;
+	max-height: 			23px;
+	margin:					0px;
+	padding:				0px;
+}
+
+/* タイトル */
+#id_td_info_title {
+	width:					60px;
+	height:					69px;
+	background-color:		#d9d9ff;
+/*
+	background-image:		url("../img/newz_title_back_tall.png");
+	background-repeat:		no-repeat;
+*/
+	font-size:				13px;
+	font-weight:			bold;
+}
+
+/* キャプション用TD */
+.c_td_info_cap_col1, .c_td_info_cap_col2, .c_td_info_cap_col5 {
+	border-top:				#ffffff solid 1px;
+	border-left:			#ffffff solid 1px;
+	background-color:		#c9d6ff;
+	font-size:				12px;
+	height:					21px;
+	min-height: 			21px;
+	max-height: 			21px;
+	margin:					0px;
+	padding:				0px;
+	padding-left:			1px;
+	padding-right:			1px;
+}
+.c_td_info_cap_col1 {
+	width:					100px;
+	max-width: 				100px;
+}
+.c_td_info_cap_col2 {
+	width:					140px;
+	max-width: 				140px;
+}
+.c_td_info_cap_col5 {
+	width:					400px;
+	max-width: 				400px;
+}
+/* 値表示用TD */
+.c_td_info_col1, .c_td_info_col2, .c_td_info_col5 {
+	border-top:				#ffffff solid 1px;
+	border-left:			#ffffff solid 1px;
+	border-bottom:			#c9d6ff solid 1px;
+	font-size:				12px;
+	height:					21px;
+	min-height: 			21px;
+	max-height: 			21px;
+	margin:					0px;
+	padding:				0px;
+	padding-left:			1px;
+	padding-right:			1px;
+}
+.c_td_info_col1 {
+	width:					80px;
+	max-width: 				80px;
+}
+.c_td_info_col2 {
+	width:					160px;
+	max-width: 				160px;
+}
+.c_td_info_col5 {
+	width:					400px;
+	max-width: 				400px;
+}
+.c_div_info_data {
+	overflow:				hidden;
+	white-space:			nowrap;
+	max-width: 				100%;
+	max-height: 			100%;
+}

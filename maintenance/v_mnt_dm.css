@@ -1,0 +1,156 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************/
+/* メンテナンス用表                                        */
+/***********************************************************/
+/***********************************************************/
+/* ログアウトとユーザー名                                  */
+/***********************************************************/
+#id_div_logout {
+	position:			relative;
+	left: 				3%;
+	width: 				94%;
+}
+#id_table_logout {
+	width:				100%;
+	border:				0px none;
+	border-collapse:	collapse;
+}
+/* 左側の余白 */
+#id_td_margin {
+	border:				0px none;
+	text-align:			left;
+	font-size:			13px;
+	width:				70%;
+}
+/* ログアウト */
+#id_td_logout {
+	border:				0px none;
+	text-align:			right;
+	font-size:			13px;
+	width:				10%;
+}
+/* ユーザー名 */
+#id_td_user_name {
+	border:				0px none;
+	text-align:			right;
+	font-size:			13px;
+	width:				20%;
+}
+/***********************************************************/
+/* 明細                                                    */
+/***********************************************************/
+/*----- テーブル設定 -----*/
+#id_table_main_dtl {
+	border-collapse: 	collapse;
+}
+
+/*----- TOP項目 -----*/
+#id_tr_main_dtl_top td {
+	color:				#ffffff;
+	font-size:			14px;
+	background-color: 	#64647a;
+	border: 			1px solid #a6a6a6;
+}
+.c_td_main_dtl_top_no {
+	width: 				20px;
+}
+.c_td_main_dtl_top_cap {
+	width: 				250px;
+}
+.c_td_main_dtl_top_val {
+	width: 				350px;
+}
+.c_td_main_dtl_top_rem {
+	width: 				350px;
+}
+
+/*----- 明細td -----*/
+.c_td_main_dtl_no {
+	border: 			1px solid #a6a6a6;
+	background-color: 	#b6b6bd;
+}
+.c_td_main_dtl_cap {
+	border: 			1px solid #a6a6a6;
+	background-color: 	#e4e4f2;
+}
+.c_td_main_dtl_val {
+	border: 			1px solid #a6a6a6;
+	background-color: 	#ffffff;
+}
+.c_td_main_dtl_rem {
+	border: 			1px solid #a6a6a6;
+	background-color: 	#91ffef;
+}
+
+/*----- 明細項目 -----*/
+/* 番号 */
+.c_inp_main_dtl_no {
+	width: 				20px;
+	color:				#111111;
+	font-size:			14px;
+	background-color: 	transparent;
+	border: 			0px none #a6a6a6;
+}
+/* 項目タイトル */
+.c_inp_main_dtl_cap {
+	width: 				250px;
+	color:				#111111;
+	font-size:			14px;
+	background-color: 	transparent;
+	border: 			0px none #a6a6a6;
+}
+/* 普通のテキスト */
+.c_inp_main_dtl_val {
+	width: 				350px;
+	color:				#111111;
+	font-size:			14px;
+	background-color: 	transparent;
+	border: 			0px none #a6a6a6;
+}
+/* 読み取り専用のテキスト */
+.c_inp_main_dtl_val_disp {
+	width: 				350px;
+	color:				#111111;
+	font-size:			14px;
+	background-color: 	#e4e4f2;
+	border: 			0px none #a6a6a6;
+}
+/* リストボックス */
+.c_sel_main_dtl_val{
+	width: 				350px;
+	color:				#111111;
+	font-size:			14px;
+	background-color: 	transparent;
+	border: 			0px none #a6a6a6;
+}
+/* テキストエリア */
+.c_txta_main_dtl_val{
+	width: 				350px;
+	height:				100px;
+	color:				#111111;
+	font-size:			14px;
+	background-color: 	transparent;
+	border: 			0px none #a6a6a6;
+}
+
+/* 備考欄 */
+.c_inp_main_dtl_rem {
+	width: 				350px;
+	color:				#111111;
+	font-size:			14px;
+	background-color: 	transparent;
+	border: 			0px none #a6a6a6;
+}

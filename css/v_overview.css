@@ -1,0 +1,67 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ 詳細画面で使用するCSSの設定
+ ***********************************************************/
+/*----------------------------------------------------------
+	全体
+  ----------------------------------------------------------*/
+body {
+	font-size: 			12px;
+}
+
+#id_div_master {
+	width:				800px;
+	max-width:			800px;
+	min-width:			800px;
+	overflow:			hidden;
+	border:				none;
+	margin:				auto;
+}
+
+#id_table_disp_main {
+	border-collapse;	collapse;
+	border:				none;
+	width:				800px;
+	max-width:			800px;
+	min-width:			800px;
+}
+/*----------------------------------------------------------
+	タイトル
+  ----------------------------------------------------------*/
+#id_td_disp_title {
+	width:				792px;
+	height:				27px;
+	background-image:	url("../img/newz_title_back.png");
+	background-repeat:	repeat-x;
+	padding:			1px 4px;
+}
+/*----------------------------------------------------------
+	ボタン
+  ----------------------------------------------------------*/
+#id_td_disp_button {
+	width:				800px;
+	max-width:			800px;
+	min-width:			800px;
+	height:				30px;
+	max-height:			30px;
+	min-height:			30px;
+	text-align:			left;
+}
+#id_btn_close {
+	height:				25px;
+	max-height:			25px;
+	min-height:			25px;
+}

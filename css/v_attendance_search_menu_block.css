@@ -1,0 +1,205 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ 検索メニューの設定
+ ***********************************************************/
+#id_div_search_menu {
+	color:				#000000;
+	width:				298px;
+	height:				125px;
+	overflow:			hidden;
+}
+
+/* 検索項目のタイトル */
+#id_div_search_menu_title {
+	background-color:	transparent;
+	background-image:	url("../img/newz_title_back.png");
+	background-repeat:	repeat-x;
+	border:				0px none;
+	color:				#111111;
+	font-family:		"メイリオ","ＭＳ Ｐゴシック",sans-serif;
+	font-size:			14px;
+	font-weight:		bold;
+	height:				23px;
+	padding-left:		3px;
+	padding-top:		3px;
+	margin-top:			1px;
+	margin-left:		1px;
+	vertical-align:		middle;
+	width:				99%;
+}
+/*-----------------------------------------------------------
+ 検索条件入力部分
+ -----------------------------------------------------------*/
+/* 検索条件用表 */
+#id_table_search {
+	width:				296px;
+	position:			relative;
+	left:				1px;
+	border-collapse:	collapse;
+	/*margin-top:		2px;*/
+}
+/* 検索項目タイトル */
+.c_td_serch_text {
+	width:				125px;
+	max-width:			125px;
+	height:				20px;
+	border:				none 0px;
+	text-align:			left;
+	border-top:			solid 1px #c9d6ff;
+	border-bottom:		solid 1px #c9d6ff;
+	font-size:			12px;
+}
+
+/* 検索条件入力欄 */
+.c_td_search_input {
+	width:				165px;
+	max-width:			165px;
+	height:				20px;
+	border:				none 0px;
+	text-align:			left;
+	border-top:			solid 1px #c9d6ff;
+	border-bottom:		solid 1px #c9d6ff;
+	font-size:			12px;
+}
+.c_txt_search_textbox {
+	width:				165px;
+	max-width:			165px;
+	color:				#000000;
+	text-align:			left;
+	font-size:			12px;
+	border:				groove 1px #c9d6ff;
+	background-color:	#eafcf4;
+}
+.c_txt_search_textbox_ro {
+	color:				#000000;
+	text-align:			left;
+	border:				none 0px;
+	font-size:			12px;
+	background-color:	transparent;
+}
+/*-----------------------------------------------------------
+ ボタン部分
+ -----------------------------------------------------------*/
+/* 検索ボタン格納用DIV */
+#id_div_search_menu_btn {
+	color:				#000000;
+	width:				98%;
+	height:				25px;
+	overflow:			hidden;
+	position:			relative;
+	left:				1%;
+}
+
+/* ボタン格納用表 */
+#id_table_search_menu_btn {
+	width:				100%;
+	height:				100%;
+	border-collapse:	collapse;
+}
+
+/* ボタン格納用TD */
+/* 検索 */
+#id_td_search_menu_btn_search {
+	width:				50%;
+	height:				100%;
+	border:				none 0px;
+	text-align:			left;
+}
+/* クリア */
+#id_td_search_menu_btn_clear {
+	width:				50%;
+	height:				100%;
+	border:				none 0px;
+	text-align:			right;
+}
+
+/* ボタン */
+.c_btn_search {
+	width:				90px;
+	height:				100%;
+}
+/***********************************************************
+ 出力設定
+ ***********************************************************/
+#id_div_output_style {
+	color:				#000000;
+	width:				298px;
+	height:				105px;
+	overflow:			hidden;
+	position:			relative;
+	top:				0px;
+	left:				0px;
+	margin-left:		1px;
+	padding:			0px;
+	/*border:			solid 1px #cc0000;*/
+}
+/* 出力設定のタイトル */
+#id_div_output_style_title {
+	width:				99%;
+	height:				23px;
+	background-color:	transparent;
+	background-image:	url("../img/newz_title_back.png");
+	border:				none 0px;
+	/*border:			solid 1px #cccccc;*/
+	font-size:			14px;
+	font-weight:		bold;
+	font-family:		"メイリオ","ＭＳ Ｐゴシック",sans-serif;
+	color:				#111111;
+	padding-top:		3px;
+	padding-left:		3px;
+	vertical-align:		middle;
+}
+/* メニュー */
+#id_div_output_style_menu {
+	width:				98%;
+	position:			relative;
+	left:				1%;
+	height:				50px;
+	background-color:	transparent;
+	/*border:				solid 1px #cccccc;*/
+	border:				none 0px;
+}
+/* テーブル */
+#id_table_output_style_menu {
+	width:				100%;
+	border-collapse:	separate;
+	border:				none 0px;
+}
+/* TR */
+.c_tr_output_style_menu {
+	height:				22px;
+}
+/* TD */
+.c_td_output_style_menu_cap {
+	width:				130px;
+	height:				100%;
+	background-color:	#c9d6ff;
+	border:				none 0px;
+	font-size:			10px;
+}
+.c_td_output_style_menu {
+	width:				160px;
+	height:				100%;
+	text-align:			left;
+	border:				none 0px;
+}
+/* SELECT */
+.c_select_output_style_menu {
+	width:				158px;
+	height:				20px;
+	text-align:			left;
+	font-size:			10px;
+}

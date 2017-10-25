@@ -1,0 +1,170 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************/
+/* 画面全体の設定                                          */
+/***********************************************************/
+BODY {
+	text-align:			left;
+	font-size:			10px;
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	color:				#111111;
+	background:			#FFFFFF;
+	margin:				0px;
+	padding:			1px;
+}
+
+/***********************************************************/
+/* 画面上部に表示する3色線                                 */
+/***********************************************************/
+H1.topline {
+	/* 画像を並べて線を表示 */
+	background-image:	url("../img/topline.png");	/* 画像の指定 */
+	height:				7px;						/* 水平線の太さ */
+	font-size:			7px;						/* 画像に合わせてフォントサイズを変更 */
+}
+DIV.topline {
+	height:				35px;
+	border-width:		0px;
+	margin:				0px;
+	padding:			0px;
+}
+
+/***********************************************************/
+/* 画像テーブル                                            */
+/***********************************************************/
+TABLE.imagetab {
+	width:				97%;
+	border-style:		solid;
+	border-width:		0px;
+	margin:				0px;
+	padding-left:		3%;
+}
+
+/***********************************************************/
+/* ログイン名                                              */
+/***********************************************************/
+TD.name {
+	/* 項目名表示部分 */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	text-align:			right;
+	padding:			0px;
+	white-space: 		nowrap;
+	font-size:			11px;
+	font-weight:		bold;
+	color:				#000000;
+}
+/***********************************************************/
+/* リンク                                                  */
+/***********************************************************/
+TD.link {
+	/* 項目名表示部分 */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	text-align:			right;
+	padding:			2px;
+	white-space: 		nowrap;
+	font-weight:		bold;
+}
+
+A.linkcapt{
+	font-size:			11px;
+	text-decoration:	none;
+	color:				#0000FF;
+}
+
+HR.headline {
+	border-style:		solid;
+	border-width:		1px;
+	border-color:		#AAAAAA;
+}
+
+/***********************************************************/
+/* 操作部                                              */
+/***********************************************************/
+div.rdbtn {
+	position: 			fixed;
+}
+#id_read_btn1,#id_read_btn2 {
+	width:				90px;
+}
+#id_stop_btn1,#id_stop_btn2 {
+	width:				90px;
+}
+#id_pause_btn1,#id_pause_btn2 {
+	width:				90px;
+}
+/***********************************************************/
+/* 本文                                              */
+/***********************************************************/
+.docbox {
+	width:				97%;
+	border-style:		solid;
+	border-width:		0px;
+	margin:				0px;
+	padding-left:		3%;
+}
+/* タイトル */
+.doctitle {
+	font-family:		sans-serif;
+	text-align:			left;
+	padding:			0px;
+	font-size:			14px;
+	font-weight:		bold;
+	color:				#000000;
+}
+/* 文章部分 */
+.docmain {
+	font-family:		sans-serif;
+	text-align:			left;
+	padding:			0px;
+	font-size:			12px;
+	color:				#000000;
+}
+/* 読み上げ部分 */
+.readOutHere1,.readOutHere2 {
+	font-family:		sans-serif;
+	text-align:			left;
+	padding:			0px;
+	font-size:			12px;
+	color:				#000000;
+}
+/* 注意書き部分 */
+.css_span_notice {
+	font-family:		sans-serif;
+	border-width:		0px;
+	margin:				0px;
+	color:				#FF0000;
+	font-size:			14px;
+}
+/* インフォメーション */
+.css_span_info {
+	font-family:		sans-serif;
+	border-width:		0px;
+	margin:				0px;
+	color:				#000000;
+	font-size:			12px;
+}
+/***********************************************************/
+/* 画面下部に表示するコピーライト                          */
+/***********************************************************/
+DIV.btmcr {
+	text-align:			right;
+	font-size:			10px;
+	font-style: 		Italic;
+	margin:				0px;
+	padding:			0px;
+}
+DIV.btmcr STRONG{
+	color:				#B40303;
+}

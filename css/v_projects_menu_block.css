@@ -1,0 +1,80 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************/
+/* メインメニューの設定                                    */
+/***********************************************************/
+#id_div_main_menu {
+	color:				#000000;
+	/*background-color: 	#ff9900;*/
+	position: 			relative;
+	width: 				998px;
+	height: 			25px;
+	text-align: 		left;
+	border:				solid 1px #cccccc;
+	overflow:			hidden;
+	/*background-image: 	url("../img/mainmenu_back.png");*/
+}
+/* ボタン配置用テーブル */
+#id_table_main_menu {
+	height: 			25px;
+	border-collapse: 	collapse;
+	border:				solid 1px #cccccc;
+}
+/* ボタンを配置するTD */
+.c_td_main_menu_selector {
+	width: 				110px;
+	height: 			23px;
+	border:				none 0px;
+	color:				#000000;
+	background-color:	#ffffff;
+	border-left:		solid 1px #cccccc;
+	border-right:		solid 1px #cccccc;
+	/*background-image: 	url("../img/mainmenubtn_back.png");*/
+	background-repeat: 	no-repeat;
+	cursor:				pointer;
+}
+.c_td_main_menu_selector:hover {
+	background-color:	#b0ceff;
+}
+.c_td_main_menu_selector_now {
+	/* 選択中のメニュー */
+	width: 				110px;
+	height: 			23px;
+	border:				none 0px;
+	color:				#ffffff;
+	background-color:	#555555;
+	border-left:		solid 1px #cccccc;
+	border-right:		solid 1px #cccccc;
+	/*background-image: 	url("../img/mainmenubtn_back_now.png");*/
+	background-repeat: 	no-repeat;
+	cursor:				pointer;
+}
+/*メニューのボタン */
+input.c_btn_mainmenu {
+	width:				100%;
+	height: 			100%;
+	margin: 			0px;
+	padding: 			0px;
+	border:				none 0px;
+	text-align: 		center;
+	background-color:	transparent;
+	background-repeat:	no-repeat;
+	color:				inherit;
+	cursor:				pointer;
+}
+/* プロジェクト管理 */
+#id_td_mainmenu_projects {
+	background-image: 	url("../img/projects_menu_btn.png");
+}

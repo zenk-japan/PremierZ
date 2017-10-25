@@ -1,0 +1,114 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ 作業情報画面で使用するCSSの設定
+ ***********************************************************/
+/***********************************************************/
+/* 明細部                                                  */
+/***********************************************************/
+/* 全体のDIV */
+#id_div_detail {
+	width:						746px;
+	max-width:					746px;
+/*	height:						500px;*/
+	border:						0px none;
+	overflow-x:					hidden;
+}
+/* 表 */
+#id_tab_detail {
+	background-color:			transparent;
+	border:						0 none;
+	border-collapse:			collapse;
+}
+/* ヘッダー */
+.c_th_detail_header {
+	background-color:			#c9d6ff;
+	border:						1px solid #ffffff;
+	font-size:					12px;
+	height:						20px;
+	padding:					0px 4px;
+}
+/* 明細TD */
+.c_td_detail_list_wuser,
+.c_td_detail_list_wplace,
+.c_td_detail_list_15_ok,
+.c_td_detail_list_15_ng,
+.c_td_detail_list_15_na,
+.c_td_detail_list_32 {
+	background-color:			transparent;
+	border:						1px solid #cccccc;
+	font-size:					12px;
+	height:						22px;
+	padding:					0px;
+	white-space:				nowrap;
+	padding:					0px 4px;
+}
+.c_td_detail_list_wuser,
+.c_td_detail_list_wplace {
+	min-width:					180px;
+	max-width:					180px;
+	width:						180px;
+}
+.c_td_detail_list_wuser {
+	cursor:						pointer;
+}
+
+.c_td_detail_list_15_ok,
+.c_td_detail_list_15_ng,
+.c_td_detail_list_15_na {
+	min-width:					15px;
+	max-width:					15px;
+	width:						15px;
+}
+/* OK */
+.c_td_detail_list_15_ok {
+	background-color:			#55ff55;
+	text-align:					center;
+}
+/* NG */
+.c_td_detail_list_15_ng {
+	background-color:			#ff2222;
+	text-align:					center;
+}
+/* NA */
+.c_td_detail_list_15_na {
+	background-color:			transparent;
+	text-align:					center;
+}
+
+.c_td_detail_list_32 {
+	min-width:					35px;
+	max-width:					35px;
+	width:						35px;
+}
+/* 明細DIV */
+.c_div_detail_list,
+.c_div_detail_list_180 {
+	font-size:					12px;
+	height:						100%;
+	overflow:					hidden;
+	white-space:				nowrap;
+	vertical-align:				middle;
+}
+.c_div_detail_list_180 {
+	min-width:					180px;
+	max-width:					180px;
+	width:						180px;
+}
+/* 作業者 */
+.c_span_detail_underline {
+	color:						#0000ff;
+	text-decoration:			underline;
+}

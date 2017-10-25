@@ -1,0 +1,67 @@
+/*-----------------------------------------------------------------------------
+-- VIEW名           ：ESTIMATES_V
+-- 作成者           ：zenk
+-- 作成日           ：2012-02-28
+-- 更新履歴         ：
+-----------------------------------------------------------------------------*/
+CREATE OR REPLACE VIEW `ESTIMATES_V` AS
+	SELECT
+			es.`DATA_ID`						AS `DATA_ID`
+		   ,es.`ESTIMATE_ID`					AS `ESTIMATE_ID`
+		   ,es.`ESTIMATE_CODE`					AS `ESTIMATE_CODE`
+		   ,es.`SUB_NUMBER`						AS `SUB_NUMBER`
+		   ,es.`ESTIMATE_USER_ID`				AS `ESTIMATE_USER_ID`
+		   ,esus1.`USER_CODE`					AS `ESTIMATE_USER_CODE`
+		   ,esus1.`NAME`						AS `ESTIMATE_USER_NAME`
+		   ,es.`ESTIMATE_REQUEST_DATE`			AS `ESTIMATE_REQUEST_DATE`
+		   ,es.`SCHEDULE_FROM_DATE`				AS `SCHEDULE_FROM_DATE`
+		   ,es.`SCHEDULE_TO_DATE`				AS `SCHEDULE_TO_DATE`
+		   ,es.`WORK_NAME`						AS `WORK_NAME`
+		   ,es.`ENDUSER_COMPANY_ID`				AS `ENDUSER_COMPANY_ID`
+		   ,esco1.`COMPANY_CODE`				AS `ENDUSER_COMPANY_CODE`
+		   ,esco1.`COMPANY_NAME`				AS `ENDUSER_COMPANY_NAME`
+		   ,es.`ENDUSER_USER_ID`				AS `ENDUSER_USER_ID`
+		   ,esus3.`USER_CODE`					AS `ENDUSER_USER_CODE`
+		   ,esus3.`NAME`						AS `ENDUSER_USER_NAME`
+		   ,es.`REQUEST_COMPANY_ID`				AS `REQUEST_COMPANY_ID`
+		   ,esco2.`COMPANY_CODE`				AS `REQUEST_COMPANY_CODE`
+		   ,esco2.`COMPANY_NAME`				AS `REQUEST_COMPANY_NAME`
+		   ,es.`REQUEST_USER_ID`				AS `REQUEST_USER_ID`
+		   ,esus2.`USER_CODE`					AS `REQUEST_USER_CODE`
+		   ,esus2.`NAME`						AS `REQUEST_USER_NAME`
+		   ,es.`SUBMITTING_DATE1`				AS `SUBMITTING_DATE1`
+		   ,es.`SUBMITTING_DATE2`				AS `SUBMITTING_DATE2`
+		   ,es.`SUBMITTING_DATE3`				AS `SUBMITTING_DATE3`
+		   ,es.`SUBMITTING_DATE4`				AS `SUBMITTING_DATE4`
+		   ,es.`SUBMITTING_DATE5`				AS `SUBMITTING_DATE5`
+		   ,es.`FINAL_PRESENTATION_AMOUNT`		AS `FINAL_PRESENTATION_AMOUNT`
+		   ,es.`ORDER_DIVISION`					AS `ORDER_DIVISION`
+		   ,escm1.`CODE_VALUE`					AS `ORDER_DIVISION_NAME`
+		   ,es.`WORK_COMPLETION_DATE`			AS `WORK_COMPLETION_DATE`
+		   ,es.`WORK_DIVISION`					AS `WORK_DIVISION`
+		   ,escm2.`CODE_VALUE`					AS `WORK_DIVISION_NAME`
+		   ,es.`REMARKS`						AS `REMARKS`
+		   ,es.`BOOK_INPUT_DATE`				AS `BOOK_INPUT_DATE`
+		   ,es.`BILL_SENDING_DATE`				AS `BILL_SENDING_DATE`
+		   ,es.`VALIDITY_FLAG`					AS `VALIDITY_FLAG`
+		   ,es.`REGISTRATION_DATET`				AS `REGISTRATION_DATET`
+		   ,es.`REGISTRATION_USER_ID`			AS `REGISTRATION_USER_ID`
+		   ,es.`LAST_UPDATE_DATET`				AS `LAST_UPDATE_DATET`
+		   ,es.`LAST_UPDATE_USER_ID`			AS `LAST_UPDATE_USER_ID`
+	FROM
+			`ESTIMATES`			   es
+		   ,`ESTIMATES_SUB1_V`	   escm1
+		   ,`ESTIMATES_SUB2_V`	   escm2
+		   ,`ESTIMATES_SUB3_V`	   esco1
+		   ,`ESTIMATES_SUB4_V`	   esco2
+		   ,`ESTIMATES_SUB5_V`	   esus1
+		   ,`ESTIMATES_SUB6_V`	   esus2
+		   ,`ESTIMATES_SUB7_V`	   esus3
+	WHERE	es.`ESTIMATE_ID` = escm1.`ESTIMATE_ID`
+	AND		es.`ESTIMATE_ID` = escm2.`ESTIMATE_ID`
+	AND		es.`ESTIMATE_ID` = esco1.`ESTIMATE_ID`
+	AND		es.`ESTIMATE_ID` = esco2.`ESTIMATE_ID`
+	AND		es.`ESTIMATE_ID` = esus1.`ESTIMATE_ID`
+	AND		es.`ESTIMATE_ID` = esus2.`ESTIMATE_ID`
+	AND		es.`ESTIMATE_ID` = esus3.`ESTIMATE_ID`
+;

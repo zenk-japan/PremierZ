@@ -1,0 +1,138 @@
+<!--
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<meta http-equiv="Content-Script-Type" content="text/javascript">
+	<link rel="stylesheet" href="./setup.css" type="text/css">
+	<script type="text/javascript" src="../../js/jquery.js"></script>
+	<script type="text/javascript" src="./setup.js"></script>
+	<title>セットアップ</title>
+</head>
+<body>
+	<table id="id_tab_main">
+		<tr>
+			<td colspan=3 class="c_td_title">
+				セットアップ
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3 class="c_td_mess">
+				DB設定、利用会社設定、発信用・受信用メールアドレス設定の各項目を入力し、setupボタンをクリックして下さい。
+			</td>
+		</tr>
+		<tr>
+			<td class="c_td_head">
+				<span class="c_span_head">セットアップ項目</span>
+			</td>
+			<td class="c_td_head">
+				<span class="c_span_head">設定内容(<span class="c_span_required">*</span>は必須入力)</span>
+			</td>
+			<td class="c_td_head">
+				<span class="c_span_head">チェック判定</span>
+			</td>
+		</tr>
+		<tr>
+			<td class="c_td_sectitle">
+				<span class="c_span_sectitle">１．DB設定</span><br><br>
+				<span class="c_span_secmess">&nbsp;DBのあるホスト名を指定して下さい。</span><br>
+				<span class="c_span_secmess">&nbsp;DBアクセス用のユーザーとパスワードを指定して下さい。</span><br>
+				<span class="c_span_secmess">&nbsp;DB名を指定して下さい。</span>
+			</td>
+			<td class="c_td_secvalue">
+				DBホスト名<span class="c_span_required">*</span>：<input type="text" class="c_txt_input c_ipt_required" id="id_txt_db_host" name="DBホスト名"><br>
+				DBユーザー名<span class="c_span_required">*</span>：<input type="text" class="c_txt_input c_ipt_required" id="id_txt_db_user" name="DBユーザー名"><br>
+				パスワード<span class="c_span_required">*</span>：<input type="text" class="c_txt_input c_ipt_required" id="id_txt_db_pass" name="パスワード"><br>
+				DB名<span class="c_span_required">*</span>：<input type="text" class="c_txt_input c_ipt_required" id="id_txt_db_name" name="DB名">
+			</td>
+			<td id="id_td_dbchkresult" class="c_td_chkresult">
+				&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td class="c_td_sectitle">
+				<span class="c_span_sectitle">２．利用会社設定</span><br><br>
+				<span class="c_span_secmess">&nbsp;データのオーナーとなる利用会社の設定を行います。</span><br>
+				<span class="c_span_secmess">&nbsp;利用会社は後で追加する事もできます。</span><br>
+				<span class="c_span_secmess">&nbsp;DATA_IDは３桁までの数値、利用会社コードは英数字６文字以内、</span><br>
+				<span class="c_span_secmess">&nbsp;利用会社名は５０文字以内、</span><br>
+				<span class="c_span_secmess">&nbsp;管理者ユーザーコードは、英数字８文字以内</span><br>
+				<span class="c_span_secmess">&nbsp;で指定して下さい。</span><br>
+			</td>
+			<td class="c_td_secvalue">
+				DATA_ID<span class="c_span_required">*</span>：<input type="text" class="c_txt_input c_ipt_required" id="id_txt_data_id" name="DATA_ID"><br>
+				利用会社コード<span class="c_span_required">*</span>：<input type="text" class="c_txt_input c_ipt_required" id="id_txt_comp_code" name="利用会社コード"><br>
+				利用会社名<span class="c_span_required">*</span>：<input type="text" class="c_txt_input c_ipt_required" id="id_txt_comp_name" name="利用会社名"><br>
+				管理者ユーザーコード<span class="c_span_required">*</span>：<input type="text" class="c_txt_input c_ipt_required" id="id_txt_adminusr_code" name="管理者ユーザーコード"><br>
+			</td>
+			<td id="id_td_compchkresult" class="c_td_chkresult">
+				&nbsp;
+			</td>
+		</tr>
+		<tr>
+			<td class="c_td_sectitle">
+				<span class="c_span_sectitle">３．発信用メールサーバ設定</span><br><br>
+				<span class="c_span_secmess">&nbsp;各種通知発信用のメールサーバの設定を行います。</span><br>
+				<span class="c_span_secmess">&nbsp;御利用されているSMTPサーバの設定を入力して下さい。</span><br>
+				<span class="c_span_secmess">&nbsp;後で管理画面から変更する事もできます。</span><br>
+				<span class="c_span_secmess">&nbsp;暗号化方式はsslかtlsを指定して下さい。</span>
+			</td>
+			<td class="c_td_secvalue">
+				SMTPサーバ：<input type="text" class="c_txt_input" id="id_txt_smtp_server" name="SMTPサーバ"><br>
+				ポート番号：<input type="text" class="c_txt_input" id="id_txt_smtp_port" name="ポート番号"><br>
+				認証の暗号化方式：<input type="text" class="c_txt_input" id="id_txt_smtp_secure" name="暗号化方式"><br>
+				アカウント：<input type="text" class="c_txt_input" id="id_txt_smtp_account" name="アカウント"><br>
+				パスワード：<input type="text" class="c_txt_input" id="id_txt_smtp_pass" name="パスワード"><br>
+			</td>
+			<td id="id_td_smtpchkresult" class="c_td_chkresult">
+				-
+			</td>
+		</tr>
+		<tr>
+			<td class="c_td_sectitle">
+				<span class="c_span_sectitle">４．受信用メールアドレス設定</span><br><br>
+				<span class="c_span_secmess">&nbsp;各種通知に記載するメールアドレスの設定を行います。</span><br>
+				<span class="c_span_secmess">&nbsp;利用者からのメールを受信できるアドレスを入力して下さい。</span><br>
+				<span class="c_span_secmess">&nbsp;後で管理画面から変更する事もできます。</span><br>
+			</td>
+			<td class="c_td_secvalue">
+				作業取り纏め用：<input type="text" class="c_txt_input" id="id_txt_mail_manager" name="作業取り纏め用"><br>
+				勤怠報告用：<input type="text" class="c_txt_input" id="id_txt_mail_report" name="勤怠報告用"><br>
+			</td>
+			<td id="id_td_mailchkresult" class="c_td_chkresult">
+				-
+			</td>
+		</tr>
+		<tr>
+			<td colspan=3 id="id_td_setup_btn">
+				<input type="button" value="setup" id="id_btn_setup">
+			</td>
+		</tr>
+		<tr>
+			<td id="id_td_setup_status_cap">
+				<span class='c_span_setup_status_cap'>セットアップ進捗</span>
+			</td>
+			<td colspan=2 id="id_td_setup_status">
+				&nbsp;
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>

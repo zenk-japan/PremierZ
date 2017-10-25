@@ -1,0 +1,485 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************/
+/* 画面全体の設定                                          */
+/***********************************************************/
+BODY {
+	text-align:			left;
+	font-size:			11px;
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	color:				#111111;
+	background:			#FFFFFF;
+	margin:				0px;
+	padding:			1px;
+}
+INPUT.btstnd, INPUT.jqModal {
+	/* ボタンの標準設定 */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			11px;
+	padding:			2px;
+	width: 				70px;
+	cursor:				pointer;
+}
+LABEL.cbstnd {
+	/* チェックボックスの標準設定 */
+	font-size:			11px;
+	padding-right:		5px;
+}
+INPUT.txstnd {
+	/* テキストボックスの標準設定 */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			11px;
+	padding:			1px;
+	width:				180px;
+}
+
+DIV.coverplate{
+	position:			absolute;
+	left:				0px;
+	top:				0px;
+	z-index:			1;
+	width:				0%;
+	height:				0%;
+	background:			#222222;
+	border-style:		solid;
+	border-width:		2px;
+	filter:				Alpha(opacity=70);
+	-moz-opacity:		0.7;
+	opacity:			0.70;
+}
+
+/***********************************************************/
+/* 外枠のテーブル                                          */
+/***********************************************************/
+DIV.outer {
+	/* 幅は画面に合わせ、灰色の実線で囲む */
+	max-width:			100%;
+	border-style:		solid;
+	border-width:		1px;
+	border-color:		#BBBBBB;
+}
+
+/***********************************************************/
+/* 画面上部に表示する3色線                                 */
+/***********************************************************/
+H1.topline {
+	/* 画像を並べて線を表示 */
+	background-image:	url("../img/topline.png");	/* 画像の指定 */
+	height:				7px;						/* 水平線の太さ */
+	font-size:			7px;						/* 画像に合わせてフォントサイズを変更 */
+}
+DIV.topline {
+	height:				35px;
+	border-width:		0px;
+	margin:				0px;
+	padding:			0px;
+}
+
+/***********************************************************/
+/* 画像テーブル                                            */
+/***********************************************************/
+TABLE.imagetab {
+	width:				97%;
+	border-style:		solid;
+	border-width:		0px;
+	margin:				0px;
+	padding-left:		3%;
+}
+
+/***********************************************************/
+/* ログイン名                                              */
+/***********************************************************/
+TD.name {
+	/* 項目名表示部分 */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	text-align:			right;
+	padding:			0px;
+	white-space: 		nowrap;
+	font-size:			11px;
+	font-weight:		bold;
+	color:				#000000;
+}
+
+/***********************************************************/
+/* リンク                                                  */
+/***********************************************************/
+TD.link {
+	/* 項目名表示部分 */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	text-align:			right;
+	padding:			2px;
+	white-space: 		nowrap;
+	font-weight:		bold;
+}
+
+A.linkcapt{
+	font-size:			11px;
+	text-decoration:	none;
+	color:				#0000FF;
+}
+/***********************************************************/
+/* 本体テーブル                                            */
+/***********************************************************/
+/* テーブル本体 */
+TABLE.maintab {
+	/* 横幅は一番上の横幅で固定、枠線はなし */
+	/*table-layout:		fixed;*/
+	width:				100%;
+	border-style:		solid;
+	border-width:		0px;
+	margin:				0px;
+	padding:			0px;
+}
+
+/***********************************************************/
+/* 見出しとその上下に配置する線                            */
+/***********************************************************/
+DIV.headline {
+	position:			relative;
+	width: 				94%;
+	max-width:			100% !important;
+	left: 				3%;
+}
+HR.headline {
+	border-style:		solid;
+	border-width:		1px;
+	border-color:		#AAAAAA;
+}
+P.headline {
+	/* 見出しに表示する文字列用の設定 */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			20px;
+	font-weight:		bolder;
+	color:				#111111;
+	margin:				0px;
+	padding:			0px;
+}
+
+/***********************************************************/
+/* パンくずリンク                                          */
+/***********************************************************/
+DIV.bclink {
+	position:			relative;
+	font-size:			12px;
+	width: 				94%;
+	max-width:			100% !important;
+	left: 				3%;
+	white-space: 		nowrap
+}
+/* ハイパーリンク部分 */
+INPUT.bclink {
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			12px;
+	width:				80px;
+	color: 				#0000FF;
+	background-color:	transparent;
+	border: 			0px solid;
+	cursor:				pointer;
+}
+/* 自画面の部分 */
+INPUT.bclinkself {
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			12px;
+	font-weight: 		bolder;
+	width:				80px;
+	color: 				#111111;
+	background-color:	transparent;
+	border: 			0px solid;
+}
+
+/***********************************************************/
+/* ヘッドライン項目                                        */
+/***********************************************************/
+DIV.hdldata {
+	position:			relative;
+	width: 				94%;
+	max-width:			100% !important;
+	left: 				3%;
+	/* FORM内でのフォント */
+	margin:				0px;
+	padding:			0px;
+	overflow: 			auto;
+	white-space: 		nowrap;
+}
+DIV.hdldata TABLE {
+	/* テーブル */
+	font-size:			11px;
+	border-style:		solid;
+	border-width:		0px;
+	margin:				0px;
+	padding:			0px;
+}
+TD.hdlcapt {
+	/* 項目名表示部分 */
+	font-size:			11px;
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	text-align:			right;
+	padding:			2px;
+	white-space: 		nowrap;
+}
+INPUT.hdltextbox {
+	/* 項目値表示(編集可) */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			11px;
+	text-align:			left;
+	border:				1px solid #AAAAAA;
+	padding-top:		2px;
+	padding-left: 		2px;
+	padding-bottom:		0px;
+}
+INPUT.hdltxtro {
+	/* 項目値表示(編集不可) */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			11px;
+	text-align:			left;
+	border:				1px solid #AAAAAA;
+	background-color:	#EFEFEF;
+	padding-top:		2px;
+	padding-left: 		2px;
+	padding-bottom:		0px;
+}
+INPUT.hdltext {
+	/* リスト非表示用 */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			11px;
+	text-align:			left;
+	border:				1px solid #AAAAAA;
+	padding-top:		2px;
+	padding-left: 		2px;
+	padding-bottom:		0px;
+}
+INPUT.hdltxtnumro {
+	/* 項目値表示(編集不可-数値) */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			11px;
+	text-align:			right;
+	border:				1px solid #AAAAAA;
+	background-color:	#EFEFEF;
+	padding-top:		2px;
+	padding-left: 		2px;
+	padding-bottom:		0px;
+}
+/***********************************************************/
+/* オーバーフローを利用したインナーフレーム                */
+/***********************************************************/
+DIV.offrame
+{
+	position:			relative;
+	width: 				94%;
+	/*max-width:			100% !important;*/
+	max-width:			100%;
+	left: 				3%;
+	border:				solid 0px #AAAAAA;
+	/*width:			640px;*/
+	height:				300px;
+	padding:			1px;
+	overflow:			auto;					/* これを設定するとフレーム風になる */
+}
+/***********************************************************/
+/* 明細表示テーブル                                        */
+/***********************************************************/
+/* テーブル本体 */
+TABLE.dtltab {
+	font-size:			11px;
+	border-style:		solid;
+	border-collapse:	collapse;
+	border-width:		0px;
+}
+TABLE.dtltab TD{
+	/* テーブル全体の余白設定 */
+	padding-left:		10px;
+	padding-right:		10px;
+	padding-top:		3px;
+	padding-bottom:		3px;
+	white-space: 		nowrap;
+}
+TR.dtltabtop TD INPUT{
+	/* 一行目の項目名でテキストBOXの場合は枠線なし */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			11px;
+	border:				0px;
+}
+TR.dtl_tr_nomal TD.dtltext_even{
+	/* 明細行の枠設定(偶数行) */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	border: 			1px solid #DDDDDD;
+	background-color: 	#ECE8F2;
+}
+TR.dtl_tr_nomal TD.dtltext_odd{
+	/* 明細行の枠設定(奇数行) */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	border: 			1px solid #DDDDDD;
+}
+TR.dtl_tr_nomal TD.dtltextnum_even{
+	/* 明細行の枠設定-数値(偶数行) */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	border: 			1px solid #DDDDDD;
+	text-align:			right;
+	background-color: 	#ECE8F2;
+}
+TR.dtl_tr_nomal TD.dtltextnum_odd{
+	/* 明細行の枠設定-数値(奇数行) */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	border: 			1px solid #DDDDDD;
+	text-align:			right;
+}
+TR.dtltabtop TD.dtltext_odd, TR.dtltabtop TD.dtltext_even{
+	/* 一行目の項目名表示 */
+	font-size:			12px;
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	text-align:			center;
+	height: 			28px;
+	border: 			1px solid #DDDDDD;
+	background-color: 	#666670;
+	color: 				#FFFFFF;
+	/*font-weight: 		bolder;*/
+}
+TR.dtl_tr_amt TD.dtltext_odd, TR.dtl_tr_amt TD.dtltext_even, TR.dtl_tr_amt TD.dtltextnum_even, TR.dtl_tr_amt TD.dtltextnum_odd{
+	/* 合計行の項目 */
+	font-size:			11px;
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	text-align:			right;
+	height: 			28px;
+	border: 			1px solid #EFEFEF;
+	background-color: 	#DFDAF2;
+}
+TR.dtl_tr_nomal TD INPUT.updbt {
+	/* 明細行のupdateボタン */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			11px;
+	width:				40px;
+	padding-top: 		2px;
+	cursor:				pointer;
+}
+TR.dtl_tr_nomal TD INPUT.chkbk{
+	/* 明細行のチェックボックス */
+	font-size:			11px;
+	border:				1px solid #BBBBBB;
+	background-color: 	transparent;
+}
+TR.dtl_tr_nomal TD INPUT.glbt{
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	/* 明細行のボタン一般 */
+	font-size:			11px;
+	padding-top: 		2px;
+	cursor:				pointer;
+}
+TD.dtlhidden,  TD.dtlhidden > *{
+	/* 明細行の隠し項目 */
+	width: 				0px;
+	visibility:			hidden;
+}
+
+/***********************************************************/
+/* 背景選択用プルダウンメニュー                            */
+/***********************************************************/
+DIV.pulldown {
+	position:			relative;
+	width: 				94%;
+	max-width:			100% !important;
+	left: 				3%;
+	white-space: 		nowrap
+}
+
+/***********************************************************/
+/* フッター                                                */
+/***********************************************************/
+DIV.footer {
+	position:			relative;
+	width: 				94%;
+	max-width:			100% !important;
+	left: 				3%;
+	display: 			none;
+	/* FORM内でのフォント */
+	margin:				0px;
+	padding:			0px;
+}
+DIV.footer TABLE {
+	/* テーブル */
+	font-size:			14px;
+	border-style:		solid;
+	border-width:		0px;
+	margin:				0px;
+	padding:			0px;
+}
+DIV.footer TD.ftcapt {
+	/* 項目名表示部分 */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	text-align:			right;
+	padding:			2px;
+	white-space: 		nowrap;
+}
+DIV.footer TD.fttext {
+	/* 項目名表示部分(枠付き) */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	border:				1px solid #AAAAAA;
+	text-align:			right;
+	padding-left:		2px;
+	padding-right:		2px;
+	white-space: 		nowrap;
+}
+DIV.footer INPUT.fttextbox {
+	/* テキストボックス(編集可) */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			11px;
+	text-align:			left;
+	border:				1px solid #AAAAAA;
+	padding-top:		2px;
+	padding-left:		2px;
+	padding-bottom:		0px;
+	width:				180px;
+}
+DIV.footer INPUT.fttxtro {
+	/* テキストボックス(編集不可) */
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			11px;
+	text-align:			left;
+	border:				1px solid #AAAAAA;
+	background-color:	#EFEFEF;
+	padding-top:		2px;
+	padding-left:		2px;
+	padding-bottom:		0px;
+	width:				180px;
+}
+
+/***********************************************************/
+/* 画面下部に表示するコピーライト                          */
+/***********************************************************/
+DIV.btmcr {
+	position:			relative;
+	text-align:			right;
+	font-size:			11px;
+	font-style: 		Italic;
+	margin:				0px;
+	padding:			0px;
+}
+DIV.btmcr STRONG{
+	color:				#B40303;
+}
+
+/***********************************************************/
+/* メッセージ出力用                                        */
+/***********************************************************/
+DIV.msg {
+	color:				#ff0000;
+	background-color: 	transparent;
+	font-weight:		bold;
+	position:			relative;
+	font-size:			12px;
+	width: 				94%;
+	max-width:			100% !important;
+	left: 				3%;
+	white-space: 		nowrap
+}

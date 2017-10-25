@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+-->
+<view_create_sql>
+	<sql_directory>view</sql_directory>
+	
+	<sql_file>
+		<!-- AUTHORITY_V -->
+		<view_node name="AUTHORITY_SUB1_V">
+			<create>0010_AUTHORITY_SUB1_V.sql</create>
+		</view_node>
+		<view_node name="AUTHORITY_SUB2_V">
+			<create>0020_AUTHORITY_SUB2_V.sql</create>
+		</view_node>
+		<view_node name="AUTHORITY_V">
+			<create>0030_AUTHORITY_V.sql</create>
+		</view_node>
+		
+		<!-- BASES_V -->
+		<view_node name="BASES_V">
+			<create>0040_BASES_V.sql</create>
+		</view_node>
+		
+		<!-- COMMON_MASTER_V -->
+		<view_node name="COMMON_MASTER_V">
+			<create>0050_COMMON_MASTER_V.sql</create>
+		</view_node>
+		
+		<!-- COMPANIES_V -->
+		<view_node name="COMPANIES_SUB1_V">
+			<create>0060_COMPANIES_SUB1_V.sql</create>
+		</view_node>
+		<view_node name="COMPANIES_V">
+			<create>0070_COMPANIES_V.sql</create>
+		</view_node>
+		
+		<!-- ESTIMATES_V -->
+		<view_node name="ESTIMATES_SUB1_V">
+			<create>0080_ESTIMATES_SUB1_V.sql</create>
+		</view_node>
+		<view_node name="ESTIMATES_SUB2_V">
+			<create>0090_ESTIMATES_SUB2_V.sql</create>
+		</view_node>
+		<view_node name="ESTIMATES_SUB3_V">
+			<create>0100_ESTIMATES_SUB3_V.sql</create>
+		</view_node>
+		<view_node name="ESTIMATES_SUB4_V">
+			<create>0110_ESTIMATES_SUB4_V.sql</create>
+		</view_node>
+		<view_node name="ESTIMATES_SUB5_V">
+			<create>0120_ESTIMATES_SUB5_V.sql</create>
+		</view_node>
+		<view_node name="ESTIMATES_SUB6_V">
+			<create>0130_ESTIMATES_SUB6_V.sql</create>
+		</view_node>
+		<view_node name="ESTIMATES_SUB7_V">
+			<create>0140_ESTIMATES_SUB7_V.sql</create>
+		</view_node>
+		<view_node name="ESTIMATES_SUB8_V">
+			<create>0150_ESTIMATES_SUB8_V.sql</create>
+		</view_node>
+		<view_node name="ESTIMATES_V">
+			<create>0160_ESTIMATES_V.sql</create>
+		</view_node>
+		
+		<!-- GROUPS_V -->
+		<view_node name="GROUPS_SUB1_V">
+			<create>0170_GROUPS_SUB1_V.sql</create>
+		</view_node>
+		<view_node name="GROUPS_V">
+			<create>0180_GROUPS_V.sql</create>
+		</view_node>
+		
+		<!-- LOGIN_LOG_V -->
+		<view_node name="LOGIN_LOG_V">
+			<create>0190_LOGIN_LOG_V.sql</create>
+		</view_node>
+		
+		<!-- MAIL_LOG_V -->
+		<view_node name="MAIL_LOG_V">
+			<create>0200_MAIL_LOG_V.sql</create>
+		</view_node>
+		
+		<!-- PAGE_USING_CONF_V -->
+		<view_node name="PAGE_USING_CONF_V">
+			<create>0210_PAGE_USING_CONF_V.sql</create>
+		</view_node>
+		
+		<!-- USE_COMPANY_V -->
+		<view_node name="USE_COMPANY_V">
+			<create>0220_USE_COMPANY_V.sql</create>
+		</view_node>
+		
+		<!-- VALUE_LIST_DEFINES_V -->
+		<view_node name="VALUE_LIST_DEFINES_V">
+			<create>0230_VALUE_LIST_DEFINES_V.sql</create>
+		</view_node>
+		
+		<!-- WORK_REPORTS_V -->
+		<view_node name="WORK_REPORTS_V">
+			<create>0240_WORK_REPORTS_V.sql</create>
+		</view_node>
+		
+		<!-- WORK_STAFF_V -->
+		<view_node name="WORKSTAFF_SUB1_V">
+			<create>0250_WORKSTAFF_SUB1_V.sql</create>
+		</view_node>
+		<view_node name="WORKSTAFF_SUB2_V">
+			<create>0260_WORKSTAFF_SUB2_V.sql</create>
+		</view_node>
+		<view_node name="WORKSTAFF_SUB3_V">
+			<create>0270_WORKSTAFF_SUB3_V.sql</create>
+		</view_node>
+		<view_node name="WORKSTAFF_SUB4_V">
+			<create>0280_WORKSTAFF_SUB4_V.sql</create>
+		</view_node>
+		<view_node name="WORKSTAFF_SUB5_V">
+			<create>0290_WORKSTAFF_SUB5_V.sql</create>
+		</view_node>
+		<view_node name="WORKSTAFF_SUB6_V">
+			<create>0300_WORKSTAFF_SUB6_V.sql</create>
+		</view_node>
+		<view_node name="WORKSTAFF_SUB7_V">
+			<create>0310_WORKSTAFF_SUB7_V.sql</create>
+		</view_node>
+		<view_node name="WORKSTAFF_MOBILE_V">
+			<create>0320_WORKSTAFF_MOBILE_V.sql</create>
+		</view_node>
+		
+		<!-- WORKSTAFF_MOBILE_LIST_V -->
+		<view_node name="WORKSTAFF_MOBILE_LIST_V">
+			<create>0330_WORKSTAFF_MOBILE_LIST_V.sql</create>
+		</view_node>
+		
+		<!-- ATTENDANCE_SHEET_V -->
+		<view_node name="ATTENDANCE_SHEET_V">
+			<create>0340_ATTENDANCE_SHEET_V.sql</create>
+		</view_node>
+		
+		<!-- GROUPS_LIST_V -->
+		<view_node name="GROUPS_LIST_V">
+			<create>0350_GROUPS_LIST_V.sql</create>
+		</view_node>
+		
+		<!-- SESSIONS_V -->
+		<view_node name="SESSIONS_SUB1_V">
+			<create>0360_SESSIONS_SUB1_V.sql</create>
+		</view_node>
+		<view_node name="SESSIONS_V">
+			<create>0370_SESSIONS_V.sql</create>
+		</view_node>
+		
+		<!-- LOGIN_CHECK_V -->
+		<view_node name="LOGIN_CHECK_V">
+			<create>0380_LOGIN_CHECK_V.sql</create>
+		</view_node>
+		
+		<!-- TARGET_OF_ALERT_V -->
+		<view_node name="TARGET_OF_ALERT_V">
+			<create>0390_TARGET_OF_ALERT_V.sql</create>
+		</view_node>
+		
+		<!-- USERS_V -->
+		<view_node name="USERS_SUB1_V">
+			<create>0400_USERS_SUB1_V.sql</create>
+		</view_node>
+		<view_node name="USERS_SUB2_V">
+			<create>0410_USERS_SUB2_V.sql</create>
+		</view_node>
+		<view_node name="USERS_SUB3_V">
+			<create>0420_USERS_SUB3_V.sql</create>
+		</view_node>
+		<view_node name="USERS_V">
+			<create>0430_USERS_V.sql</create>
+		</view_node>
+		
+		<!-- WORKSTAFF_V USER関係を使用している為、このビューのみUSER系の後とする -->
+		<view_node name="WORKSTAFF_V">
+			<create>0440_WORKSTAFF_V.sql</create>
+		</view_node>
+		
+		<!-- WORKCONTENTS_V -->
+		<view_node name="WORKCONTENTS_COPY_V">
+			<create>0450_WORKCONTENTS_COPY_V.sql</create>
+		</view_node>
+		<view_node name="WORKCONTENTS_SUB1_V">
+			<create>0460_WORKCONTENTS_SUB1_V.sql</create>
+		</view_node>
+		<view_node name="WORKCONTENTS_SUB2_V">
+			<create>0470_WORKCONTENTS_SUB2_V.sql</create>
+		</view_node>
+		<view_node name="WORKCONTENTS_SUB3_V">
+			<create>0480_WORKCONTENTS_SUB3_V.sql</create>
+		</view_node>
+		<view_node name="WORKCONTENTS_V">
+			<create>0490_WORKCONTENTS_V.sql</create>
+		</view_node>
+		
+		<!-- WORKSITUATION_V -->
+		<view_node name="WORKSITUATION_V">
+			<create>0500_WORKSITUATION_V.sql</create>
+		</view_node>
+		
+	</sql_file>
+</view_create_sql>

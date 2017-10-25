@@ -1,0 +1,156 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/*----------------------------------------------------------
+  画面最上位メニューの設定
+  ----------------------------------------------------------*/
+body {
+	font-family:		"メイリオ","ＭＳ Ｐゴシック",sans-serif;
+	font-size:			12px;
+	margin:				0px;
+	background-repeat:	repeat-x;
+}
+th,td {
+	border:				none;
+	padding:			0px;
+	margin:				0px;
+}
+div {
+	border:				none;
+	padding:			0px;
+	margin:				0px;
+}
+input {
+	font-family:		"メイリオ","ＭＳ Ｐゴシック",sans-serif;
+	font-size:			12px;
+}
+/*---------------------------------------------------------
+	外側のdivの設定
+  ---------------------------------------------------------*/
+#id_div_outer {
+	width:				1000px;
+	min-height:			100%;
+	_height:			100%;
+	margin-left:		auto;
+	margin-right:		auto;
+	background-image:	url('../img/mainback.png');
+}
+/*----------------------------------------------------------
+  トップメニューのDIV
+  ----------------------------------------------------------*/
+#id_div_topline {
+	height:				30px;
+	position:			relative;
+	top:				0px;
+	left:				0px;
+	width:				1000px;
+	border:				none 0px;
+	margin:				0px;
+	padding:			0px;
+	overflow:			hidden;
+}
+/*----------------------------------------------------------
+  メニュー用テーブル
+  ----------------------------------------------------------*/
+#id_table_topline {
+	/* 画像を並べて線を表示 */
+	width:				1000px;
+	height:				30px;
+	border:				none;
+	border-collapse:	collapse;
+	margin:				0px;
+	padding:			0px;
+	background-image:	url("../img/menutopback.png");
+	background-repeat:	no-repeat;
+}
+/*----------------------------------------------------------
+  TD一般
+  ----------------------------------------------------------*/
+.c_td_topmenu {
+	border:				none 1px;
+	background-image:	url("../img/menutoptdback.png");
+	background-repeat:	no-repeat;
+/*
+	background-color:	#5bdfff;
+*/
+}
+/*----------------------------------------------------------
+  ロゴ
+  ----------------------------------------------------------*/
+#id_td_topline {
+	width:				120px;
+	min-width:			120px;
+	height:				100%;
+	background-image:	url("../img/zenklog_half.png");	/* 画像の指定 */
+	background-size:	contain;
+	background-repeat:	no-repeat;
+}
+/*----------------------------------------------------------
+  ログイン名 
+  ----------------------------------------------------------*/
+#id_td_topline_name {
+	width:				760px;
+	height:				100%;
+	text-align: 		left;
+	padding:			0 0 0 6px;
+}
+/*----------------------------------------------------------
+  メインメニューの表示
+  ----------------------------------------------------------*/
+/*メインメニュー*/
+#id_div_menubar {
+	width:				1000px;
+	height:				200px;
+	background-image:	url("../img/menuheader.png");	/* 画像の指定 */
+}
+/*帳票メニュー*/
+#id_div_menubar_rep {
+	width:				1000px;
+	height:				200px;
+	background-image:	url("../img/menureptitle.png");	/* 画像の指定 */
+}
+/*----------------------------------------------------------
+  ボタン類
+  ----------------------------------------------------------*/
+.c_td_topline_btn {
+	width:				60px;
+	min-width:			60px;
+	height:				100%;
+	text-align:			right;
+}
+.c_btn_topline_menu {
+	width:				60px;
+	height:				30px;
+	border:				none 0px;
+	background-color:	transparent;
+	cursor:				pointer;
+}
+/* メニュー */
+#id_btn_topline_backmenu {
+	background-image:	url("../img/menu.png");
+	background-repeat:	no-repeat;
+}
+/* ログアウト */
+#id_btn_topline_logout {
+	background-image:	url("../img/exit.png");
+	background-repeat:	no-repeat;
+}
+
+
+/*----------------------------------------------------------
+  CopyRight
+  ----------------------------------------------------------*/
+#id_div_copyright {
+	text-align:			center;
+}

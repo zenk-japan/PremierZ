@@ -1,0 +1,81 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/*----------------------------------------------------------
+  全体DIV
+  ----------------------------------------------------------*/
+#id_div_topline {
+	width:				100%;
+	height:				40px;
+}
+/*----------------------------------------------------------
+  画面上部に表示する3色線
+  ----------------------------------------------------------*/
+#id_h1_topline {
+	/* 画像を並べて線を表示 */
+	background-image:	url("../img/topline.png");	/* 画像の指定 */
+	height:				7px;						/* 水平線の太さ */
+	font-size:			7px;						/* 画像に合わせてフォントサイズを変更 */
+}
+/*----------------------------------------------------------
+  ロゴ
+  ----------------------------------------------------------*/
+#id_table_topline {
+	width:				100%;
+	height:				30px;
+}
+#id_td_topline {
+	/* 画像を並べて線を表示 */
+	background-image:	url("../img/zenklog_half.png");	/* 画像の指定 */
+	width:				100%;
+	height:				100%;
+	background-repeat:	no-repeat;
+}
+
+/*----------------------------------------------------------
+  タイトル
+  ----------------------------------------------------------*/
+#id_div_hd {
+	position:			relative;
+	width: 				94%;
+	max-width:			100% !important;
+	left: 				3%;
+}
+#id_span_hd {
+	font-size:			14px;
+	font-weight:		bold;
+}
+/*----------------------------------------------------------
+ メッセージ画面用の設定
+  ----------------------------------------------------------*/
+/* メッセージを囲むDIV */
+#id_div_message {
+	position:			relative;
+	width: 				94%;
+	max-width:			100% !important;
+	left: 				3%;
+}
+
+/* メッセージ(セッション) */
+.c_mess_sessiontimeout {
+	font: 				14px;
+}
+/* メッセージ(予期せぬ例外) */
+.c_mess_unknownexpt {
+	font: 				14px;
+}
+/* メッセージ(追加メッセージ) */
+.c_mess_extend {
+	font: 				14px;
+}

@@ -1,0 +1,186 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************/
+/* 画面全体の設定                                          */
+/***********************************************************/
+BODY {
+	overflow: 			hidden;
+}
+/***********************************************************/*
+/* タイトル                                                  */
+/***********************************************************/
+.css_cal_title {
+	background-color: 	#333333;
+	margin:				0px;
+	padding:			0px;
+}
+.css_cal_title P.css_title_strings{
+	font-family:		sans-serif;
+	font-size:			14px;
+	font-weight:		bolder;
+	color:				#DBDBDB;
+}
+/***********************************************************/*
+/* メッセージ                                                */
+/***********************************************************/
+.css_cal_message {
+	font-family:		sans-serif;
+	font-size:			12px;
+	font-weight:		bolder;
+	color:				#FF0000;
+	margin:				0px;
+	padding:			0px;
+	white-space: 		nowrap;
+}
+/***********************************************************/*
+/* 検索部                                                    */
+/***********************************************************/
+.css_cal_cond_table {
+	/* 幅は画面に合わせる */
+	max-width:			100%;
+	border-style:		none;
+	border-width:		0px;
+}
+.css_cal_cond_table_tr {
+	text-align: 		center;
+}
+/* 左ボタン */
+.css_cal_cond_bt_left {
+	font-family: 		sans-serif;
+	border-style: 		none;
+	font-size:			12px;
+	background-image: 	url("../img/calleftbtn.gif");
+	background-color: 	#FFFFFF;
+	width: 				24px;
+	height: 			24px;
+	margin:				0px;
+	padding:			0px;
+	white-space: 		nowrap;
+}
+/* 右ボタン */
+.css_cal_cond_bt_right{
+	font-family: 		sans-serif;
+	border-style: 		none;
+	font-size:			12px;
+	background-image: 	url("../img/calrightbtn.gif");
+	background-color: 	#FFFFFF;
+	width: 				24px;
+	height: 			24px;
+	margin:				0px;
+	padding:			0px;
+	white-space: 		nowrap;
+}
+/* 日付ボックス */
+.css_cal_cond_date {
+	font-family:		sans-serif;
+	font-size:			14px;
+	font-weight:		bolder;
+	border-style: 		none;
+	text-align: 		center;
+	vertical-align: 	middle;
+	color:				#111111;
+	width: 				125px;
+	height: 			20px;
+	margin:				0px;
+	padding:			0px;
+	white-space: 		nowrap;
+}
+/***********************************************************/*
+/* 明細部                                                    */
+/***********************************************************/
+.css_cal_detail {
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			12px;
+	font-weight:		bolder;
+	color:				#111111;
+	margin:				0px;
+	padding:			0px;
+	white-space: 		nowrap;
+}
+/***********************************************************/*
+/* カレンダー部                                              */
+/***********************************************************/
+/* テーブル */
+.css_cal_dtl_table {
+	/* 幅は画面に合わせる */
+	max-width:			100%;
+	border-style:		none;
+	border-width:		0px;
+}
+/* 各項目 */
+.css_cal_dtl_table TD{
+	width: 				24px;
+	height: 			24px;
+}
+/* 曜日 */
+.css_cal_dtl_table TH INPUT{
+	font-family: 		sans-serif;
+	border: 			none 0px;
+	font-size:			10px;
+	/*background-image: 	url("../img/calbtn.gif");*/
+	background-color: 	#CDCDAA;
+	text-align: 		center;
+	vertical-align: 	middle;
+	width: 				24px;
+	height: 			24px;
+	margin:				0px;
+	padding:			0px;
+	white-space: 		nowrap;
+}
+/* 数字ボタン全体 */
+.css_cal_dtl_table TD INPUT{
+	font-family: 		sans-serif;
+	border: 			none 0px;
+	font-size:			12px;
+	/*background-image: 	url("../img/calbtn.gif");*/
+	width: 				24px;
+	height: 			24px;
+	margin:				0px;
+	padding:			0px;
+	white-space: 		nowrap;
+}
+/* 数字ボタン */
+.css_cal_dtl_table_tdsun {
+	color:				#EE1111;
+}
+.css_cal_dtl_table_tdmon {
+	color:				#111111;
+}
+.css_cal_dtl_table_tdtue {
+	color:				#111111;
+}
+.css_cal_dtl_table_tdwed {
+	color:				#111111;
+}
+.css_cal_dtl_table_tdthu {
+	color:				#111111;
+}
+.css_cal_dtl_table_tdfri {
+	color:				#111111;
+}
+.css_cal_dtl_table_tdsat {
+	color:				#1111EE;
+}
+/***********************************************************/*
+/* キャンセルボタン                                          */
+/***********************************************************/
+.css_cal_cancelbt {
+	font-family:		sans-serif;
+	font-size:			12px;
+	padding:			2px;
+	width: 				72px;
+	height: 			24px;
+	cursor:				pointer;
+}

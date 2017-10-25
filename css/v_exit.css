@@ -1,0 +1,246 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************/
+/* 画面全体の設定                                          */
+/***********************************************************/
+BODY {
+	text-align:			left;
+	font-size:			10px;
+	color:				#111111;
+	background:			#ffffff;
+	margin:				0px;
+	padding:			1px;
+}
+
+/***********************************************************/
+/* 外枠のDIV                                               */
+/***********************************************************/
+#id_div_outer {
+	/* 幅は画面に合わせ、灰色の実線で囲む */
+	/*max-width:			1000px;*/
+	height:				100%;
+	width:				100%;
+	min-height:			100%;
+	_height:			100%;
+	margin-left:		auto;
+	margin-right:		auto;
+	border-style:		solid;
+	border-width:		0px;
+	border-color:		#BBBBBB;
+}
+
+/***********************************************************/
+/* 画面上部に表示する3色線                                 */
+/***********************************************************/
+#id_h1_topline {
+	/* 画像を並べて線を表示 */
+	background-image:	url("../img/topline.png");	/* 画像の指定 */
+	height:				7px;						/* 水平線の太さ */
+	font-size:			0px;						/* 画像に合わせてフォントサイズを変更 */
+	width:				100%;
+	min-width:			300px;
+}
+#id_div_topline {
+	height:				35px;
+	border-width:		0px;
+	margin:				0px;
+	padding:			0px;
+}
+
+/***********************************************************/
+/* ロゴ                                                    */
+/***********************************************************/
+#id_table_topline {
+	width:				100%;
+	height:				45px;
+	border:				0px none;
+	margin:				0px;
+	padding:			0px;
+}
+#id_td_topline {
+	/* 画像を並べて線を表示 */
+	background-image:	url("../img/zenklog_half.png");	/* 画像の指定 */
+	width:				60%;
+	height:				100%;
+	background-repeat:	no-repeat;
+}
+#id_p_logout {
+	position:			relative;
+	left: 				3%;
+	width: 				120px;
+}
+/***********************************************************/
+/* ログアウトとユーザー名                                  */
+/***********************************************************/
+#id_div_logout {
+	position:			relative;
+	left: 				3%;
+	width: 				94%;
+}
+#id_table_logout {
+	width:				100%;
+	border:				0px none;
+	border-collapse:	collapse;
+}
+/* 左側の余白 */
+#id_td_margin {
+	border:				0px none;
+	text-align:			left;
+	font-size:			13px;
+	width:				70%;
+}
+/* ログアウト */
+#id_td_logout {
+	border:				0px none;
+	text-align:			right;
+	font-size:			13px;
+	width:				10%;
+}
+/* ユーザー名 */
+#id_td_user_name {
+	border:				0px none;
+	text-align:			right;
+	font-size:			13px;
+	width:				20%;
+}
+/***********************************************************/
+/* タイトル                                                */
+/***********************************************************/
+#id_div_hd {
+	position:			relative;
+	width: 				94%;
+	max-width:			100% !important;
+	left: 				3%;
+}
+#id_hr_hd {
+	border-style:		solid;
+	border-width:		0px;
+	background-color: 	#AAAAAA;
+}
+#id_span_hd {
+	font-size:			15px;
+	color:				#111111;
+	margin-left: 		5px;
+	font-weight: 		bold;
+}
+
+/***********************************************************/
+/* 明細部                                                  */
+/***********************************************************/
+#id_div_main {
+	width:				100%;
+	min-width:			300px;
+	position:			relative;
+	text-align:			center;
+}
+
+#id_div_main > p {
+	font-size:			14px;
+}
+
+/* テーブル本体 */
+#id_table_main {
+	position:			relative;
+	max-width:			94% !important;
+	left: 				3%;
+	font-size:			11px;
+	border-style:		solid;
+	border-collapse:	collapse;
+	border-width:		0px;
+}
+
+/* ヘッダー項目 */
+th.c_th_main_top{
+	/* 一行目の項目名表示 */
+	font-size:			14px;
+	text-align:			center;
+	border: 			1px solid #DDDDDD;
+	background-color: 	#666670;
+	color: 				#FFFFFF;
+	height:				35px;
+	/*font-weight: 		bolder;*/
+}
+#id_th_main1 {
+	/* メニューヘッダー(ボタン部) */
+	width:				180px;
+	padding:			0px;
+	margin: 			0px;
+}
+#id_th_main2 {
+	/* メニューヘッダー(説明部) */
+	padding-left:		10px;
+	padding-right:		10px;
+	width:				500px;
+}
+
+/* 明細項目 */
+#id_table_main TD{
+	/* テーブル全体の項目設定 */
+	white-space: 		nowrap;
+	height: 			35px;
+	font-size:			14px;
+	border: 			1px solid #DDDDDD;
+}
+td.c_td_main_even{
+	/* 明細行の枠設定(偶数行) */
+	background-color: 	#e6e5fc;
+	text-align: 		left;
+}
+td.c_td_main_even_btn{
+	/* 明細行の枠設定(偶数行ボタン) */
+	background-color: 	#e6e5fc;
+	text-align: 		center;
+}
+td.c_td_main_odd{
+	/* 明細行の枠設定(奇数行) */
+	text-align: 		left;
+}
+td.c_td_main_odd_btn{
+	/* 明細行の枠設定(奇数行ボタン) */
+	text-align: 		center;
+}
+
+	/* 明細行のボタン */
+input.c_btn_main {
+	font-weight: 		bold;
+	color:				#111111;
+	width:				180px;
+	height: 			35px;
+	padding-top: 		2px;
+	cursor:				pointer;
+	border:				0px none;
+	background-image:	url(btnmenu180.png);
+}
+input.c_btn_main:hover {
+	background-image:	url(btnmenu180_hv.png);
+}
+/***********************************************************/
+/* 隠し項目                                                */
+/***********************************************************/
+#id_div_hidden {
+	width:				50px;
+}
+
+/***********************************************************/
+/* コピーライト                                              */
+/***********************************************************/
+#id_div_copyright {
+	width:				100%;
+	min-width:			300px;
+	height: 			15px;
+	position:			relative;
+	text-align:			center;
+	border-top:			1px solid #BBBBBB;
+}

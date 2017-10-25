@@ -1,0 +1,200 @@
+﻿■■PremierZセットアップ手順■■
+
+1. 基盤準備
+	OS・・・Linux
+	Webサーバ・・・Apache2
+	DBサーバ・・・Mysql5系
+	PHP実行環境・・・PHP5.3以上
+		php-devel php-mbstring php-mysql php-gd php-mcrypt php-xml php-pdo php-pearをインストール
+		※リポジトリによってはphp53～というパッケージ名になります。
+
+	※Webサーバ上にPHP実行環境が必要となります。
+	※WebサーバとDBサーバは別ノードでも構いません。
+	※WebサーバとDBサーバは文字コードをともにUTF-8にして下さい。
+	※基本的にSSL（https）を使用します。SSLを使用しない場合は、phpモジュールのカスタマイズが必要となります。
+	  (libディレクトリのIndividualStaticValue.php内にあるURI_SCHEMEをhttpに変更します。)
+	
+	1-1. Apache設定
+	
+		/etc/httpd/conf.dにzp.conf（ファイル名はzpでなくても良い）を作成し、以下を記述
+			ServerName localhost:80
+			DirectoryIndex index.html index.html.var index.php
+			AddType application/x-httpd-php .php
+			ServerSignature Off
+			Options FollowSymLinks
+			ServerTokens Prod
+
+	1-2. MySQL設定
+	
+		/etc/my.cnfに以下を追記
+		・セクションごと追記
+			[mysql]
+			default-character-set=utf8
+		・[mysqld]セクションに追記
+			character-set-server=utf8
+	
+	1-3. PHP設定
+	
+		/etc/php.dにzp.ini（ファイル名はzpでなくても良い）ファイルを作成し、以下の内容を記載する。
+			precision = 14
+			output_buffering = 4096
+			expose_php = Off
+			display_errors = Off
+			log_errors = On
+			register_long_arrays = Off
+			register_argc_argv = Off
+			magic_quotes_gpc = Off
+			include_path = ".:/usr/share/pear/:[※プログラムを配置するディレクトリ]"
+			allow_url_fopen = Off
+			mbstring.internal_encoding = UTF-8
+			mbstring.http_input = UTF-8
+			mbstring.http_output = UTF-8
+			mbstring.encoding_translation = Off
+			error_reporting  =
+			※クラウド環境等で作成できない場合は、.htaccessを利用します。（詳細割愛）
+			※pearの場所は/usr/share/pearでなくても構いませんがpearに対してパスを通しておく必要があります。
+			※上記内容は他のphpアプリケーションの存在を意識していません。他にもphpアプリケーションを使用する場合は、
+			  include_pathの設定等、競合する設定に注意して下さい。
+			※ver1.0.1から.htaccessが同梱されています。適宜修正するか、不要であれば削除して下さい。
+	
+	1-4．Smarty、PHPMailer、tcpdf、phpexcelをセットアップ
+		（※ver1.0.1から同梱していますので、より最新のバージョンを利用する要件が無ければ、何もしなくても構いません。）
+		
+		それぞれダウンロードし、PremierZと同じディレクトリに配置します。
+		ディレクトリ名は、それぞれ、
+		「Smarty」、「PHPMailer」、「tcpdf」「phpexcel」とします。
+		ディレクトリ名が異なると正常に起動しません。
+		
+		動作が確認されている最新バージョンは以下の通りです。
+			Smarty 3.1.8
+			PHPMailer 5.0.0
+			tcpdf 5.9.149
+			phpexcel 1.7.7
+	
+	1-5. pearモジュールのインストール
+		（※ver1.0.1から同梱していますので、より最新のバージョンを利用する要件が無ければ、何もしなくても構いません。）
+		
+		下記コマンドを実行し、必要なpearのモジュールをインストールします。
+			pear install -f Net_UserAgent_Mobile
+			pear install -f DB
+			pear install -f Auth
+			pear install -f Console_Getargs
+			pear install -f XML_RPC
+			pear install -f XML_Util
+	
+2. プログラム配置
+	ソースをPHP設定のiniファイルに指定したディレクトリに展開
+	
+	template_cディレクトリの権限を777に設定する。
+	（SmartyからApacheのユーザを通して書き込みが行われる為。）
+
+	uploadsディレクトリの権限を777に設定する。
+	（Excelインポート処理の際Apacheのユーザを通して書き込みが行われる為。）
+
+3. データベース作成
+	Mysqlのrootユーザにて以下の処理を実行する。
+	※DB名（ZP2となっている部分）、ユーザー名（zpuserとなっている部分）等はセットアップ時に指定しますので、変更して構いません。
+
+	CREATE DATABASE ZP2;
+
+	grant all privileges on ZP2.* to zpuser@localhost identified by 'zpuser';
+	grant all privileges on * . * to zpuser@localhost with grant option max_queries_per_hour 0 max_connections_per_hour 0 max_updates_per_hour 0 max_user_connections 0 ;
+
+	-- 以下のスクリプトは特定のIPからの接続を許可します。外部のサーバから接続する必要がある場合は追加設定して下さい。 --
+	grant all privileges on ZP2.* to zpuser@'172.16.1.254' identified by 'zpuser';
+
+	FLUSH PRIVILEGES;
+
+4. セットアッププログラム実行
+	libディレクトリの権限を777に設定。
+	※セットアップ中にファイルの書き込みを行う為です。
+	　セットアッププログラム実行前の段階でlibディレクトリ内に「SpotValueOrg.php」が存在している場合、当該ファイルを削除してください。
+	
+	https://[Webサーバのアドレス]/maintenance/setup/setup.html
+	※サブディレクトリ上に公開した場合は、上記URLを適宜変更して下さい。
+
+	各項目を入力し、「setup」ボタンをクリックする。
+	「セットアップが完了しました。」と表示されれば完了です。
+	
+	libディレクトリの権限を元に戻す。
+	
+	セットアップ後に使用できるユーザーは２名です。
+	(1)adminz
+		システム管理者です。管理画面に入れます。一般サイトには入れません。
+	(2)セットアップ中に指定した管理者
+		データの管理者です。一般サイトのすべての機能が使えます。管理画面には入れません。
+
+5. ログイン
+	・一般サイト
+	https://[Webサーバのアドレス]/page/entrance.php
+	※サブディレクトリ上に公開した場合は、上記URLを適宜変更して下さい。
+
+	ユーザー名：[セットアップ時に指定した値]
+	パスワード：test
+	利用会社コード：[セットアップ時に指定した値]
+
+	・管理サイト
+	https://[Webサーバのアドレス]/maintenance/maintenance.php
+	※サブディレクトリ上に公開した場合は、上記URLを適宜変更して下さい。
+
+	ユーザー名：adminz
+	パスワード：test
+
+6. cron登録
+	shellディレクトリ配下にある、以下の4つのcronに登録します。
+		delay_check.sh
+		mysqldump.sh
+		delete_old_mysqldump.sh
+		rotate_delaychecklog.sh
+	
+	先ず、4つのファイルを適当な場所に移動し、環境に合わせてシェルを編集します。
+		・delay_check.sh
+		　遅延警告用のモジュールを起動するシェル。
+		　出発、入店が予定時間に対して遅延している場合（デフォルト５分以上）警告メールを送信します。
+		　警告メールが送信された場合、ログにその旨が記録されます。
+		　現状delay_check.shはDATA_IDを識別していません。すべての利用会社に対して処理を実行します。
+		　遅延警告メールを送信したくない場合は、ユーザー管理画面にて遅延警告を「通知しない」に設定します。
+		　以下のパラメータを編集
+			logdir：		ログが出力されるディレクトリ
+			webhomedir：	PremierZをインストールしたディレクトリ
+			phpdir：		PHPの実行ファイルが在るディレクトリ（which phpにて確認）
+			
+		・rotate_delaychecklog.sh
+		　遅延警告のログをバックアップし、10日前のものは圧縮ファイルに追加します。
+		　圧縮ファイルは削除されませんので、手動で削除するか別途シェルの作成が必要です。
+		　以下のパラメータを編集
+			logdir：		delay_check.shで指定したログが出力されるディレクトリ
+			
+		・mysqldump.sh
+		　MySQLのダンプファイルを取得します。
+		　以下のパラメータを編集
+			logdir：		ログが出力されるディレクトリ
+			databasename：	インストール時に指定したデータベース名
+			dbuser：		データベースのユーザー名
+			dbpass：		データベースユーザーのパスワード
+			
+		・delete_old_mysqldump.sh
+		　30日以上経過したMySQLのダンプファイルを削除します。
+		　以下のパラメータを編集
+			logdir：		mysqldump.shで指定したログが出力されるディレクトリ
+			
+	シェル内で指定したディレクトリが存在していない場合は、作成しておきます。
+	編集したシェルをcronに登録します。
+	例）
+		00 0 * * * sh /home/test/cron/mysqldump.sh > /dev/null 2>&1
+		0-55/5 * * * * sh /test/sato/cron/delay_check.sh > /dev/null 2>&1
+		05 0 * * * sh /home/test/cron/delete_old_mysqldump.sh > /dev/null 2>&1
+		00 0 * * * sh /home/test/cron/rotate_delaychecklog.sh > /dev/null 2>&1
+		この場合は、/home/test/cron/に配置しています。
+	
+	
+
+補足
+	補-1. 利用会社について
+		システム内の各データはDATA_IDというカラムによって色分けされます。
+		この色分け単位が利用会社単位となります。
+		各ユーザーが所属する利用会社のデータのみ見える仕組みになっています。
+		管理者と言えど他の利用会社のデータには手が出せません。
+		setup時に作成される利用会社とは別に管理画面から利用会社を増やせます。
+		
+-- 以上 --

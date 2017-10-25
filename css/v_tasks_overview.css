@@ -1,0 +1,115 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ 作業詳細画面で使用するCSSの設定
+ ***********************************************************/
+/*----------------------------------------------------------
+	ヘッダ部
+  ----------------------------------------------------------*/
+#id_td_task_ov_wname {
+	height:					25px;
+	max-height:				25px;
+	min-height:				25px;
+	border-width:			0 0 1px;
+	border-style:			solid;
+	border-color:			#c9d6ff;
+	padding:				1px 4px;
+}
+.c_td_task_ov_caption {
+	width:					120px;
+	max-width:				120px;
+	min-width:				120px;
+	height:					25px;
+	max-height:				25px;
+	min-height:				25px;
+	background-color:		#c9d6ff;
+	padding:				1px 4px;
+}
+.c_td_task_ov_value {
+	width:					230px;
+	max-width:				230px;
+	min-width:				230px;
+	height:					25px;
+	max-height:				25px;
+	min-height:				25px;
+	border-width:			0 0 1px;
+	border-style:			solid;
+	border-color:			#c9d6ff;
+	padding:				1px 4px;
+}
+/*----------------------------------------------------------
+	明細部
+  ----------------------------------------------------------*/
+#id_td_task_ov_wstaff_title {
+	color:					#ffffff;
+	background-color:		#799af6;
+	/*background-image:		url("../img/comp_detailsectiontitle.png");*/
+	background-position:	left center;
+	background-repeat:		no-repeat;
+	padding:				1px 4px;
+}
+#id_div_task_ov_wstaff {
+	width:					794px;
+	max-width:				794px;
+	min-width:				794px;
+	border:					none;
+	overflow:				scroll;
+}
+#id_tab_tov_ws_main {
+	border-collapse:		collapse;
+}
+.c_th_tov_ws_main {
+	background-color:		#c9d6ff;
+	border:					1px solid #cccccc;
+	font-size:				10px;
+	padding:				1px 4px;
+	white-space:			nowrap;
+}
+.c_td_tov_ws_main {
+	background-color:		transparent;
+	border:					1px solid #cccccc;
+	font-size:				11px;
+	padding:				0 4px;
+	white-space:			nowrap;
+	text-align:				left;
+}
+.c_div_tov_ws_main,
+.c_div_tov_ws_main_dr,
+.c_div_tov_ws_main_cr {
+	background-color:		transparent;
+	font-size:				11px;
+	overflow:				hidden;
+}
+.c_div_tov_ws_main_dr {
+	color:					blue;
+}
+.c_div_tov_ws_main_cr {
+	color:					red;
+}
+
+.c_td_tov_ws_total_cap,
+.c_td_tov_ws_total_dr,
+.c_td_tov_ws_total_cr {
+	background-color:		#ccf2ff;
+	font-size:				11px;
+	border:					1px solid #cccccc;
+	padding:				0 4px;
+}
+.c_td_tov_ws_total_dr {
+	color:					blue;
+}
+.c_td_tov_ws_total_cr {
+	color:					red;
+}

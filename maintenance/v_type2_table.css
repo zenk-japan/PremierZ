@@ -1,0 +1,215 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************/
+/* 表形式表示部の設定                                      */
+/***********************************************************/
+/* 外枠のDIV */
+#id_div_main_dtl {
+	position:			relative;
+	width: 				1100px;
+	height:				320px;
+	overflow:			hidden;
+	overflow-x:			auto;
+}
+/* テーブル */
+#id_table_main_dtl {
+	width:				100%;
+	height:				310px;
+	border-style:		solid;
+	border-collapse:	collapse;
+	border-width:		0px;
+	table-layout: 		fixed;
+}
+#id_td_main_po {
+	/* ページ操作部右 */
+	width:				100%;
+	height: 			30px;
+	max-height:			30px;
+	border: 			1px solid #DDDDDD;
+}
+#id_td_main_hd {
+	/* ヘッダー部右 */
+	width:				100%;
+	height: 			30px;
+	max-height:			30px;
+	border: 			1px solid #DDDDDD;
+}
+#id_td_main_dtl {
+	/* 明細部右 */
+	width:				100%;
+	height:				260px;
+	max-height:			260px;
+	border: 			1px solid #DDDDDD;
+}
+/***********************************************************/
+/* ページ操作部                                            */
+/***********************************************************/
+/* テーブル */
+#id_table_po {
+	width: 				100%;
+	max-width: 			100%;
+}
+/* 各表示用のtd */
+#id_td_po_sp {
+	width:				33%;
+	text-align:			left;
+}
+#id_td_po_rc {
+	width:				33%;
+	text-align:			left;
+}
+#id_td_po_bt {
+	width:				33%;
+	text-align:			right;
+}
+/* ページ数等の表示用span */
+span.c_span_pageope {
+	font-size:			14px;
+}
+/***********************************************************/
+/* 明細表表示部に対応したDIV                               */
+/***********************************************************/
+/* ヘッダー */
+#id_div_dtl_hd {
+	width:				100%;
+	height:				100%;
+	margin: 			0px;
+	padding:			0px;
+	overflow:			hidden;
+}
+/* 明細 */
+#id_div_dtl {
+	width:				100%;
+	height:				100%;
+	margin: 			0px;
+	padding:			0px;
+	overflow:			hidden;
+}
+/***********************************************************/
+/* ヘッダー                                                */
+/***********************************************************/
+/* テーブル */
+#id_table_hd {
+	/*width:				100%;*/
+	border-style:		solid;
+	border-collapse:	collapse;
+	border-width:		0px;
+}
+/* 項目全般 */
+td.c_td_hd {
+	width:				200px;
+	line-height: 		5%;
+	background-color: 	#64647a;
+	border: 			1px solid #aaaaaa;
+}
+/* 項目(RDB) */
+td.c_td_hd_rdb {
+	width:				50px;
+	line-height: 		5%;
+	background-color: 	#64647a;
+	border: 			1px solid #aaaaaa;
+}
+
+/* 見出し */
+input.c_cap_hd {
+	width:				100%;
+	margin: 			0px;
+	padding:			0px;
+	background-color: 	transparent;
+	color:				#ffffff;
+	border: 			1px solid #64647a;
+}
+/* 見出し(RDB) */
+input.c_cap_hd_rdb {
+	width:				100%;
+	margin: 			0px;
+	padding:			0px;
+	background-color: 	transparent;
+	color:				#ffffff;
+	border: 			1px solid #64647a;
+}
+/* テキスト */
+input.c_txt_hd {
+	width:				100%;
+	margin: 			0px;
+	padding:			0px;
+	border: 			1px solid #64647a;
+}
+/***********************************************************/
+/* 明細                                                    */
+/***********************************************************/
+/* テーブル */
+#id_table_dtl {
+	/*width:				100%;*/
+	border-style:		solid;
+	border-collapse:	collapse;
+	border-width:		0px;
+}
+
+/* 項目全般 */
+/* 奇数行(RDB) */
+td.c_td_dtl_rdb_odd {
+	width:				50px;
+	line-height: 		5%;
+	border: 			1px solid #a6a6a6;
+}
+/* 奇数行 */
+td.c_td_dtl_odd {
+	width:				200px;
+	line-height: 		5%;
+	border: 			1px solid #a6a6a6;
+}
+/* 偶数行(RDB) */
+td.c_td_dtl_rdb_even {
+	width:				50px;
+	line-height: 		5%;
+	background-color: 	#e6e5fc;
+	border: 			1px solid #a6a6a6;
+}
+/* 偶数行 */
+td.c_td_dtl_even {
+	width:				200px;
+	line-height: 		5%;
+	background-color: 	#e6e5fc;
+	border: 			1px solid #a6a6a6;
+}
+
+/* テキスト項目 */
+input.c_txt_dtl {
+	width:				100%;
+	margin: 			0px;
+	padding:			0px;
+	border-style: 		solid;
+	border-width: 		1px;
+	border-color: 		transparent;
+	background-color: 	transparent;
+	/*border: 			1px solid #ffffff;*/
+}
+
+/* ボタン */
+input.c_btn_dtl {
+	width:				40px;
+	margin: 			0px;
+	padding:			0px;
+	height:				20px;
+	font-size:			12px;
+	color:				#111111;
+	border:				0px none;
+	background-image:	url(btnbg40.png);
+}
+input.c_btn_dtl:hover {
+	color:				#111111;
+	background-image:	url(btnbg40_hv.png);
+}

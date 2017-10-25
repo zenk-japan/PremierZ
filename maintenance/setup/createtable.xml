@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+-->
+<db_create_sql>
+	<sql_directory>table</sql_directory>
+	
+	<sql_file>
+		<!-- AUTHORITY -->
+		<table_node name="AUTHORITY">
+			<drop>AUTHORITY_DROP.sql</drop>
+			<create>AUTHORITY_CREATE.sql</create>
+		</table_node>
+
+		<!-- BASES -->
+		<table_node name="BASES">
+			<drop>BASES_DROP.sql</drop>
+			<create>BASES_CREATE.sql</create>
+		</table_node>
+
+		<!-- COMMON_MASTER -->
+		<table_node name="COMMON_MASTER">
+			<drop>COMMON_MASTER_DROP.sql</drop>
+			<create>COMMON_MASTER_CREATE.sql</create>
+		</table_node>
+
+		<!-- COMPANIES -->
+		<table_node name="COMPANIES">
+			<drop>COMPANIES_DROP.sql</drop>
+			<create>COMPANIES_CREATE.sql</create>
+		</table_node>
+
+		<!-- ESTIMATES -->
+		<table_node name="ESTIMATES">
+			<drop>ESTIMATES_DROP.sql</drop>
+			<create>ESTIMATES_CREATE.sql</create>
+		</table_node>
+
+		<!-- GROUPS -->
+		<table_node name="GROUPS">
+			<drop>GROUPS_DROP.sql</drop>
+			<create>GROUPS_CREATE.sql</create>
+		</table_node>
+
+		<!-- LOGIN_LOG -->
+		<table_node name="LOGIN_LOG">
+			<drop>LOGIN_LOG_DROP.sql</drop>
+			<create>LOGIN_LOG_CREATE.sql</create>
+		</table_node>
+
+		<!-- MAIL_LOG -->
+		<table_node name="MAIL_LOG">
+			<drop>MAIL_LOG_DROP.sql</drop>
+			<create>MAIL_LOG_CREATE.sql</create>
+		</table_node>
+
+		<!-- PAGE_USING_CONF -->
+		<table_node name="PAGE_USING_CONF">
+			<drop>PAGE_USING_CONF_DROP.sql</drop>
+			<create>PAGE_USING_CONF_CREATE.sql</create>
+		</table_node>
+
+		<!-- SESSIONS -->
+		<table_node name="SESSIONS">
+			<drop>SESSIONS_DROP.sql</drop>
+			<create>SESSIONS_CREATE.sql</create>
+		</table_node>
+
+		<!-- USERS -->
+		<table_node name="USERS">
+			<drop>USERS_DROP.sql</drop>
+			<create>USERS_CREATE.sql</create>
+		</table_node>
+
+		<!-- USE_COMPANY -->
+		<table_node name="USE_COMPANY">
+			<drop>USE_COMPANY_DROP.sql</drop>
+			<create>USE_COMPANY_CREATE.sql</create>
+		</table_node>
+
+		<!-- VALUE_LIST_DEFINES -->
+		<table_node name="VALUE_LIST_DEFINES">
+			<drop>VALUE_LIST_DEFINES_DROP.sql</drop>
+			<create>VALUE_LIST_DEFINES_CREATE.sql</create>
+		</table_node>
+
+		<!-- WORK_CONTENTS -->
+		<table_node name="WORK_CONTENTS">
+			<drop>WORK_CONTENTS_DROP.sql</drop>
+			<create>WORK_CONTENTS_CREATE.sql</create>
+		</table_node>
+
+		<!-- WORK_REPORTS -->
+		<table_node name="WORK_REPORTS">
+			<drop>WORK_REPORTS_DROP.sql</drop>
+			<create>WORK_REPORTS_CREATE.sql</create>
+		</table_node>
+
+		<!-- WORK_STAFF -->
+		<table_node name="WORK_STAFF">
+			<drop>WORK_STAFF_DROP.sql</drop>
+			<create>WORK_STAFF_CREATE.sql</create>
+		</table_node>
+		
+		<!-- MESSAGE_TEMPLATE -->
+		<table_node name="MESSAGE_TEMPLATE">
+			<drop>MESSAGE_TEMPLATE_DROP.sql</drop>
+			<create>MESSAGE_TEMPLATE_CREATE.sql</create>
+		</table_node>
+	</sql_file>
+</db_create_sql>

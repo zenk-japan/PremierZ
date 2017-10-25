@@ -1,0 +1,154 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ 作業情報画面で使用するCSSの設定
+ ***********************************************************/
+/***********************************************************/
+/* 検索部                                                  */
+/***********************************************************/
+/* 全体のDIV */
+#id_div_search {
+	width:						250px;
+	max-width:					250px;
+/*	height:						500px;*/
+	border:						0px none;
+	overflow-x:					hidden;
+}
+/* タイトル */
+#id_div_search_title {
+	width:						247px;
+	max-width:					247px;
+	background-image:			url("../img/newz_title_back.png");
+	background-repeat:			repeat-x;
+	font-size:					13px;
+	font-weight:				bold;
+	height:						23px;
+	padding:					3px 0 0 3px;
+	position:					relative;
+}
+/* 検索項目タイトル */
+.c_td_serch_text {
+	width: 						90px;
+	height: 					20px;
+	border:						none 0px;
+	text-align: 				left;
+	border-top: 				solid 1px #c9d6ff;
+	border-bottom: 				solid 1px #c9d6ff;
+	font-size:					12px;
+}
+/* 検索条件入力欄 */
+.c_td_search_input {
+	width: 						152px;
+	height: 					20px;
+	border:						none 0px;
+	text-align: 				left;
+	border-top: 				solid 1px #c9d6ff;
+	border-bottom: 				solid 1px #c9d6ff;
+	font-size:					12px;
+}
+/* テキストボックス */
+.c_txt_search_textbox {
+	width:						100%;
+	color:						#000000;
+	text-align: 				left;
+	border: 					none 0px;
+	font-size:					12px;
+	border: 					groove 1px #c9d6ff;
+	background-color: 			#eafcf4;
+}
+
+
+/* ボタン格納用TD */
+/* 検索 */
+#id_td_search_menu_btn_search {
+/*	width:						50%;*/
+	height:						100%;
+	border:						none 0px;
+	text-align:					left;
+}
+/* クリア */
+#id_td_search_menu_btn_clear {
+/*	width:						50%;*/
+	height:						100%;
+	border:						none 0px;
+	text-align:					right;
+}
+.c_btn_search {
+	width:						90px;
+	height:						22px;
+}
+
+/* 注意書き */
+.c_td_search_notice {
+	font-size:					10px;
+}
+/***********************************************************/
+/* リスト表示部                                            */
+/***********************************************************/
+/* 表 */
+#id_table_list {
+	width:						249px;
+	max-width:					249px;
+	background-color:			transparent;
+	border:						0 none;
+	border-collapse:			collapse;
+}
+
+/* ヘッダー */
+.c_th_list_work_name {
+	width: 						121px;
+	height: 					20px;
+	background-color:			#c9d6ff;
+	border:						1px solid #FFFFFF;
+	font-size:					12px;
+}
+
+.c_th_list_end_user {
+	width: 						121px;
+	height: 					20px;
+	background-color:			#c9d6ff;
+	border:						1px solid #FFFFFF;
+	font-size:					12px;
+}
+
+/* 明細 */
+.c_td_list_work_name {
+	border-bottom:				1px solid #c9d6ff;
+	border-top:					1px solid #c9d6ff;
+	border-right:				1px solid #c9d6ff;
+	cursor:						pointer;
+	font-size:					10px;
+	height:						20px;
+	max-height:					20px;
+	width: 						121px;
+	max-width:					121px;
+	white-space:				nowrap;
+}
+.c_td_list_end_user {
+	border-bottom:				1px solid #c9d6ff;
+	border-top:					1px solid #c9d6ff;
+	cursor:						pointer;
+	font-size:					10px;
+	height:						20px;
+	max-height:					20px;
+	width: 						121px;
+	max-width:					121px;
+	white-space:				nowrap;
+}
+.c_div_work_contents_list {
+	width: 						121px;
+	max-width:					121px;
+	overflow:					hidden;
+}

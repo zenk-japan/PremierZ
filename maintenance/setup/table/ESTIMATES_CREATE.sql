@@ -1,0 +1,50 @@
+/*-----------------------------------------------------------------------------
+-- TABLE名          ：作業管理
+-- 作成者           ：zenk
+-- 作成日           ：2009-03-04
+-- 更新履歴         ：
+  -----------------------------------------------------------------------------*/
+CREATE TABLE  `ESTIMATES` (
+    `DATA_ID`                   BIGINT(8)     NOT NULL                  COMMENT 'データID',
+    `ESTIMATE_ID`               BIGINT(8)     NOT NULL  AUTO_INCREMENT  COMMENT '見積ID',
+    `ESTIMATE_CODE`             VARCHAR(50)   NOT NULL                  COMMENT '見積コード',
+    `SUB_NUMBER`                VARCHAR(50)             DEFAULT '00'    COMMENT '枝番',
+    `ESTIMATE_USER_ID`          BIGINT(8)               DEFAULT NULL    COMMENT '見積担当者ID',
+    `ESTIMATE_REQUEST_DATE`     DATE                    DEFAULT NULL    COMMENT '見積依頼日',
+    `SCHEDULE_FROM_DATE`        DATE                    DEFAULT NULL    COMMENT '作業開始予定日',
+    `SCHEDULE_TO_DATE`          DATE                    DEFAULT NULL    COMMENT '作業終了予定日',
+    `WORK_NAME`                 VARCHAR(150)            DEFAULT NULL    COMMENT '作業名',
+    `ENDUSER_COMPANY_ID`        BIGINT(8)               DEFAULT NULL    COMMENT 'エンドユーザ会社ID',
+    `ENDUSER_USER_ID`           BIGINT(8)               DEFAULT NULL    COMMENT 'エンドユーザ担当者ID',
+    `REQUEST_COMPANY_ID`        BIGINT(8)               DEFAULT NULL    COMMENT '依頼元会社ID',
+    `REQUEST_USER_ID`           BIGINT(8)               DEFAULT NULL    COMMENT '依頼元担当者ID',
+    `SUBMITTING_DATE1`          DATE                    DEFAULT NULL    COMMENT '見積提出日1',
+    `SUBMITTING_DATE2`          DATE                    DEFAULT NULL    COMMENT '見積提出日2',
+    `SUBMITTING_DATE3`          DATE                    DEFAULT NULL    COMMENT '見積提出日3',
+    `SUBMITTING_DATE4`          DATE                    DEFAULT NULL    COMMENT '見積提出日4',
+    `SUBMITTING_DATE5`          DATE                    DEFAULT NULL    COMMENT '見積提出日5',
+    `FINAL_PRESENTATION_AMOUNT` INTEGER                 DEFAULT NULL    COMMENT '最終掲示金額',
+    `ORDER_DIVISION`            VARCHAR(2)              DEFAULT NULL    COMMENT '注文区分',
+    `WORK_COMPLETION_DATE`      DATE                    DEFAULT NULL    COMMENT '作業完了日',
+    `WORK_DIVISION`             VARCHAR(2)              DEFAULT NULL    COMMENT '作業区分',
+    `REMARKS`                   VARCHAR(150)            DEFAULT NULL    COMMENT '備考',
+    `BOOK_INPUT_DATE`           DATE                    DEFAULT NULL    COMMENT '帳簿入力日',
+    `BILL_SENDING_DATE`         DATE                    DEFAULT NULL    COMMENT '請求書送付日',
+    `RESERVE_1`                 VARCHAR(150)            DEFAULT NULL    COMMENT '予備1',
+    `RESERVE_2`                 VARCHAR(150)            DEFAULT NULL    COMMENT '予備2',
+    `RESERVE_3`                 VARCHAR(150)            DEFAULT NULL    COMMENT '予備3',
+    `RESERVE_4`                 VARCHAR(150)            DEFAULT NULL    COMMENT '予備4',
+    `RESERVE_5`                 VARCHAR(150)            DEFAULT NULL    COMMENT '予備5',
+    `RESERVE_6`                 VARCHAR(150)            DEFAULT NULL    COMMENT '予備6',
+    `RESERVE_7`                 VARCHAR(150)            DEFAULT NULL    COMMENT '予備7',
+    `RESERVE_8`                 VARCHAR(150)            DEFAULT NULL    COMMENT '予備8',
+    `RESERVE_9`                 VARCHAR(150)            DEFAULT NULL    COMMENT '予備9',
+    `RESERVE_10`                VARCHAR(150)            DEFAULT NULL    COMMENT '予備10',
+    `VALIDITY_FLAG`             VARCHAR(1)    NOT NULL  DEFAULT 'Y'     COMMENT '有効フラグ',
+    `REGISTRATION_DATET`        DATETIME      NOT NULL                  COMMENT '新規登録日',
+    `REGISTRATION_USER_ID`      BIGINT(8)     NOT NULL                  COMMENT '新規登録者ID',
+    `LAST_UPDATE_DATET`         DATETIME      NOT NULL                  COMMENT '最終更新日',
+    `LAST_UPDATE_USER_ID`       BIGINT(8)     NOT NULL                  COMMENT '最終更新者ID',
+    PRIMARY KEY  (`ESTIMATE_ID`),
+    UNIQUE KEY `NI_ESTIMATES_01` (`DATA_ID`,`ESTIMATE_CODE`)
+) ENGINE=innoDB DEFAULT CHARSET=utf8 COMMENT='見積';

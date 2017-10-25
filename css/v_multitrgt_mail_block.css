@@ -1,0 +1,284 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ ボタン
+ ***********************************************************/
+.c_btn_edit_menu {
+	width:							80px;
+	height: 						100%;
+	text-align: 					center;
+}
+
+/* 送信ボタン */
+#id_btn_send {
+}
+
+/* 確認ボタン */
+#id_btn_confirmation {
+}
+
+/* キャンセルボタン */
+#id_btn_cancel {
+}
+
+/***********************************************************
+ メール送信
+ ***********************************************************/
+/* table */
+#id_table_mail {
+	width:							640px;
+	max-width:						640px;
+	min-width:						640px;
+	border-collapse:				collapse;
+	margin:							0px;
+	padding:						0px;
+}
+/* ボタンを配置するTD */
+#id_td_mail_buttons {
+	width:							640px;
+	max-width:						640px;
+	min-width:						640px;
+	border:							0px none;
+	text-align:						right;
+}
+/* caption */
+.c_td_mail_caption {
+	width:							79px;
+	max-width:						79px;
+	min-width:						79px;
+	border:							1px solid #ffffff;
+	background-color:				#afeeee;
+	font-weight:					bold;
+}
+/* To */
+#id_td_mail_cap_to {
+	height:							125px;
+	max-height:						125px;
+	min-height:						125px;
+	margin:							0px;
+	padding:						0px;
+}
+/* To右側のTD */
+#id_td_mail_dtl_to {
+	width:							559px;
+	max-width:						559px;
+	min-width:						559px;
+	height:							125px;
+	max-height:						125px;
+	min-height:						125px;
+	border:							1px solid #ffffff;
+	margin:							0px;
+	padding:						0px;
+}
+/* -----------------
+   送信先の各項目
+   ----------------- */
+#id_tab_mailto {
+	width:							559px;
+	max-width:						559px;
+	min-width:						559px;
+	height:							125px;
+	max-height:						125px;
+	min-height:						125px;
+	border:							0px none;
+	border-collapse:				collapse;
+}
+/* ヘッダー */
+#id_tr_mailto_top {
+	height:							24px;
+	max-height:						24px;
+	min-height:						24px;
+}
+#id_td_mailto_top {
+	width:							559px;
+	max-width:						559px;
+	min-width:						559px;
+	height:							24px;
+	max-height:						24px;
+	min-height:						24px;
+	margin:							0px;
+	padding:						0px;
+}
+#id_tab_mailto_hd {
+	width:							544px;
+	max-width:						544px;
+	min-width:						544px;
+	height:							24px;
+	max-height:						24px;
+	min-height:						24px;
+	border-collapse:				collapse;
+	margin:							0px;
+	padding:						0px;
+}
+/*.c_td_mailto_sendok,*/
+.c_td_mailto_name,
+.c_td_mailto_addr,
+.c_td_mailto_remark {
+	border:							1px solid #CCCCCC;
+	font-size:						12px;
+	height:							22px;
+	overflow:						hidden;
+	padding:						0 4px;
+	white-space:					nowrap;
+	background-color:				#c9d6ff;
+	margin:							0px;
+	padding:						0px;
+}
+/*
+.c_td_mailto_sendok {
+	width:							30px;
+	max-width:						30px;
+	min-width:						30px;
+}
+*/
+.c_td_mailto_name {
+	width:							100px;
+	max-width:						100px;
+	min-width:						100px;
+}
+.c_td_mailto_addr {
+	width:							159px;
+	max-width:						159px;
+	min-width:						159px;
+}
+.c_td_mailto_remark {
+	width:							120px;
+	max-width:						120px;
+	min-width:						120px;
+}
+
+/* 明細 */
+#id_td_mailto_bottom {
+	height:							104px;
+	max-height:						104px;
+	min-height:						104px;
+	margin:							0px;
+	padding:						0px;
+}
+#id_div_mailto_bottom {
+	width:							559px;
+	max-width:						559px;
+	min-width:						559px;
+	height:							104px;
+	max-height:						104px;
+	min-height:						104px;
+	overflow:						scroll;
+}
+#id_tab_mailto_bottom {
+	width:							544px;
+	max-width:						544px;
+	min-width:						544px;
+	max-height:						104px;
+	border-collapse:				collapse;
+	margin:							0px;
+	padding:						0px;
+}
+/*.c_td_mailto_sendok_dtl_ok,*/
+/*.c_td_mailto_sendok_dtl_ng,*/
+.c_td_mailto_name_dtl,
+.c_td_mailto_addr_dtl,
+.c_td_mailto_remark_dtl {
+	border:							1px solid #CCCCCC;
+	font-size:						11px;
+	height:							20px;
+	overflow:						hidden;
+	padding:						0 4px;
+	white-space:					nowrap;
+	margin:							0px;
+	padding:						0px;
+}
+/*
+.c_td_mailto_sendok_dtl_ok,
+.c_td_mailto_sendok_dtl_ng {
+	width:							30px;
+	max-width:						30px;
+	min-width:						30px;
+}
+*/
+.c_td_mailto_name_dtl {
+	width:							100px;
+	max-width:						100px;
+	min-width:						100px;
+}
+.c_td_mailto_addr_dtl {
+	width:							159px;
+	max-width:						159px;
+	min-width:						159px;
+}
+.c_td_mailto_remark_dtl {
+	width:							120px;
+	max-width:						120px;
+	min-width:						120px;
+}
+/* OK/NG */
+
+/*
+.c_td_mailto_sendok_dtl_ok {
+	background-color:				#0000ff;
+}
+.c_td_mailto_sendok_dtl_ng {
+	background-color:				#ff0000;
+}
+*/
+.c_span_mail {
+	color:							#ffffff;
+	font-size:						11px;
+}
+/* メールアドレスのテキスト */
+.c_txt_mailto_addr_dtl {
+	width:							100%;
+	border:							0px none;
+	font-size:						11px;
+	white-space:					nowrap;
+}
+
+/* セクションタイトル */
+.c_td_edit_section_header {
+	height:							22px;
+	/*background-color:				#AFEEEE;*/
+	background-image: 				url("../img/detaileditsectiontitle.png");
+	background-repeat:				no-repeat;
+	padding-left: 					10px;
+	color: 							#ffffff;
+	font-size: 						13px;
+}
+
+/* 7TD分テキスト */
+.c_txt_mail_col7 {
+	width:							99%;
+}
+/* 8TD分テキスト */
+.c_txt_mail_col8 {
+	width:							99%;
+}
+
+/* メール本文 */
+#id_td_mail_dtl_textarea {
+	width:							642px;
+	max-width:						642px;
+	min-width:						642px;
+	height:							200px;
+	max-height:						200px;
+	min-height:						200px;
+	margin:							0px;
+	padding:						0px;
+}
+#id_txtarea_mail_body {
+	width:							99%;
+	max-width:						640px;
+	height:							99%;
+	max-height:						200px;
+	font-size: 						10px;
+}

@@ -1,0 +1,116 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************/
+/* タイトル                                                */
+/***********************************************************/
+.css_dm_titile {
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			16px;
+	font-weight:		bolder;
+	color:				#111111;
+	margin:				0px;
+	padding:			0px;
+	white-space: 		nowrap;
+	vertical-align:		baseline;
+}
+/***********************************************************/
+/* キャプション                                            */
+/***********************************************************/
+.css_dm_caption {
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			12px;
+	font-weight:		bolder;
+	color:				#111111;
+	margin:				0px;
+	padding:			0px;
+	white-space: 		nowrap;
+	vertical-align:		text-top;
+}
+/***********************************************************/
+/* 入力項目（更新可）                                      */
+/***********************************************************/
+.css_dm_txtbox {
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			10px;
+	color:				#111111;
+	border-style: 		solid;
+	border-color: 		#aaaaaa;
+	border-width: 		1;
+	width:				400px;
+	margin:				0px;
+	padding:			0px;
+	vertical-align:		text-top;
+}
+/***********************************************************/
+/* 入力項目（更新可）                                      */
+/***********************************************************/
+.css_dm_textarea {
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			10px;
+	color:				#111111;
+	border-style: 		solid;
+	border-color: 		#aaaaaa;
+	border-width: 		1;
+	width:				400px;
+	height:				200px;
+	margin:				0px;
+	padding:			0px;
+	vertical-align:		text-top;
+/*	word-spacing:		*/
+}
+/***********************************************************/
+/* 入力項目（更新不可）                                    */
+/***********************************************************/
+.css_dm_txtro {
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			10px;
+	color:				#111111;
+	background-color: 	#dddddd;
+	border-style: 		solid;
+	border-color: 		#aaaaaa;
+	border-width: 		1;
+	width:				400px;
+	margin:				0px;
+	padding:			0px;
+	vertical-align:		text-top;
+}
+/***********************************************************/
+/* ボタン                                                  */
+/***********************************************************/
+.css_dm_bt {
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			11px;
+	padding:			2px;
+	width: 				80px;
+	cursor:				pointer;
+}
+/***********************************************************/
+/* チェックボックス                                        */
+/***********************************************************/
+.css_dm_chkbox{
+	text-align: 		left;
+}
+/***********************************************************/
+/* ラジオボタン                                            */
+/***********************************************************/
+.css_dm_rb{
+	text-align: 		left;
+}
+/***********************************************************/
+/* css_dm_orgval                                           */
+/***********************************************************/
+.css_dm_orgval{
+
+}

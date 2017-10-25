@@ -1,0 +1,71 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ 作業報告詳細ページの設定
+ ***********************************************************/
+
+/***********************************************************
+ リンク
+ ***********************************************************/
+/* 作業状況一覧 */
+#id_btn_mainmenu_worklist {
+	background-image: 	url("../img/worklistmnt_menu_btn.png");
+	cursor:				pointer;
+}
+/* 作業完了一覧 */
+#id_btn_mainmenu_workcomplist {
+	background-image: 	url("../img/workcomplist_menu_btn.png");
+	cursor:				pointer;
+}
+/* 作業完了詳細 */
+#id_btn_mainmenu_workcompdetail {
+	background-image: 	url("../img/workcompdetailmnt_menu_btn.png");
+}
+
+/***********************************************************
+ 明細
+ ***********************************************************/
+#id_div_workreport_table {
+	width: 				100%;
+	height: 			100%;
+	overflow: 			hidden;
+	border: 			solid 1px #c9d6ff;
+}
+
+#id_table_workreport_list {
+	position:			relative;
+	width:				95%;
+	border:				0px;
+	left:				1%;
+	empty-cells: 		show;
+	border-collapse:	separate;
+}
+
+/* 項目名用TD */
+.c_td_detail_name {
+	width:				20%;
+	height:				20px;
+	border:				none 0px;
+	background-color:	#c9d6ff;
+	text-align: 		left;
+}
+
+/* 項目値用TD */
+.c_td_detail_value {
+	height:				20px;
+	border:				none 0px;
+	text-align: 		left;
+	border-bottom:		solid 1px #c9d6ff;
+}

@@ -1,0 +1,74 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ 作業報告補足/修正ページの設定
+ ***********************************************************/
+
+/***********************************************************
+ リンク
+ ***********************************************************/
+/* 作業状況一覧 */
+#id_btn_mainmenu_worklist {
+	background-image: 	url("../img/worklistmnt_menu_btn.png");
+	cursor:				pointer;
+}
+/* 作業完了一覧 */
+#id_btn_mainmenu_workcomplist {
+	background-image: 	url("../img/workcomplist_menu_btn.png");
+	cursor:				pointer;
+}
+/* 作業完了詳細 */
+#id_btn_mainmenu_workcompdetail {
+	background-image: 	url("../img/workcompdetailmnt_menu_btn.png");
+	cursor:				pointer;
+}
+/* 補足/修正 */
+#id_btn_mainmenu_workmailform {
+	background-image: 	url("../img/workmailformmnt_menu_btn.png");
+}
+/***********************************************************
+ リスト
+ ***********************************************************/
+#id_div_workreport_table {
+	width: 				50%;
+	height: 			100%;
+	overflow: 			hidden;
+	border: 			solid 1px #c9d6ff;
+}
+
+#id_table_workreport_list {
+	border-collapse:	collapse;
+	width: 				100%;
+	empty-cells: 		show;
+	table-layout: 		fixed;
+}
+
+/***********************************************************
+ テキストボックス
+ ***********************************************************/
+.c_div_mailform {
+	padding-left: 		10px;
+}
+
+.c_textbox_mailform {
+	width:				450px;
+	font-size:			11px;
+}
+
+#id_textbox_body {
+	width:				450px;
+	height:				200px;
+	font-size:			11px;
+}

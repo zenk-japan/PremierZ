@@ -1,0 +1,115 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ 人員管理画面で使用するCSSの設定
+ ***********************************************************/
+/***********************************************************/
+/* 検索部                                                  */
+/***********************************************************/
+/* 全体テーブル */
+#id_table_search {
+	height:						25px;
+	max-height:					25px;
+	min-height:					25px;
+	border:						1 solid #ffffff;
+	border-collapse:			collapse;
+}
+/* タイトル */
+.c_td_search_title {
+	background-color:			#d9d9ff;
+/*
+	background-image:			url("../img/newz_title_back_mid.png");
+	background-repeat:			repeat-x;
+*/
+	font-size:					13px;
+	font-weight:				bold;
+	border:						0 none;
+	height:						25px;
+	max-height:					25px;
+	min-height:					25px;
+	max-width:					60px;
+	min-width:					60px;
+	width:						60px;
+}
+/* コンボボックス群 */
+.c_td_search_select_cap {
+	border-color:				#c9d6ff;
+	border-left:				0 none;
+	border-right:				0 none;
+	border-style:				solid none;
+	border-width:				1px 0;
+	text-align:					left;
+	font-size:					12px;
+	height:						25px;
+	max-height:					25px;
+	min-height:					25px;
+	max-width:					80px;
+	min-width:					80px;
+	width:						80px;
+	margin:						0px;
+	padding:					0px;
+}
+.c_td_search_select {
+	background-color:			transparent;
+	border-left:				1px solid #ffffff;
+	border-top:					1px solid #ffffff;
+	font-size:					12px;
+	height:						25px;
+	max-height:					25px;
+	min-height:					25px;
+	max-width:					225px;
+	min-width:					225px;
+	width:						225px;
+	margin:						0px;
+	padding:					0px;
+}
+.c_sel_search {
+	width:						97%;
+	height:						23px;
+	max-height:					23px;
+	min-height:					23px;
+	margin:						0px;
+	padding:					0px;
+}
+
+/* 有効のみ表示 */
+#id_td_workstaff_dtl_ckb {
+	border:						0 none;
+	height:						25px;
+	max-height:					25px;
+	min-height:					25px;
+	max-width:					180px;
+	min-width:					180px;
+	width:						180px;
+	margin:						0px;
+	padding:					0px;
+}
+/* クリアボタン */
+#id_td_search_button {
+	border:						0 none;
+	height:						25px;
+	max-height:					25px;
+	min-height:					25px;
+	margin:						0px;
+	padding:					0px;
+	text-align:					right;
+}
+#id_btn_search_clear {
+	font-size:					12px;
+	height:						22px;
+	max-height:					22px;
+	min-height:					22px;
+	width:						90px;
+}

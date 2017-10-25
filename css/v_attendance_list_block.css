@@ -1,0 +1,174 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ リストの設定
+ ***********************************************************/
+#id_div_list_menu {
+	color:				#000000;
+	background-color: 	transparent;
+	width: 				298px;
+	height: 			265px;
+	overflow: 			hidden;
+	/*border:				solid 1px #cccccc;*/
+	margin:				0px;
+	padding:			0px;
+}
+/***********************************************************
+ タイトル
+ ***********************************************************/
+#id_div_list_menu_title {
+	width: 				99%;
+	height: 			23px;
+	background-color: 	transparent;
+	background-image:	url("../img/newz_title_back.png");
+	border:				none 0px;
+	/*border:				solid 1px #cccccc;*/
+	font-size:			14px;
+	font-weight:		bold;
+	font-family: 		"メイリオ","ＭＳ Ｐゴシック",sans-serif;
+	color:				#111111;
+	padding-top:  		3px;
+	padding-left: 		3px;
+	vertical-align:		middle;
+}
+/***********************************************************
+ ページ操作
+ ***********************************************************/
+#id_div_list_menu_page {
+	width: 				98%;
+	position: 			relative;
+	left: 				1%;
+	height: 			30px;
+	background-color: 	transparent;
+	/*border:				solid 1px #cccccc;*/
+	border:				none 0px;
+}
+/* テーブル */
+#id_table_list_menu_page {
+	width: 				100%;
+	height: 			100%;
+	border:				none 0px;
+	empty-cells: 		show;
+}
+/* レコード数 */
+#id_td_list_menu_reccnt {
+	width: 				25%;
+	font-size:			12px;
+	border:				none 0px;
+}
+/* ページ表示 */
+#id_td_list_menu_pgcnt {
+	width: 				25%;
+	font-size:			12px;
+	border:				none 0px;
+}
+/* ボタン */
+#id_td_list_menu_btnpev {
+	width: 				25%;
+	border:				none 0px;
+}
+#id_td_list_menu_btnnext {
+	width: 				25%;
+	border:				none 0px;
+}
+.c_btn_list_menu {
+	width: 				100%;
+	height: 			100%;
+	text-align: 		center;
+}
+
+/***********************************************************
+ リスト
+ ***********************************************************/
+#id_div_list_menu_table {
+	width: 				98%;
+	position: 			relative;
+	left: 				1%;
+	height: 			205px;
+	background-color: 	transparent;
+	/*border:				solid 1px #cccccc;*/
+	border:				none 0px;
+	overflow: 			hidden;
+	overflow-x:			auto;
+}
+/* テーブル */
+#id_table_list_menu {
+	border-collapse:	collapse;
+	width:				100%;
+	empty-cells: 		show;
+	table-layout: 		fixed;
+}
+/* ヘッダー */
+#id_tr_list_menu_top{
+	height:				18px;
+}
+#id_tr_list_menu_top {
+	background-color: 	#c9d6ff;
+}
+#id_td_list_menu_workdate {
+	width:				80px;
+	border-right: 		solid 1px #ffffff;
+}
+#id_td_list_menu_workname {
+	width:				120px;
+	border-right: 		solid 1px #ffffff;
+}
+#id_td_list_menu_workuser {
+	width:				120px;
+}
+.c_td_list_menu {
+	border: 			none 0px;
+	text-align: 		left;
+	font-weight: 		normal;
+	font-size:			12px;
+}
+
+/* 明細 */
+.c_tr_list_menu{
+	height:				18px;
+}
+/* 年月 */
+.c_td_list_menu_workdate {
+	border-top: 		solid 1px #c9d6ff;
+	border-bottom: 		solid 1px #c9d6ff;
+	font-size:			10px;
+	cursor:				pointer;
+	height:				18px;
+	max-height:			18px;
+}
+/* 作業者 */
+.c_td_list_menu_workuser {
+	border-top: 		solid 1px #c9d6ff;
+	border-bottom: 		solid 1px #c9d6ff;
+	border-left: 		solid 1px #c9d6ff;
+	font-size:			10px;
+	cursor:				pointer;
+	height:				18px;
+	max-height:			18px;
+	white-space: 		nowrap;
+	overflow: 			hidden;
+}
+/* 作業名 */
+.c_td_list_menu_workname {
+	border-top: 		solid 1px #c9d6ff;
+	border-bottom: 		solid 1px #c9d6ff;
+	border-left: 		solid 1px #c9d6ff;
+	font-size:			10px;
+	cursor:				pointer;
+	height:				18px;
+	max-height:			18px;
+	white-space: 		nowrap;
+	overflow: 			hidden;
+}

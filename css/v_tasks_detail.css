@@ -1,0 +1,268 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ 作業管理画面で使用するCSSの設定
+ ***********************************************************/
+/***********************************************************/
+/* 明細                                              */
+/***********************************************************/
+/* DIV */
+#id_div_task_detail {
+	width: 					617px;
+	min-width: 				617px;
+	max-width: 				617px;
+	height: 				408px;
+	min-height: 			408px;
+	max-height: 			408px;
+	border:					0px none;
+	margin:					0px;
+	padding:				0px;
+}
+#id_div_task_dtl_title {
+	width: 					616px;
+	min-width: 				616px;
+	max-width: 				616px;
+	height:					22px;
+	min-height: 			22px;
+	max-height: 			22px;
+	border:					0px none;
+	margin:					0px;
+	margin-left:			1px;
+	padding:				0px;
+	padding-top:			3px;
+	background-image:		url("../img/newz_title_back.png");
+	background-repeat:		repeat-x;
+}
+
+#id_div_task_dtl_ope {
+	width: 					617px;
+	min-width: 				617px;
+	max-width: 				617px;
+	height:					28px;
+	min-height: 			28px;
+	max-height: 			28px;
+	border:					0px none;
+	margin:					0px;
+	padding:				0px;
+}
+#id_div_task_dtl_main {
+	width: 					617px;
+	min-width: 				617px;
+	max-width: 				617px;
+	height:					326px;
+	min-height: 			326px;
+	max-height: 			326px;
+	border:					0px none;
+	margin:					0px;
+	padding:				0px;
+}
+#id_div_task_dtl_bottom {
+	width: 					617px;
+	min-width: 				617px;
+	max-width: 				617px;
+	height:					28px;
+	min-height: 			28px;
+	max-height: 			28px;
+	border:					0px none;
+	margin:					0px;
+	padding:				0px;
+}
+
+/* ------------------------------------------------------ */
+/* 明細タイトル */
+/* ------------------------------------------------------ */
+#id_span_task_title {
+	font-size:				13px;
+	font-weight:			bold;
+}
+/* ------------------------------------------------------ */
+/* 明細操作部 */
+/* ------------------------------------------------------ */
+#id_tab_task_dtl_ope {
+	width: 					617px;
+	min-width: 				617px;
+	max-width: 				617px;
+	height:					28px;
+	min-height: 			28px;
+	max-height: 			28px;
+	border:					0px none;
+	margin:					0px;
+	padding:				0px;
+}
+.c_td_task_dtl_ope_btn {
+	border:					0px none;
+	margin:					0px;
+	padding:				0px;
+}
+#id_td_task_search_by_wc {
+	text-align:				left;
+}
+#id_td_task_dtl_delete {
+	text-align:				right;
+}
+/* コンボボックス */
+#id_sel_task_search_by_wc {
+	width:					90px;
+}
+/* ボタン */
+.c_btn_task_ope {
+	width:					90px;
+}
+
+/* ------------------------------------------------------ */
+/* 明細表ページ操作部 */
+/* ------------------------------------------------------ */
+#id_tr_task_dtl_ope {
+	width: 					617px;
+	min-width: 				617px;
+	max-width: 				617px;
+	height:					28px;
+	min-height: 			28px;
+	max-height: 			28px;
+}
+/* ボタン部 */
+#id_tab_ope_pagemenu {
+	width:				100%;
+	height:				30px;
+}
+.c_td_ope_pagemenu {
+	width:				30%;
+}
+.c_td_ope_btnmenu {
+	width:				20%;
+}
+#id_btn_ope_prev {
+	width:				100%;
+}
+#id_btn_ope_next {
+	width:				100%;
+}
+/* ------------------------------------------------------ */
+/* 明細表部 */
+/* ------------------------------------------------------ */
+#id_div_task_dtl_table {
+	width: 					617px;
+	min-width: 				617px;
+	max-width: 				617px;
+	height:					290px;
+	min-height: 			290px;
+	max-height: 			290px;
+	overflow:				auto;
+}
+#id_tab_task_dtl_table {
+	width: 					617px;
+	min-width: 				617px;
+	max-width: 				617px;
+	max-height: 			290px;
+	border-collapse:		collapse;
+}
+.c_tr_task_dtl {
+	height:					24px;
+	min-height: 			24px;
+	max-height: 			24px;
+}
+/* ヘッダー */
+.c_th_task_dtl {
+/* 
+	height:					22px;
+	min-height: 			22px;
+	max-height: 			22px;
+*/
+	background-color:		#c9d6ff;
+	border:					solid 1px #cccccc;
+	white-space:			nowrap;
+	padding-top:			1px;
+	padding-bottom:			1px;
+	padding-left:			4px;
+	padding-right:			4px;
+	font-size: 				12px;
+}
+
+/* TD一般設定 */
+.c_td_task_dtl {
+/* 
+	height:					22px;
+	min-height: 			22px;
+	max-height: 			22px;
+*/
+	background-color:		transparent;
+	border:					solid 1px #cccccc;
+	white-space:			nowrap;
+	padding-top:			0px;
+	padding-bottom:			0px;
+	padding-left:			4px;
+	padding-right:			4px;
+	font-size: 				12px;
+}
+/* 有効無効表示 */
+.c_txt_td_task_valid {
+/* 
+	height:					22px;
+	min-height: 			22px;
+	max-height: 			22px;
+*/
+	width:					4px;
+	border:					none 0px;
+	background-color:		#0000ff;
+}
+.c_txt_td_task_invalid {
+/* 
+	height:					22px;
+	min-height: 			22px;
+	max-height: 			22px;
+*/
+	width:					4px;
+	border:					none 0px;
+	background-color:		#ff0000;
+}
+/* ボタン */
+.c_btn_task_dtl,
+.c_btn_task_report,
+.c_btn_task_update,
+.c_btn_task_delete {
+	height:					22px;
+	min-height: 			22px;
+	max-height: 			22px;
+	width:					40px;
+	font-size: 				12px;
+}
+/* チェックボックス */
+.c_chk_task_dtl {
+	height:					100%;
+	width:					20px;
+}
+.c_chk_task_report {
+	height:					100%;
+	width:					20px;
+}
+/* ------------------------------------------------------ */
+/* 明細下部 */
+/* ------------------------------------------------------ */
+#id_tab_task_dtl_bottom {
+	width:					100%;
+}
+#id_td_task_dtl_ckb {
+	width:					40%;
+}
+#id_td_task_dtl_ckb_expl {
+	width:					20%;
+}
+#id_td_task_dtl_insert {
+	width:					40%;
+	text-align:				right;
+}
+#id_btn_task_insert {
+	width:					90px;
+}

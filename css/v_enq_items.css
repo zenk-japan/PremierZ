@@ -1,0 +1,159 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************/
+/* 画面全体の設定                                          */
+/***********************************************************/
+BODY {
+	text-align:			left;
+	font-size:			10px;
+	font-family:		monospace;
+	color:				#111111;
+	background:			#FFFFFF;
+	margin:				0px;
+	padding:			1px;
+}
+
+/***********************************************************/
+/* 画面上部に表示する3色線                                 */
+/***********************************************************/
+H1.topline {
+	/* 画像を並べて線を表示 */
+	background-image:	url("../img/topline.png");	/* 画像の指定 */
+	height:				7px;						/* 水平線の太さ */
+	font-size:			7px;						/* 画像に合わせてフォントサイズを変更 */
+}
+DIV.topline {
+	height:				35px;
+	border-width:		0px;
+	margin:				0px;
+	padding:			0px;
+}
+/***********************************************************/
+/* メッセージ部分                                                */
+/***********************************************************/
+.css_freemess {
+	text-align:			left;
+	font-size:			10px;
+	font-family:		monospace;
+	color:				#FF1010;
+}
+/***********************************************************/
+/* 問題部分                                                */
+/***********************************************************/
+/* 外枠のテーブル */
+.css_qtable {
+	width:				100%;
+	border-style:		solid;
+	border-width:		1px;
+	border-color:		#bec864;
+	border-collapse: 	collapse;
+}
+/* セル全体 */
+.css_qtable TD {
+	border-color:		#bec864;
+	font-family:		monospace;
+	border-style:		solid;
+	font-size:			12px;
+}
+/* 各セル */
+/* 質問 */
+.css_td_question {
+	border-width:		0px;
+	background-color: 	#bedc64;
+}
+.css_td_question_q {
+	border-width:		0px;
+	background-color: 	#bedc64;
+}
+/* 選択用ボタン */
+.css_td_ansnum {
+	width:				15%;
+	border-width:		1px;
+}
+/* 選択肢 */
+.css_td_answer {
+	border-width:		1px;
+}
+/* 保存用回答プロンプト */
+.css_td_ansprmpt {
+	height: 			20px;
+	border-width:		1px;
+	background-color: 	#c8f0b4;
+}
+/* 保存用回答 */
+.css_td_ansreslt {
+	height: 			20px;
+	border-width:		1px;
+	background-color: 	#c8f0b4;
+}
+/* 個別項目 */
+/* ボタン */
+.css_ansbtn {
+	width: 				90px;
+	height:				25px;
+	border-width:		1px;
+	font-weight: 		bold;
+	background-color: 	#b4fa78;
+	cursor: 			pointer;
+}
+/* 表示テキスト */
+.css_ansdsp {
+	border-width:		0px;
+	width: 				80%;
+	background-color: 	transparent;
+}
+/* 画像 */
+.css_ansgrp {
+	border-width:		0px;
+}
+/* 入力用テキスト */
+.css_anstxt {
+	border-width:		1px;
+	width: 				70%;
+	height: 			80px:
+}
+/* 保存用回答表示 */
+.css_ansreslt {
+	border-width:		0px;
+	width: 				80%;
+	background-color: 	transparent;
+}
+/* 保存ボタン */
+.css_savebt {
+	width: 				100px;
+	height:				25px;
+	border-width:		1px;
+	font-weight: 		bold;
+	background-color: 	#b4fa78;
+	cursor: 			pointer;
+}
+/* キャンセルボタン */
+.css_cancelbt{
+	width: 				100px;
+	height:				25px;
+	border-width:		1px;
+	font-weight: 		bold;
+	background-color: 	#b4fa78;
+	cursor: 			pointer;
+}
+/* クリアボタン */
+.css_clearbt{
+	width: 				100px;
+	height:				25px;
+	border-width:		1px;
+	font-weight: 		bold;
+	background-color: 	#b4fa78;
+	cursor: 			pointer;
+}

@@ -1,0 +1,60 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************/
+/* 画面全体の設定                                          */
+/***********************************************************/
+html,BODY {
+/*
+	height:				99%;
+	width:				99%;
+	text-align:			center;
+*/	
+	text-align:			left;
+	font-size:			11px;
+	color:				#111111;
+	background:			#FFFFFF;
+	margin:				0px;
+	padding:			1px;
+}
+/***********************************************************/
+/* NowLoading                                              */
+/***********************************************************/
+#id_ext_loading_div {
+	background-image:	url("../img/nowloading.gif");	/* 画像の指定 */
+	position: 			fixed;
+	top: 				50%;
+	left: 				50%;
+	margin: 			-15px 0 0 -15px;	/* サイズの半分マージンを取って中央に表示 */
+	width:				30px;
+	height:				30px;
+	z-index:			300;
+}
+/***********************************************************/
+/* 外枠のDIV                                               */
+/***********************************************************/
+#id_div_outer {
+	width:				100%;
+	height: 			100%;
+	border:				solid 0px #cccccc;
+}
+
+#id_div_mail_menu{
+	color:				#000000;
+	background-color: 	transparent;
+	width: 				100%;
+	overflow: 			hidden;
+	border:				solid 0px #aaaaaa;
+	vertical-align:		middle;
+}

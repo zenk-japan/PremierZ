@@ -1,0 +1,257 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ 人員管理画面で使用するCSSの設定
+ ***********************************************************/
+/***********************************************************/
+/* 明細                                              */
+/***********************************************************/
+/* DIV */
+#id_div_detail {
+	width:					998px;
+	min-width: 				998px;
+	max-width: 				998px;
+	height: 				300px;
+	min-height: 			300px;
+	max-height: 			300px;
+	border:					none 0px;
+	margin:					0px;
+	padding:				0px;
+}
+/* 外枠のテーブル */
+#id_table_detail {
+	width:					998px;
+	min-width: 				998px;
+	max-width: 				998px;
+	height: 				300px;
+	min-height: 			300px;
+	max-height: 			300px;
+	border-collapse:		collapse;
+	border:					none 0px;
+	margin:					0px;
+	padding:				0px;
+}
+/*--------------------------------------------------------
+	タイトル
+  --------------------------------------------------------*/
+#id_tr_dtl_title {
+	height: 				25px;
+	min-height: 			25px;
+	max-height: 			25px;
+}
+#id_td_dtl_title {
+	width:					997px;
+	min-width: 				997px;
+	max-width: 				997px;
+	height: 				25px;
+	min-height: 			25px;
+	max-height: 			25px;
+	border:					0px none;
+	margin:					0px;
+	background-image:		url("../img/newz_title_back.png");
+	background-repeat:		repeat-x;
+}
+#id_span_dtl_title {
+	font-size:				13px;
+	font-weight:			bold;
+	padding-left:			3px;
+}
+
+/*--------------------------------------------------------
+	ヘッダー
+  --------------------------------------------------------*/
+#id_tr_dtl_header {
+	height: 				24px;
+	min-height: 			24px;
+	max-height: 			24px;
+}
+#id_td_dtl_header {
+	width:					998px;
+	min-width: 				998px;
+	max-width: 				998px;
+	height: 				24px;
+	min-height: 			24px;
+	max-height: 			24px;
+	border:					0px none;
+	margin:					0px;
+	padding:				0px;
+}
+#id_div_dtl_header {
+	width:					998px;
+	min-width: 				998px;
+	max-width: 				998px;
+	height: 				48px;
+	min-height: 			48px;
+	max-height: 			48px;
+	border:					none 0px;
+	margin:					0px;
+	padding:				0px;
+	overflow:				hidden;
+}
+#id_tab_dtl_header {
+	height: 				44px;
+	min-height: 			44px;
+	max-height: 			44px;
+	border:					none 0px;
+	border-collapse:		collapse;
+}
+.c_td_dtl_header {
+	background-color:		#c9d6ff;
+	border:					1px solid #cccccc;
+	font-size:				12px;
+	padding:				1px 4px;
+	white-space:			nowrap;
+}
+/*--------------------------------------------------------
+	一覧
+  --------------------------------------------------------*/
+#id_tr_dtl_detail {
+	min-height: 			290px;
+}
+#id_td_dtl_detail {
+	width:					998px;
+	min-width: 				998px;
+	max-width: 				998px;
+	min-height: 			265px;
+	height: 				265px;
+	max-height: 			265px;
+	border:					0px none;
+	margin:					0px;
+	padding:				0px;
+	vertical-align:			top;
+}
+#id_div_dtl_detail {
+	width:					998px;
+	min-width: 				998px;
+	max-width: 				998px;
+	min-height: 			265px;
+	height: 				265px;
+	max-height: 			265px;
+	border:					0px none;
+	margin:					0px;
+	padding:				0px;
+	overflow:				scroll;
+}
+/* 明細テーブル */
+#id_tab_dtl_detail {
+	border-collapse:		collapse;
+	position:				relative;
+	top:					0;
+}
+/* 有効無効表示 */
+.c_txt_td_workstaff_valid {
+	background-color:		#0000FF;
+	border:					0 none;
+	width:					4px;
+}
+.c_txt_td_workstaff_invalid {
+	background-color:		#FF0000;
+	border:					0 none;
+	width:					4px;
+}
+/* ボタン */
+.c_btn_workstaff_update {
+	font-size:				12px;
+	height:					22px;
+	max-height:				22px;
+	min-height:				22px;
+	width:					40px;
+}
+/* 値表示 */
+.c_td_dtl_width10,
+.c_td_dtl_width20,
+.c_td_dtl_width30,
+.c_td_dtl_width40,
+.c_td_dtl_width50,
+.c_td_dtl_width80,
+.c_td_dtl_width100,
+.c_td_dtl_width150,
+.c_td_dtl_width200 {
+	border:					1px solid #CCCCCC;
+	font-size:				12px;
+	height:					22px;
+	padding:				0 4px;
+	white-space:			nowrap;
+	overflow:				hidden;
+}
+.c_td_dtl_width10, .c_div_dtl_value_10 {
+	width:					10px;
+	min-width:				10px;
+	max-width:				10px;
+}
+.c_td_dtl_width20, .c_div_dtl_value_20 {
+	width:					20px;
+	min-width:				20px;
+	max-width:				20px;
+}
+.c_td_dtl_width30, .c_div_dtl_value_30 {
+	width:					30px;
+	min-width:				30px;
+	max-width:				30px;
+}
+.c_td_dtl_width40, .c_div_dtl_value_40 {
+	width:					40px;
+	min-width:				40px;
+	max-width:				40px;
+}
+.c_td_dtl_width50, .c_div_dtl_value_50 {
+	width:					50px;
+	min-width:				50px;
+	max-width:				50px;
+}
+.c_td_dtl_width80, .c_div_dtl_value_80 {
+	width:					80px;
+	min-width:				80px;
+	max-width:				80px;
+}
+.c_td_dtl_width100, .c_div_dtl_value_100 {
+	width:					100px;
+	min-width:				100px;
+	max-width:				100px;
+}
+.c_td_dtl_width150, .c_div_dtl_value_150 {
+	width:					150px;
+	min-width:				150px;
+	max-width:				150px;
+}
+.c_td_dtl_width200, .c_div_dtl_value_200 {
+	width:					200px;
+	min-width:				200px;
+	max-width:				200px;
+}
+/* 値用DIV */
+.c_div_dtl_value_10,
+.c_div_dtl_value_20,
+.c_div_dtl_value_30,
+.c_div_dtl_value_40,
+.c_div_dtl_value_50,
+.c_div_dtl_value_80,
+.c_div_dtl_value_100,
+.c_div_dtl_value_150,
+.c_div_dtl_value_200 {
+	overflow:				hidden;
+	height:					100%;
+	font-size:				12px;
+	white-space:			nowrap;
+}
+/* ヘッダー部の設定 */
+#id_tr_dtl_header > TD {
+	background-color:		#c9d6ff;
+	font-weight:			bold; 
+}/* 合計欄の設定 */
+#id_tr_dtl_summary > TD {
+    background-color:		#ccf2ff;
+	font-weight:			bold; 
+}

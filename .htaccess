@@ -1,0 +1,18 @@
+#include_path
+php_value include_path ".:/var/www/PremierZ/pear/:/var/www/PremierZ/"
+
+#Debug-Error
+#php_flag display_errors "On"
+
+#directive
+AddDefaultCharset UTF-8
+
+##mbstring
+##php_value mbstring.language Japanese
+#php_value mbstring.http_input UTF-8
+#php_value mbstring.http_output UTF-8
+#php_value mbstring.internal_encoding UTF-8
+##php_value mbstring.encoding_translation = On
+##php_value mbstring.detect_order = auto
+##php_value mbstring.substitute_character = none
+##php_value mbstring.script_encoding = UTF-8

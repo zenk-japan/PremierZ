@@ -1,0 +1,81 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************/
+/* 検索項目用テーブル                                      */
+/***********************************************************/
+#id_table_search {
+	width: 				100%;
+	/*border: 			1px solid #DDDDDD;*/
+	border: 			0px solid #DDDDDD;
+	padding: 			0px !important;
+	margin: 			0px !important;
+	border-collapse: 	separate;
+}
+tr.c_tr_search {
+	width: 				100%;
+	/*border: 			1px solid #DDDDDD;*/
+	border: 			0px solid #DDDDDD;
+	padding: 			0px !important;
+	margin: 			0px !important;
+}
+
+/***********************************************************/
+/* 各項目                                                  */
+/***********************************************************/
+td.c_td_search {
+	border-style:		none;
+	border-width:		0px;
+	padding: 			0px !important;
+	margin: 			0px !important;
+	height: 			20px;
+	width: 				100%;
+}
+
+/* 条件見出し */
+input.c_disp_search{
+	padding: 			0px !important;
+	margin: 			0px !important;
+	text-align: 		left;
+	border: 			1px solid #64647a;
+	color: 				#FFFFFF;
+	background-color: 	#64647a;
+	font-size:			12px;
+	height: 			20px;
+}
+/* 条件入力テキスト */
+input.c_text_search{
+	padding: 			0px !important;
+	margin: 			0px !important;
+	text-align: 		left;
+	background-color: 	traseparent;
+	border: 			1px solid #a6a6a6;
+	font-size:			12px;
+	height: 			20px;
+}
+/* 条件入力リスト */
+select.c_sel_search{
+	padding: 			0px !important;
+	margin-top: 		1px !important;
+	text-align: 		left;
+	background-color: 	traseparent;
+	border: 			1px solid #a6a6a6;
+	font-size:			12px;
+	height: 			20px;
+}
+/* 一般の文字 */
+span.c_span_search {
+	font-size:			12px;
+	font-family:		monospace;
+}

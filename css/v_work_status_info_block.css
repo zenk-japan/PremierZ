@@ -1,0 +1,81 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ 作業情報画面で使用するCSSの設定
+ ***********************************************************/
+/***********************************************************/
+/* 概要部                                                  */
+/***********************************************************/
+/* 全体のDIV */
+#id_div_info {
+	width:						746px;
+	max-width:					746px;
+/*	height:						500px;*/
+	border:						0px none;
+	overflow-x:					hidden;
+}
+/* タイトル */
+#id_div_info_title {
+	width:						746px;
+	max-width:					746px;
+	background-image:			url("../img/newz_title_back.png");
+	background-repeat:			repeat-x;
+	font-size:					13px;
+	font-weight:				bold;
+	height:						23px;
+	padding:					3px 0 0 3px;
+	position:					relative;
+}
+/* 作業概要 */
+.c_td_info_title {
+	background-color:			#799af6;
+	/*background-image:			url("../img/detailsectiontitle_long.png");*/
+	background-repeat:			no-repeat;
+	color:						#ffffff;
+	font-size:					12px;
+	height:						20px;
+	padding-left:				10px;
+}
+
+/* キャプション */
+.c_td_info_cap {
+	background-color:			#c9d6ff;
+	border:						0 none;
+	height:						20px;
+	text-align:					left;
+	width:						100px;
+	max-width:					100px;
+}
+/* 値 */
+.c_td_info_data {
+	width:						140px;
+	max-width:					140px;
+	height:						20px;
+	border:						none 0px;
+	text-align: 				left;
+	border-bottom:				solid 1px #969aff;
+}
+.c_div_info_data {
+	max-width:					100%;
+	overflow:					hidden;
+	font-size:					12px;
+	height:						18px;
+}
+/* 纏め者（ユーザーへのリンク扱い） */
+.c_span_data_underline {
+	cursor:						pointer;
+	color:						#0000ff;
+	text-decoration:			underline;
+}

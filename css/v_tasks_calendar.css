@@ -1,0 +1,377 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ 作業管理画面で使用するCSSの設定
+ ***********************************************************/
+/***********************************************************/
+/* カレンダー                                              */
+/***********************************************************/
+/* DIV */
+#id_div_calendar {
+	width:					379px;
+	min-width: 				379px;
+	max-width: 				379px;
+	height:					407px;
+	min-height: 			407px;
+	max-height: 			407px;
+	border:					0px none;
+	margin:					0px;
+	padding:				0px;
+}
+#id_div_cal_title {
+	width:					379px;
+	min-width: 				379px;
+	max-width: 				379px;
+	height:					22px;
+	min-height: 			22px;
+	max-height: 			22px;
+	border:					0px none;
+	margin:					0px;
+	padding:				0px;
+	padding-top:			3px;
+	background-image:		url("../img/newz_title_back.png");
+	background-repeat:		repeat-x;
+}
+
+#id_div_cal_ope {
+	width:					379px;
+	min-width: 				379px;
+	max-width: 				379px;
+	height:					83px;
+	min-height: 			83px;
+	max-height: 			83px;
+	border:					0px none;
+	margin:					0px;
+	padding:				0px;
+}
+#id_div_cal_main {
+	width:					379px;
+	min-width: 				379px;
+	max-width: 				379px;
+	height:					268px;
+	min-height: 			268px;
+	max-height: 			268px;
+	border:					0px none;
+	margin:					0px;
+	padding:				0px;
+}
+#id_div_cal_mess {
+	width:					379px;
+	min-width: 				379px;
+	max-width: 				379px;
+	height:					31px;
+	min-height: 			31px;
+	max-height: 			31px;
+	border:					0px none;
+	margin:					0px;
+	padding:				0px;
+}
+
+/* ------------------------------------------------------ */
+/* カレンダータイトル */
+/* ------------------------------------------------------ */
+#id_span_cal_title {
+	font-size:				13px;
+	font-weight:			bold;
+}
+/* ------------------------------------------------------ */
+/* カレンダー操作部 */
+/* ------------------------------------------------------ */
+#id_tab_cal_ope {
+	width:					379px;
+	min-width: 				379px;
+	max-width: 				379px;
+	height:					83px;
+	min-height: 			83px;
+	max-height: 			83px;
+	border:					0px none;
+	border-collapse:		collapse;
+	margin:					0px;
+	padding:				0px;
+}
+.c_tr_cal_ope {
+	min-height: 			28px;
+	max-height: 			28px;
+	height:					28px;
+}
+/* 年移動、今日、今月 */
+.c_td_cal_ope {
+	width:					62px;
+	min-width: 				62px;
+	max-width: 				62px;
+	min-height: 			27px;
+	max-height: 			27px;
+	height:					27px;
+	border:					1px solid #dddddd;
+	margin:					0px;
+	padding:				0px;
+	text-align:				center;
+}
+/* 年表示 */
+.c_td_cal_ope_col2 {
+	width:					125px;
+	min-width: 				125px;
+	max-width: 				125px;
+	min-height: 			27px;
+	max-height: 			27px;
+	height:					27px;
+	border:					1px solid #dddddd;
+	font-size:				13px;
+	margin:					0px;
+	padding:				0px;
+	text-align:				center;
+	background-color:		#c9d6ff;
+}
+/* 月表示 */
+.c_td_cal_ope_month {
+	width:					62px;
+	min-width: 				62px;
+	max-width: 				62px;
+	min-height: 			27px;
+	max-height: 			27px;
+	height:					27px;
+	border:					1px solid #dddddd;
+	margin:					0px;
+	padding:				0px;
+	text-align:				center;
+}
+/* 選択月の月 */
+.c_td_cal_ope_month_selected {
+	width:					62px;
+	min-width: 				62px;
+	max-width: 				62px;
+	min-height: 			27px;
+	max-height: 			27px;
+	height:					27px;
+	border:					1px solid #dddddd;
+	margin:					0px;
+	padding:				0px;
+	text-align:				center;
+	background-color:		#c9d6ff;
+}
+/* 年ボタン */
+.c_btn_cal_y_ope {
+	width:					100%;
+	height:					100%;
+	border:					1px outset #dddddd;
+	background-color:		transparent;
+	margin:					0px;
+	padding:				0px;
+}
+/* 年移動、今月、今日ボタン */
+.c_btn_cal_ym_ope {
+	width:					100%;
+	height:					100%;
+	border:					1px outset #dddddd;
+	background-color:		transparent;
+	cursor:					pointer;
+	margin:					0px;
+	padding:				0px;
+}
+/* 月ボタン */
+.c_btn_cal_ope {
+	width:					100%;
+	height:					100%;
+	border:					1px outset #dddddd;
+	background-color:		transparent;
+	cursor:					pointer;
+	margin:					0px;
+	padding:				0px;
+}
+/* ------------------------------------------------------ */
+/* カレンダーメイン */
+/* ------------------------------------------------------ */
+#id_tab_cal_main {
+	width:					379px;
+	min-width: 				379px;
+	max-width: 				379px;
+	height:					268px;
+	min-height: 			268px;
+	max-height: 			268px;
+	border:					0px none;
+	border-collapse:		collapse;
+	margin:					0px;
+	padding:				0px;
+}
+/* 曜日表示 */
+.c_tr_cal_main_top {
+	min-height: 			28px;
+	max-height: 			28px;
+	height:					28px;
+}
+/* 土日以外ヘッダ */
+.c_th_cal_main {
+	width:					53px;
+	min-width: 				53px;
+	max-width: 				53px;
+	height: 				27px;
+	min-height: 			27px;
+	max-height: 			27px;
+	border:					1px solid #efefef;
+	background-color:		#2a2ab8;
+	/*background-image:		url("../img/calendardaybk.png");*/
+	background-repeat:		no-repeat;
+	background-position:	center center;
+	font-size:				13px;
+	color:					#ffffff;
+	margin:					0px;
+	padding:				0px;
+	text-align:				center;
+}
+/* 土日ヘッダ */
+#id_th_cal_main_sun {
+	color:					#ff0000;
+}
+#id_th_cal_main_sat {
+	color:					#3dfdfd;
+}
+
+/* 日付表示 */
+.c_tr_cal_main_days {
+	min-height: 			40px;
+	max-height: 			40px;
+	height:					40px;
+}
+.c_td_cal_day1,
+.c_td_cal_day2,
+.c_td_cal_day3,
+.c_td_cal_day4,
+.c_td_cal_day5,
+.c_td_cal_day6,
+.c_td_cal_day7,
+.c_td_cal_day_inperiod {
+	width:					53px;
+	min-width: 				53px;
+	max-width: 				53px;
+	height: 				39px;
+	min-height: 			39px;
+	max-height: 			39px;
+	border:					1px solid #dddddd;
+	margin:					0px;
+	padding:				0px;
+}
+/* 期間内の日付 */
+.c_td_cal_day_inperiod {
+	background-color:		#ccffcf;
+}
+/* 選択された日付 */
+.c_td_cal_day_selected {
+	width:					53px;
+	min-width: 				53px;
+	max-width: 				53px;
+	height: 				39px;
+	min-height: 			39px;
+	max-height: 			39px;
+	border:					1px solid #dddddd;
+	margin:					0px;
+	padding:				0px;
+	background-color:		#3bff93;
+}
+/* 本日 */
+.c_td_cal_day_today {
+	width:					53px;
+	min-width: 				53px;
+	max-width: 				53px;
+	height: 				39px;
+	min-height: 			39px;
+	max-height: 			39px;
+	border:					1px solid #dddddd;
+	margin:					0px;
+	padding:				0px;
+	background-color:		#9cebff;
+}
+
+/* ボタン */
+.c_btn_cal_day1,
+.c_btn_cal_day2,
+.c_btn_cal_day3,
+.c_btn_cal_day4,
+.c_btn_cal_day5,
+.c_btn_cal_day6,
+.c_btn_cal_day7 {
+	width:					100%;
+	max-width:				53px;
+	height:					100%;
+	border:					0px none;
+	background-color:		transparent;
+	cursor:					pointer;
+	margin:					0px;
+	padding:				0px;
+	overflow:				hidden;
+}
+/* 作業がある日の日付ボタン */
+.c_btn_cal_day_workexist {
+	width:					100%;
+	height:					100%;
+	background-color:		transparent;
+	background-image:		url("../img/workexists.png");
+	background-repeat:		no-repeat;
+	background-position:	center center;
+	cursor:					pointer;
+	margin:					0px;
+	padding:				0px;
+	border:					0px none;
+}
+/* 日付のない部分の日付ボタン */
+.c_btn_cal_day_noday {
+	width:					100%;
+	height:					100%;
+	border:					0px none;
+	margin:					0px;
+	padding:				0px;
+	background-color:		#e0e0e0;
+}
+.c_btn_cal_day1 {
+	color:					#ff0000;
+}
+.c_btn_cal_day7 {
+	color:					#0000ff;
+}
+
+/* ------------------------------------------------------ */
+/* メッセージ */
+/* ------------------------------------------------------ */
+#id_tab_cal_mess {
+	width:					379px;
+	min-width: 				379px;
+	max-width: 				379px;
+	height:					31px;
+	min-height: 			31px;
+	max-height: 			31px;
+	border:					0px none;
+	border-collapse:		collapse;
+	margin:					0px;
+	padding:				0px;
+}
+#id_tr_cal_mess {
+	min-height: 			31px;
+	max-height: 			31px;
+	height:					31px;
+}
+#id_td_cal_mess_img {
+	width:					53px;
+	min-width: 				53px;
+	max-width: 				53px;
+	background-color:		transparent;
+	font-size:				12px;
+	text-align:				center;
+}
+#id_td_cal_mess {
+	width:					163px;
+	min-width: 				163px;
+	max-width: 				163px;
+	font-size:				12px;
+	text-align:				center;
+}

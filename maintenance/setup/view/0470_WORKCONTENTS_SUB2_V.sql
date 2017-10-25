@@ -1,0 +1,34 @@
+/*-----------------------------------------------------------------------------
+-- VIEW名			：WORKCONTENTS_SUB2_V
+-- 作成者			：zenk
+-- 作成日			：2012-02-28
+-- 更新履歴			：2012-05-15 結合条件見直し
+-----------------------------------------------------------------------------*/
+CREATE OR REPLACE VIEW `WORKCONTENTS_SUB2_V` AS
+	SELECT 
+		   wc1.`DATA_ID`
+		  ,wc1.`ESTIMATE_ID`
+		  ,wc1.`WORK_CONTENT_ID`
+		  ,IFNULL(SUM(ws1.`BASIC_TIME`),0)		AS `BASIC_TIME_SUM`
+		  ,IFNULL(SUM(ws1.`BREAK_TIME`),0)		AS `BREAK_TIME_SUM`
+		  ,IFNULL(SUM(ws1.`TRANSPORT_AMOUNT`),0)
+												AS `TRANSPORT_AMOUNT_SUM`
+		  ,IFNULL(SUM(ws1.`OTHER_AMOUNT`),0)	AS `OTHER_AMOUNT_SUM`
+		  ,IFNULL(SUM(ws1.`OVERTIME_WORK_AMOUNT`),0)
+												AS `OVERTIME_WORK_AMOUNT_SUM`
+		  ,IFNULL(SUM(ws1.`WORK_EXPENSE_AMOUNT_TOTAL`),0)
+												AS `WORK_EXPENSE_AMOUNT_TOTAL_SUM`
+		  ,IFNULL(SUM(ws1.`PAYMENT_AMOUNT_TOTAL`),0)
+												AS `PAYMENT_AMOUNT_TOTAL_SUM`
+		  ,IFNULL(SUM(ws1.`REAL_WORKING_HOURS`),0)
+												AS `REAL_WORKING_HOURS_SUM`
+		  ,IFNULL(SUM(ws1.`REAL_OVERTIME_HOURS`),0)
+												AS `REAL_OVERTIME_HOURS_SUM`
+		  ,IFNULL(SUM(ws1.`SUPPLIED_AMOUNT_TOTAL`),0)
+												AS `SUPPLIED_AMOUNT_TOTAL_SUM`
+	FROM   `WORK_CONTENTS` wc1 LEFT JOIN `WORK_STAFF` ws1
+		ON (	wc1.`WORK_CONTENT_ID` = ws1.`WORK_CONTENT_ID`
+			AND ws1.`DATA_ID` = wc1.`DATA_ID`
+			AND ws1.`VALIDITY_FLAG` = 'Y')
+	GROUP BY wc1.`DATA_ID`,wc1.`ESTIMATE_ID`,wc1.`WORK_CONTENT_ID`
+;

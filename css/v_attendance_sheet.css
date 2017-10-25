@@ -1,0 +1,202 @@
+/*******************************************************************************
+*	PremierZ - The first product of ZENK
+*
+*	one line to give the program's name and an idea of what it does.
+*
+*	Copyright (C) 2012 ZENK Co., Ltd
+*
+*	This program is free software; you can redistribute it and/or modify it under the terms of the GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+*
+*
+*	This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+*
+*	You should have received a copy of the GNU Affero General Public License along with this program; If not, see <http://www.gnu.org/licenses/>.
+*******************************************************************************/
+/***********************************************************
+ 勤務表の設定
+ ***********************************************************/
+/* タイトルと作業者名のDIV */
+#id_ats_div_outer { 
+	width:				698px;
+	height:				80px;
+	border:				none 0px;
+	overflow:			hidden;
+}
+/* タイトルと作業者名のテーブル */
+#id_ats_table_outer {
+	width:				100%;
+	border:				none 0px;
+	border-collapse:	collapse;
+	width:				672px;
+	max-width:			672px;
+	min-width:			672px;
+}
+/* タイトルのTD */
+#id_ats_td_title {
+	border-top:			solid 2px #222222;
+	border-bottom:		solid 2px #222222;
+	text-align:			center;
+	height:				30px;
+	font:				bold 20px sans-serif;
+}
+/* 作業者のテーブル */
+#id_ats_table_workuser {
+	width:				100%;
+	border:				none 0px;
+	border-collapse:	separate;
+}
+#id_ats_table_workuser td {
+	height:				20px;
+}
+.c_ats_td_workuser_space {
+	width:				10%;
+	border:				none 0px;
+}
+.c_ats_td_workuser_cap {
+	width:				10%;
+	border:				none 0px;
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			12px;
+	text-align:			right;
+}
+.c_ats_td_workuser_value {
+	width:				80%;
+	border:				none 0px;
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			12px;
+}
+
+/*-----------------------------
+  作業詳細
+  -----------------------------*/
+/* DIV */
+#id_ats_div_detail {
+	width:				698px;
+	height:				315px;
+	border:				none 0px;
+	overflow:			auto;
+}
+/* テーブル */
+#id_ats_table_detail {
+	border:				none 0px;
+	border-collapse:	collapse;
+	table-layout:		fixed;
+}
+/* ヘッダー */
+.c_ats_th_detail_head_short {
+	font-size:			12px;
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	text-align:			center;
+	width:				40px;
+	height: 			28px;
+	border: 			1px solid #DDDDDD;
+	background-color: 	#666670;
+	color: 				#FFFFFF;
+}
+.c_ats_th_detail_head_middle {
+	font-size:			12px;
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	text-align:			center;
+	width:				55px;
+	height: 			28px;
+	border: 			1px solid #DDDDDD;
+	background-color: 	#666670;
+	color: 				#FFFFFF;
+}
+.c_ats_th_detail_head_long {
+	font-size:			12px;
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	text-align:			center;
+	width:				130px;
+	height: 			28px;
+	border: 			1px solid #DDDDDD;
+	background-color: 	#666670;
+	color: 				#FFFFFF;
+}
+/* 明細 */
+.c_ats_td_detail_date_odd,
+.c_ats_td_detail_date_even,
+.c_ats_td_detail_date_holiday,
+.c_ats_td_detail_num_odd,
+.c_ats_td_detail_num_even,
+.c_ats_td_detail_num_holiday,
+.c_ats_td_detail_char_odd,
+.c_ats_td_detail_char_even,
+.c_ats_td_detail_char_holiday,
+.c_ats_td_detail_total {
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			11px;
+	border: 			1px solid #DDDDDD;
+	text-align:			center;
+}
+/* 日付(奇数) */
+.c_ats_td_detail_date_odd {
+}
+/* 日付(偶数) */
+.c_ats_td_detail_date_even {
+}
+/* 日付(休日) */
+.c_ats_td_detail_date_holiday {
+	background-color: 	#faf2e3;
+}
+/* 数値(奇数) */
+.c_ats_td_detail_num_odd {
+	text-align:			right;
+}
+/* 数値(偶数) */
+.c_ats_td_detail_num_even {
+	text-align:			right;
+}
+/* 数値(休日) */
+.c_ats_td_detail_num_holiday {
+	background-color: 	#faf2e3;
+	text-align:			right;
+}
+/* 文字列(奇数) */
+.c_ats_td_detail_char_odd {
+	text-align:			left;
+}
+/* 文字列(偶数) */
+.c_ats_td_detail_char_even {
+	text-align:			left;
+}
+/* 文字列(休日) */
+.c_ats_td_detail_char_holiday {
+	background-color: 	#faf2e3;
+	text-align:			left;
+}
+
+/* 合計欄 */
+.c_ats_td_detail_total {
+	background-color: 	#ece8f2;
+	text-align:			right;
+}
+
+/*-----------------------------
+  補足
+  -----------------------------*/
+#id_ats_div_notice {
+	width:				698px;
+	height:				20px;;
+	border:				none 0px;
+	overflow:			hidden;
+}
+.c_ats_span_notice {
+	font-family:		arial,"ＭＳ Ｐゴシック",Osaka,sans-serif;
+	font-size:			10px;
+	color:				#ff1111;
+}
+
+/*-----------------------------
+  HTML表示の印刷ボタン
+  -----------------------------*/
+#id_div_ext_printbtn {
+        position:                       absolute;
+        top:                            15px;
+        left:                           15px;
+}
+@media print { 
+        .c_btn_print {
+            display:                        none;
+        } 
+} 
